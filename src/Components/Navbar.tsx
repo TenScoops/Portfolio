@@ -4,7 +4,7 @@ import {BsGithub, BsLinkedin} from "react-icons/bs"
 const Navbar = () =>{
     return(
     <div className="flex flex-col items-center justify-center bg-slate-800 text-white">
-        <nav className="flex flex-row justify-between items-center md:flex-col border-b border-slate-800 py-1 w-[95%]">
+        <nav className="flex flex-row justify-between items-center md:flex-col border-b border-slate-800 py-1 w-[80%]">
             {/* <span><FaCode className="italic" size={20}/></span> */}
             <div className="bg-white text-black px-2 py-2 rounded-full">
                 <h1 className="font-bold text-base tracking-wider">PA</h1>

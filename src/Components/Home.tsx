@@ -14,11 +14,11 @@ const Home = () =>{
                 <h1 className="text-5xl flex flex-row items-center">Learning and creating<span><FaCode className="ml-2" size={40}/></span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ratione quasi ad <br/>o veritatis quam rerum odio velit ea! Nobis, veniam.</p>
                 <div className="flex flex-row items-center  w-[500px]">
-                    <button className="flex flex-row justify-center bg-slate-800 rounded py-3 text-white w-1/4 ">
+                    <button className="flex flex-row justify-center bg-slate-800 rounded py-3 text-white w-1/4  transform active:scale-95 transition duration-150">
                         Resume <IoEnterOutline className="ml-1" size={25}/>
                     </button>
 
-                    <h2 className="text-medium underline ml-4 ">Contact</h2>
+                    <h2 className="text-medium underline ml-4 cursor-pointer hover:no-underline">Contact</h2>
                     {/* <button className="flex flex-row justify-center bg-black rounded py-3 text-white w-1/4 ">
                         Linkedin<BsLinkedin className="ml-3" size = {25}/>
                     </button> */}
@@ -34,7 +34,12 @@ const Home = () =>{
                 </div> */}
             </div>
             <div>
-                <img className="rounded-full wiggle-border border-2 border-black" src={HappyDwarf} height={450} width={450}/>
+                <img className="rounded-full wiggle-border transform active:scale-95 transition 
+                                duration-150 border-2 border-black cursor-pointer" 
+                     src={HappyDwarf} 
+                     height={450} 
+                     width={450}
+                     />
             </div>
         </div>
     )
