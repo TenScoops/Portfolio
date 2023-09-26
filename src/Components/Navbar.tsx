@@ -3,16 +3,16 @@
 import {BsGithub, BsLinkedin} from "react-icons/bs"
 const Navbar = () =>{
     return(
-    <div className="flex items-center justify-center">
-        <nav className="flex flex-row justify-between items-center md:flex-col border-b border-slate-500 py-2 w-[85%]">
+    <div className="flex flex-col items-center justify-center bg-slate-800 text-white">
+        <nav className="flex flex-row justify-between items-center md:flex-col border-b border-slate-800 py-1 w-[95%]">
             {/* <span><FaCode className="italic" size={20}/></span> */}
-            <div className="bg-black rounded-full text-white w-[40px] h-[40px]  flex justify-center items-center">
-                <h1 className="font-bold text-lg tracking-wider"><i>PA</i></h1>
+            <div className="bg-white text-black px-2 py-2 rounded-full">
+                <h1 className="font-bold text-base tracking-wider">PA</h1>
             </div>
             <ul className="flex flex-row space-x-8">
-                <li className="bg-black text-white py-[8px] px-4 rounded">
+                <div><li className="bg-white text-black py-[6px] px-4 rounded">
                     Home
-                </li>
+                </li></div>
                 <li className="py-2 px-2">
                     Projects
                 </li>
@@ -26,6 +26,7 @@ const Navbar = () =>{
             </div>
         
         </nav>
+        {/* <div className="w-[80%] bg-black h-[0.2px]"></div> */}
         </div>
     )
 }
