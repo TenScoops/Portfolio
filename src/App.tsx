@@ -10,7 +10,7 @@ const App = () => {
       <Home/>
       <Projects/>
       <button className="fixed right-4 bottom-4 border-2 shadow-slate-500 shadow-md
-                      transform active:scale-95 transition duration-150 border-black rounded-full py-1 px-1">
+                      transform active:scale-95 transition duration-150 bg-black text-white border-black rounded-full py-1 px-1">
         <HiOutlineLightBulb size={30}/>
       </button>
     </div>
