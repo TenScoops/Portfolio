@@ -10,9 +10,7 @@ export default {
         "cedarville" :["Cedarville Cursive", "sans-serif", "cursive"]
       }
     },
-    screens:{
-      // '':''
-    }
+   
   },
   plugins: [],
 }

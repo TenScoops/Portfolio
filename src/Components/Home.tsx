@@ -1,11 +1,8 @@
 // import HappyDwarf from "../assets/HappyDwarf.jpg"
-import Flight from "../assets/flight.jpg"
-import {FaCode} from "react-icons/fa6"
-import {FaHtml5, FaReact, FaNode} from "react-icons/fa"
-import {IoLogoJavascript, IoLogoCss3} from "react-icons/io5"
-import {SiTailwindcss} from "react-icons/si"
-import {IoEnterOutline} from "react-icons/io5"
-import {GiLibertyWing} from "react-icons/gi"
+// import Flight from "../assets/flight.jpg"
+import { FaCode } from "react-icons/fa6"
+import { IoEnterOutline } from "react-icons/io5"
+import ProfilePic from "../assets/profile.png"
 
 
 
@@ -13,9 +10,17 @@ import {GiLibertyWing} from "react-icons/gi"
 const Home = () =>{
     return(
         <div id="Home" className="flex flex-row justify-center items-center h-screen">
-            <div className="mr-10 flex flex-col  justify-center space-y-10">
+            <div className="mr-20">
+                <img className="rounded-full wiggle-border transform active:scale-95 transition 
+                                duration-150 border-2 border-black cursor-pointer" 
+                     src={ProfilePic} 
+                     height={450} 
+                     width={450}
+                     />
+            </div>
+            <div className=" flex flex-col  justify-center space-y-10">
                 <h1 className="text-5xl flex flex-row items-center">
-                    Exploring new boundaries
+                    Hi! I'm Philipe Ayres
                     <span>
                         <FaCode className="ml-2" size={40}/>
                     </span>
@@ -43,14 +48,7 @@ const Home = () =>{
                     <FaNode className="text-green-600 cursor-pointer" size={31} />
                 </div> */}
             </div>
-            <div>
-                <img className="rounded-full wiggle-border transform active:scale-95 transition 
-                                duration-150 border-2 border-black cursor-pointer" 
-                     src={Flight} 
-                     height={450} 
-                     width={450}
-                     />
-            </div>
+            
         </div>
     )
 }
