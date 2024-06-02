@@ -1,8 +1,9 @@
 // import HappyDwarf from "../assets/HappyDwarf.jpg"
 // import Flight from "../assets/flight.jpg"
-import { FaCode } from "react-icons/fa6"
-import { IoEnterOutline } from "react-icons/io5"
-import ProfilePic from "../assets/profile.png"
+import { BsGithub } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa6";
+import { IoEnterOutline } from "react-icons/io5";
+import ProfilePic from "../assets/profile.png";
 
 
 
@@ -10,6 +11,7 @@ import ProfilePic from "../assets/profile.png"
 const Home = () =>{
     return(
         <div id="Home" className="flex flex-row justify-center items-center h-screen">
+            {/* image */}
             <div className="mr-20">
                 <img className="rounded-full wiggle-border transform active:scale-95 transition 
                                 duration-150 border-2 border-black cursor-pointer" 
@@ -18,26 +20,33 @@ const Home = () =>{
                      width={450}
                      />
             </div>
-            <div className=" flex flex-col  justify-center space-y-10">
-                <h1 className="text-5xl flex flex-row items-center">
-                    Hi! I'm Philipe Ayres
-                    <span>
-                        <FaCode className="ml-2" size={40}/>
-                    </span>
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ratione quasi ad <br/>o veritatis quam rerum odio velit ea! Nobis, veniam.</p>
-                <div className="flex flex-row items-center  w-[500px]">
-                    <button className="flex flex-row justify-center bg-black rounded py-3 text-white w-1/4   transform active:scale-95 transition duration-150">
+            {/* Greetings and CTA */}
+            <div className=" flex flex-col justify-center space-y-14">
+                <div className="space-y-6">
+                    <h1 className="text-5xl flex flex-col w-[600px]">
+                        Hi! I'm Philipe Ayres, a     
+                    </h1>
+                    <h1 className="text-5xl font-bold">
+                        frontend developer
+                    </h1>
+                </div>
+                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ratione quasi ad <br/>o veritatis quam rerum odio velit ea! Nobis, veniam.</p> */}
+                <div className="flex flex-row items-center justify-center w-[500px]">
+                    <button className="flex flex-row justify-center bg-black rounded py-4 text-white w-1/4 transform active:scale-95 transition duration-150">
                         Resume <IoEnterOutline className="ml-1" size={25}/>
                     </button>
 
-                    <h2 className="text-medium underline ml-4 cursor-pointer hover:no-underline">
+                    <button className="text-medium border rounded w-1/4 border-black ml-4 py-4 cursor-pointer hover:no-underline transform active:scale-95 transition duration-150">
                         Contact
-                    </h2>
+                    </button>
                     {/* <button className="flex flex-row justify-center bg-black rounded py-3 text-white w-1/4 ">
                         Linkedin<BsLinkedin className="ml-3" size = {25}/>
                     </button> */}
                     
+                </div>
+                <div className="flex flex-row items-center justify-center w-[500px] space-x-3">
+                    <BsGithub size={40}/>
+                    <FaLinkedin size={40}/>
                 </div>
                 {/* <div className="flex space-x-5 flex-row">
                     <FaHtml5 className="text-orange-500 cursor-pointer" size={30}/>

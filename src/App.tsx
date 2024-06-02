@@ -1,20 +1,23 @@
-import { FaRegLightbulb } from "react-icons/fa6"
-import Home from "./Components/Home"
-import Navbar from "./Components/Navbar"
-import Projects from "./Components/Projects"
+import { FaArrowDownLong } from "react-icons/fa6";
+import Home from "./Components/Home";
+import Navbar from "./Components/Navbar";
+import Projects from "./Components/Projects";
 
 const App = () => {
   return(
-    <div className="bg-slate-50 flex flex-row">
+    <div className=" flex flex-row">
       <Navbar/>
       <div className="flex flex-col">
       <Home/>
       <Projects/>
       </div>
-      <button className="fixed right-4 bottom-4 border-2 shadow-slate-500 shadow-md
-                      transform active:scale-95 transition duration-150 bg-black text-white border-black rounded-full py-[0.4rem] px-[0.4rem]">
-        <FaRegLightbulb size={27}/>
-      </button>
+      <div className=" fixed left-60 bottom-10 flex items-center space-x-2">
+        <button className="border-2 shadow-slate-500 shadow-md
+                        transform active:scale-95 transition duration-150 bg-white border-black rounded-lg py-[0.6rem] px-[0.6rem]">
+          <FaArrowDownLong size={27}/>
+        </button>
+        <h1 className="text-lg">Home</h1>
+      </div>
     </div>
   )
 }
