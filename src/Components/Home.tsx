@@ -13,7 +13,7 @@ const Home = () =>{
         <div id="Home" className="flex flex-row justify-center items-center h-screen">
             {/* image */}
             <div className="mr-20">
-                <img className="rounded-full wiggle-border transform active:scale-95 transition 
+                <img className="rounded-md transform active:scale-95 transition 
                                 duration-150 border-2 border-black cursor-pointer" 
                      src={ProfilePic} 
                      height={450} 
@@ -22,16 +22,16 @@ const Home = () =>{
             </div>
             {/* Greetings and CTA */}
             <div className=" flex flex-col justify-center space-y-14">
-                <div className="space-y-6">
-                    <h1 className="text-5xl flex flex-col w-[600px]">
+                <div className="space-y-6 flex items-center justify-start flex-col">
+                    <h1 className="text-4xl flex flex-col ">
                         Hi! I'm Philipe Ayres, a     
                     </h1>
-                    <h1 className="text-5xl font-bold">
+                    <h1 className="text-4xl font-bold">
                         frontend developer
                     </h1>
                 </div>
                 {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ratione quasi ad <br/>o veritatis quam rerum odio velit ea! Nobis, veniam.</p> */}
-                <div className="flex flex-row items-center justify-center w-[500px]">
+                <div className="flex flex-row items-center justify-center ">
                     <button className="flex flex-row justify-center bg-black rounded py-4 text-white w-1/4 transform active:scale-95 transition duration-150">
                         Resume <IoEnterOutline className="ml-1" size={25}/>
                     </button>
