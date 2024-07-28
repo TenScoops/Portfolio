@@ -3,7 +3,8 @@
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoEnterOutline } from "react-icons/io5";
-import ProfilePic from "../assets/profile.png";
+// import ProfilePic from "../assets/profile.png";
+import Spaceman from "../assets/spaceman.jpg";
 
 
 
@@ -13,11 +14,11 @@ const Home = () =>{
         <div id="Home" className="flex flex-row justify-center items-center h-screen">
             {/* image */}
             <div className="mr-20">
-                <img className="rounded-md transform active:scale-95 transition 
+                <img className="rounded-full transform active:scale-95 transition 
                                 duration-150 border-2 border-black cursor-pointer" 
-                     src={ProfilePic} 
-                     height={450} 
-                     width={450}
+                     src={Spaceman} 
+                    
+                     width={400}
                      />
             </div>
             {/* Greetings and CTA */}
@@ -32,11 +33,11 @@ const Home = () =>{
                 </div>
                 {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ratione quasi ad <br/>o veritatis quam rerum odio velit ea! Nobis, veniam.</p> */}
                 <div className="flex flex-row items-center justify-center ">
-                    <button className="flex flex-row justify-center bg-black rounded py-4 text-white w-1/4 transform active:scale-95 transition duration-150">
+                    <button className="flex flex-row icon-hover2 justify-center mr-4 bg-black rounded py-4 text-white w-1/4 shadow-transition duration-200 shadow-sharp-md border border-white hover:shadow-sharp-lg">
                         Resume <IoEnterOutline className="ml-1" size={25}/>
                     </button>
 
-                    <button className="text-medium border rounded w-1/4 border-black ml-4 py-4 cursor-pointer hover:no-underline transform active:scale-95 transition duration-150">
+                    <button className="text-medium border rounded w-1/4 border-black ml-4 py-4 icon-hover2 cursor-pointer hover:no-underline shadow-transition duration-200 shadow-sharp-md hover:shadow-sharp-lg">
                         Contact
                     </button>
                     {/* <button className="flex flex-row justify-center bg-black rounded py-3 text-white w-1/4 ">
@@ -45,8 +46,8 @@ const Home = () =>{
                     
                 </div>
                 <div className="flex flex-row items-center justify-center w-[500px] space-x-3">
-                    <BsGithub size={40}/>
-                    <FaLinkedin size={40}/>
+                    <BsGithub className="icon-hover cursor-pointer" size={35}/>
+                    <FaLinkedin className="icon-hover cursor-pointer" size={35}/>
                 </div>
                 {/* <div className="flex space-x-5 flex-row">
                     <FaHtml5 className="text-orange-500 cursor-pointer" size={30}/>

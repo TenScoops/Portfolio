@@ -1,16 +1,21 @@
-import lifexp from "../assets/lifexpimg.png"
-import pomodoro1 from "../assets/pomodoroimg.png"
+import gamepad from "../assets/gamepad.png"
 
 
 const Projects = ()=> {
     return (
     <div className="h-screen flex flex-col items-center">
-        <h1 className="text-xl">Apps</h1>
-        <h1 className="text-xl">Design</h1>
+        <div className="flex items-start justify-start">
+            <h1 className="text-xl">Apps</h1>
+            <h1 className="text-xl">Design</h1>
+        </div>
 
-        <div className="flex flex-row items-center justify-center space-x-3 mt-8">
-            <img className="rounded-lg border-2 border-black" src={lifexp} height={400} width={400}/>
-            <img className="rounded-lg border-2 border-black" src={pomodoro1} height={500} width={400}/>
+        <div className="flex flex-row items-center justify-center space-x-8 mt-8">
+            <div className="flex items-center justify-center shadow-sharp-md hover:shadow-sharp-lg w-[500px] h-[500px]">
+                <img  src={gamepad} width={200}/>
+            </div>
+            <div className="flex items-center justify-center shadow-sharp-md hover:shadow-sharp-lg w-[500px] h-[500px]">
+                <img  src={gamepad} width={200}/>
+            </div>
         </div>
         <div className="flex flex-row items-center justify-center space-x-3 mt-10">
             
