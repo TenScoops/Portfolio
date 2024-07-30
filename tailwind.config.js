@@ -10,6 +10,10 @@ export default {
         "cedarville" :["Cedarville Cursive", "sans-serif", "cursive"]
       },
       boxShadow: {
+        'sharp-2xl':[
+          '0 0 0 1px rgba(0, 0, 0, 1)', // Black border
+          '13px 13px 0 0 rgba(57, 57, 57, 1)' // Existing shadow
+        ],
         'sharp-xl':[
           '0 0 0 1px rgba(0, 0, 0, 1)', // Black border
           '11px 11px 0 0 rgba(57, 57, 57, 1)' // Existing shadow

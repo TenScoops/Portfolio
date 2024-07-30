@@ -2,7 +2,7 @@
 // import {FaCode} from "react-icons/fa6"
 const Navbar = () =>{
     return(
-    <div className="flex flex-col items-center justify-center text-black fixed">
+    <div className="flex flex-col items-center  text-black fixed ">
         <nav className="flex flex-col items-center  pt-48 pl-16  ">
             {/* <span><FaCode className="italic" size={20}/></span> */}
            
