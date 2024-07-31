@@ -12,6 +12,10 @@
   transform: scale(1.06);
   transition: all 0.15s ease
 }
+.icon-hover3:hover {
+  transform: scale(1.03);
+  transition: all 0.15s ease
+}
 
 html {
     scroll-behavior: smooth;

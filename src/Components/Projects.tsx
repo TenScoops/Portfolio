@@ -3,16 +3,16 @@ import { Gamepad, ProgressBar } from "../icons"
 const Projects = ()=> {
     return (
     <div className="h-screen flex flex-col items-center justify-center w-full">
-        <div className="flex items-start justify-start w-[1000px] space-x-5">
+        <div className="flex items-start justify-start w-[1000px] space-x-12">
             <h1 className="text-xl font-bold underline">Apps</h1>
             <h1 className="text-xl">Design</h1>
         </div>
 
         <div className="flex flex-row items-center justify-center space-x-28 mt-16">
-            <div className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[450px] h-[450px] rounded-3xl cursor-pointer shadow-transition duration-200">
+            <div className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <Gamepad />
             </div>
-            <div className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[450px] h-[450px] rounded-3xl cursor-pointer shadow-transition duration-200">
+            <div className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <ProgressBar />
             </div>
         </div>

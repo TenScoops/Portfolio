@@ -16,7 +16,7 @@ const App = () => {
         <Contact />
       </div>
       <div className=" fixed left-60 bottom-10 flex items-center space-x-2">
-        <button className="border mr-2 px-4 transform active:scale-95 transition duration-150 bg-white border-black rounded-sm py-[0.6rem] px-[0.6rem] shadow-sharp-sm icon-hover hover:shadow-sharp-md">
+        <button className="border mr-2 px-4 transform active:scale-95 transition duration-150 bg-white border-black rounded-sm py-[0.6rem]  shadow-sharp-sm icon-hover hover:shadow-sharp-md">
           <ArrowDown/>
         </button>
         <h1 className="text-lg">Home</h1>
