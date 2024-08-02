@@ -17,6 +17,17 @@
   transition: all 0.15s ease
 }
 
+.circle {
+  height: 3px;
+  width: 3px;
+  background-color: black;
+
+}
+
+.blink {
+  animation: blink 1.5s infinite;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -55,3 +66,12 @@ html {
     animation: wiggle-border 2s infinite ease-in-out;
   }
  
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }

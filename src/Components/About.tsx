@@ -1,4 +1,4 @@
-import Astronaut from '../assets/astronaut.png'
+import Rocket from '../assets/Rocket.png'
 
 const About = () => {
     return(<div className="flex flex-col items-center justify-center h-screen space-y-5 w-full">
@@ -7,8 +7,8 @@ const About = () => {
             application of UI/UX principles. The user is always placed at the forefront. “
         </h1>
         <div className='flex flex-row space-x-8 '>
-            <div>
-                <img src={Astronaut} width={500}/>
+            <div className='rounded-full'>
+                <img className='rounded-full' src={Rocket} width={400}/>
             </div>
             <div className='space-y-8'>
                 <div className="w-[600px] h-[250px] border border-black rounded-2xl  border-b-2 px-9 space-y-3 text-xl hover:border-2">
