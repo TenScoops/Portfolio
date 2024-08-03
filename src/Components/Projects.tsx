@@ -10,12 +10,14 @@ const Projects = ()=> {
         </div>
 
         <div className="flex flex-row items-center justify-center space-x-28 mt-16">
-            <Link to="/projects/lifexp" className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
+            <Link to="/projects/lifexp" 
+                  className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <Gamepad />
             </Link>
-            <div className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
+            <Link to="projects/pomoprogress"
+                  className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <ProgressBar />
-            </div>
+            </Link>
         </div>
         <div className="flex flex-row items-center justify-center space-x-3 mt-10">
             

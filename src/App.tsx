@@ -5,6 +5,7 @@ import Contact from "./Components/Contact";
 import Home from "./Components/Home";
 import LifeXP from "./Components/LifeXP";
 import Navbar from "./Components/Navbar";
+import Pomoprogress from "./Components/Pomoprogress";
 import Projects from "./Components/Projects";
 import { ArrowDown } from "./icons";
 
@@ -66,7 +67,7 @@ const App = () => {
               </>
               } />
             <Route path="/projects/lifexp" element={<LifeXP />}/>
-            <Route path="/projects/pomoprogress" element={<LifeXP />}/>
+            <Route path="/projects/pomoprogress" element={<Pomoprogress />}/>
             <Route path="/projects/imaginai" element={<LifeXP />}/>
           </Routes>
         </div>
