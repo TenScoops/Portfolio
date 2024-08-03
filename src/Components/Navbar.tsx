@@ -1,4 +1,7 @@
-const Navbar = ({ activeSection }) => {
+interface NavbarProps {
+  activeSection: string
+}
+const Navbar:React.FC<NavbarProps> = ({ activeSection }) => {
     return (
       <div className="flex flex-col items-center text-black fixed w-[200px]">
         <nav className="flex flex-col items-center pt-48 pl-16">

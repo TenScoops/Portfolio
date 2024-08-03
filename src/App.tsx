@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Home from "./Components/Home";
+import ImaginAi from "./Components/ImaginAI";
 import LifeXP from "./Components/LifeXP";
 import Navbar from "./Components/Navbar";
 import Pomoprogress from "./Components/Pomoprogress";
@@ -11,7 +12,7 @@ import { ArrowDown } from "./icons";
 
 
 const App = () => {
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState<string>("home");
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
   const aboutRef = useRef(null);
@@ -68,7 +69,7 @@ const App = () => {
               } />
             <Route path="/projects/lifexp" element={<LifeXP />}/>
             <Route path="/projects/pomoprogress" element={<Pomoprogress />}/>
-            <Route path="/projects/imaginai" element={<LifeXP />}/>
+            <Route path="/projects/imaginai" element={<ImaginAi />}/>
           </Routes>
         </div>
         {/* nav arrow */}

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { Gamepad, ProgressBar } from "../icons"
+import { AiIcon, Gamepad, ProgressBar } from "../icons"
 
 const Projects = ()=> {
     const [section, setSection] = useState<string>("apps")
@@ -24,9 +24,9 @@ const Projects = ()=> {
 
         {section ==="designs"&&
         <div className="flex flex-row space-x-28 mt-16">
-            <Link to="/projects/lifexp" 
+            <Link to="/projects/imaginai" 
                 className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
-                <Gamepad />
+                <AiIcon />
             </Link>
         
         </div>}

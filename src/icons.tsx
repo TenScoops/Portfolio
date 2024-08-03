@@ -56,3 +56,10 @@ export const SiteIcon: React.FC = () =>{
         </svg>
         )
 }
+export const AiIcon: React.FC = () =>{
+    return(<svg width="97" height="97" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="13.6913" y="0.706761" width="17.8143" height="17.8143" transform="rotate(46.7925 13.6913 0.706761)" fill="white" stroke="black"/>
+        <rect x="13.5428" y="5.44895" width="11.1042" height="11.1042" transform="rotate(46.7925 13.5428 5.44895)" fill="black" stroke="black"/>
+        </svg>
+        )
+}

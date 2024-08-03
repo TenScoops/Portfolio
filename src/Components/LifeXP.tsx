@@ -1,4 +1,4 @@
-import lifexpimg from "../assets/lifexpimg.png"
+import lifexpimg from "../assets/xp.png"
 import { ArrowBack, FigmaIcon, GitIcon, SiteIcon } from "../icons"
 
 const LifeXP = () =>{
@@ -10,8 +10,8 @@ const LifeXP = () =>{
         </div>
         {/* <h1 className="font-bold">Project: LifeXP</h1> */}
         <div className="flex flex-row items-center justify-center w-full">
-            <div className="flex flex-col items-center mr-10 mt-10">
-                <img src={lifexpimg} width={550}/>
+            <div className="flex flex-col items-center mt-10">
+                <img className="shadow-sharp-md-noborder" src={lifexpimg} width={470}/>
                 <div className="flex flex-row space-x-8 mt-5">
                     <button className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
                         <FigmaIcon />
@@ -27,7 +27,8 @@ const LifeXP = () =>{
                     </button>
                 </div>
             </div>
-            <div className="flex flex-col mt-4 ">
+            <div className="w-0 h-[440px] border border-black ml-8 mr-8"></div>
+            <div className="flex flex-col  ">
                 <h1 className="font-bold">Description</h1>
                 <p className="max-w-[500px] text-lg">LifeXP is a web app that merges gamification with resources for emotional well-being and personal  growth. It offers a diverse approach to self-improvement. By offering a gaming experience to life and an  emotional well-being system, people can see growth in their mental and physical health. Its versatility  lies in creating an engaging approach to life.</p>
                 <h1 className="font-bold">Technologies</h1>

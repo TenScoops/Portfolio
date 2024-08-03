@@ -22,6 +22,9 @@ export default {
           '0 0 0 1px rgba(0, 0, 0, 1)', // Black border
           '9px 9px 0 0 rgba(57, 57, 57, 1)' // Existing shadow
         ],
+        'sharp-md-noborder':[
+          '6px 6px 0 0 rgba(57, 57, 57, 1)' 
+        ],
         'sharp-md':[
           '0 0 0 1px rgba(0, 0, 0, 1)', // Black border
           '6px 6px 0 0 rgba(57, 57, 57, 1)' 
