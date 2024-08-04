@@ -28,6 +28,10 @@ const Projects = ()=> {
                 className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <AiIcon />
             </Link>
+            <Link to="/projects/lifexp" 
+                  className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
+                <Gamepad />
+            </Link>
         
         </div>}
         

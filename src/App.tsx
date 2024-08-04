@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+// import { BsArrowDown } from "react-icons/bs";
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import About from "./Components/About";
 import Contact from "./Components/Contact";
@@ -8,7 +9,6 @@ import LifeXP from "./Components/LifeXP";
 import Navbar from "./Components/Navbar";
 import Pomoprogress from "./Components/Pomoprogress";
 import Projects from "./Components/Projects";
-import { ArrowDown } from "./icons";
 
 
 const App = () => {
@@ -73,12 +73,12 @@ const App = () => {
           </Routes>
         </div>
         {/* nav arrow */}
-        <div className="fixed left-60 bottom-10 flex items-center space-x-2">
-          <button className="border mr-2 px-4 transform active:scale-95 transition duration-150 bg-white border-black rounded-sm py-[0.6rem] shadow-sharp-sm icon-hover hover:shadow-sharp-md">
-            <ArrowDown />
+        {/* <div className="fixed left-60 bottom-10 flex items-center space-x-2">
+          <button className="border mr-2 px-2 transform active:scale-95 transition duration-150 bg-white border-black rounded-sm py-2 shadow-sharp-sm icon-hover hover:shadow-sharp-md">
+            <BsArrowDown size={30}/>
           </button>
           <h1 className="text-lg">Home</h1>
-        </div>
+        </div> */}
       </div>
     </Router>
   );

@@ -13,18 +13,28 @@ const LifeXP = () =>{
             <div className="flex flex-col items-center mt-10">
                 <img className="shadow-sharp-md-noborder" src={lifexpimg} width={470}/>
                 <div className="flex flex-row space-x-8 mt-5">
-                    <button className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
-                        <FigmaIcon />
-                        <h1>Figma</h1>
-                    </button>
-                    <button className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
-                        <GitIcon />
-                        <h1>Github</h1>
-                    </button>
-                    <button className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
-                        <SiteIcon />
-                        <h1>Website</h1>
-                    </button>
+                    <a href="https://www.figma.com/design/BmSVm7SwGyJOQo4gjdm8tY/Final-prototype---no-interactions-yet?node-id=0-1&t=YgxkDQqeitSYVZxr-0"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <button className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
+                            <FigmaIcon />
+                            <h1>Figma</h1>
+                        </button>
+                    </a>
+                    <a href="https://github.com/TenScoops/LifeXP" target="_blank" rel="noopener noreferrer">
+                        <button className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
+                            <GitIcon />
+                            <h1>Github</h1>
+                        </button>
+                    </a>
+                    <a href="https://life-xp-kappa.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <button className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
+                            <SiteIcon />
+                            
+                            <h1>Website</h1>
+                            
+                        </button>
+                    </a>
                 </div>
             </div>
             <div className="w-0 h-[440px] border border-black ml-8 mr-8"></div>

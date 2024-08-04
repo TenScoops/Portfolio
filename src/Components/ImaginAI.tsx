@@ -26,10 +26,14 @@ const ImaginAi = () =>{
             <div className="flex flex-col items-center mt-14">
                 <img className=" shadow-sharp-md-noborder border border-black " src={AiImg} width={470}/>
                 <div className="flex flex-row space-x-8 mt-5">
-                    <button className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
-                        <FigmaIcon />
-                        <h1>Figma</h1>
-                    </button>
+                    <a href="https://www.figma.com/design/3ZnZIo9oCbOosKmQ140Fg0/ImaginAI---Final-prototype?node-id=0-1&t=7yIh3CLP3dHTVX3f-0" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <button className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
+                            <FigmaIcon />
+                            <h1>Figma</h1>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
