@@ -5,7 +5,7 @@ import { AiIcon, Gamepad, ProgressBar } from "../icons"
 const Projects = ()=> {
     const [section, setSection] = useState<string>("apps")
     return (
-    <div className="h-screen flex flex-col items-center w-full">
+    <div className="h-screen flex flex-col items-center justify-center w-full">
         <div className="flex items-start justify-start w-[1000px] space-x-12">
             <h1 onClick={()=>{setSection("apps")}} className={`text-xl cursor-pointer ${section === "apps" && 'font-bold underline'}`}>Apps</h1>
             <h1 onClick={()=>{setSection("designs")}} className={`text-xl cursor-pointer  ${section === "designs" && 'font-bold underline'}`}>Designs</h1>
@@ -27,10 +27,6 @@ const Projects = ()=> {
             <Link to="/projects/imaginai" 
                 className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <AiIcon />
-            </Link>
-            <Link to="/projects/lifexp" 
-                  className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
-                <Gamepad />
             </Link>
         
         </div>}

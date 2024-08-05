@@ -33,12 +33,12 @@ html {
 }
 /* For WebKit (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 8px;  /* Width of the vertical scrollbar */
+    width: 0px;  /* Width of the vertical scrollbar */
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #0f0f0f;  /* Color of the scroll thumb */
-    border-radius: 2px;
+    background: transparent;  /* Color of the scroll thumb */
+    /* border-radius: 2px; */
   }
   
   ::-webkit-scrollbar-thumb:hover {
@@ -47,8 +47,8 @@ html {
   
   /* For Firefox */
   * {
-    scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
   }
   
   @keyframes wiggle-border {
