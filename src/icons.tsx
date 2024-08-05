@@ -78,4 +78,10 @@ export const RocketIcon2: React.FC = () =>{
         </svg>
         )   
 } 
+export const Checkmark: React.FC = () =>{
+    return(<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 9.22222L8 15L17 2" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        )
+}
 

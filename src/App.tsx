@@ -36,11 +36,11 @@ const App = () => {
     // Adjust the timeout based on your smooth scroll duration
     setTimeout(() => {
       setIsScrolling(false);
-    }, 1000); // Adjust this time if necessary
+    }, 1000); 
   };
 
   const handleScroll = () => {
-    if (isScrolling === false) {  // Only run if not scrolling programmatically
+    if (isScrolling === false) {  // Only run if not scrolling 
       if (homeRef.current && projectsRef.current && aboutRef.current && contactRef.current) {
         const homeOffset = homeRef.current.offsetTop;
         const projectsOffset = projectsRef.current.offsetTop;
@@ -66,7 +66,7 @@ const App = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isScrolling]); // Depend on isScrolling to update the event listener if necessary
+  }, [isScrolling]); 
 
   return (
     <Router>
