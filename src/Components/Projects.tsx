@@ -13,11 +13,11 @@ const Projects = ()=> {
         {section === "apps"&&
         <div className="flex flex-row items-center justify-center space-x-28 mt-16">
             <Link to="/projects/lifexp" 
-                  className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
+                  className="flex items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <Gamepad />
             </Link>
             <Link to="projects/pomoprogress"
-                  className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
+                  className="flex items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <ProgressBar />
             </Link>
         </div>}
@@ -25,7 +25,7 @@ const Projects = ()=> {
         {section ==="designs"&&
         <div className="flex flex-row space-x-28 mt-16">
             <Link to="/projects/imaginai" 
-                className="flex items-center justify-center shadow-sharp-lg hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
+                className="flex items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-[470px] h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <AiIcon />
             </Link>
         

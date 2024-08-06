@@ -3,13 +3,14 @@ import { Checkmark } from '../icons'
 
 const About = () => {
     return(<div className="flex flex-col items-center justify-center h-screen space-y-5 w-full">
-        <h1 className='text-xl max-w-5xl oblique mb-12'>
+        <h1 className='text-xl max-w-5xl mb-12'>
             “ I’m a programmer who has a passion for coding, creating, and designing with the understanding and 
             application of UI/UX principles. The user is always placed at the forefront. “
         </h1>
         <div className='flex flex-row items-center space-x-8 '>
             <div className='rounded-full'>
-                <img className='rounded-full' src={Rocket} width={400}/>
+                <img className='rounded-full transform active:scale-95 transition 
+                                duration-150 cursor-pointer' src={Rocket} width={400}/>
             </div>
             <div className=''>
                 <div className='space-y-4'>
@@ -22,25 +23,87 @@ const About = () => {
 
                 <div className='space-y-4 mt-6'>
                     <h1 className='font-bold text-2xl '>Skills</h1>
-                    <div className='flex flex-row space-x-6'>
-                        <div className="w-[280px] h-[200px] border border-black rounded-2xl border-b-2 px-9 space-y-3 text-xl hover:border-2">    
+                    <div className='flex flex-col'>
+                        <div className='flex flex-row space-x-5'>
+                            <div className="w-[280px] h-[210px] border border-black rounded-2xl border-b-2 px-5 space-y-1 text-xl hover:border-2">    
                             <h1 className='font-bold mt-2'>Frontend</h1>
-                            <div className='flex flex-row max-w-[500px] space-x-5 text-xl'>
-                                <h1>Javascript</h1>
-                                <h1>React</h1>
-                                <h1>CSS</h1>
+                            <div className='flex  flex-wrap text-xl h-[160px]'>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Javascript</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>React js</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Typescript</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>CSS</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Tailwindcss</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Git</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Figma</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>HTML</h1>
+                                </div>
+                                
                             
                             </div>
                         </div>
-                        <div className="w-[280px] h-[200px] border border-black rounded-2xl border-b-2 px-7 space-y-3 text-xl hover:border-2">    
+                        <div className="w-[280px] h-[210px] border border-black rounded-2xl border-b-2 px-5 space-y-2 text-xl hover:border-2">    
                             <h1 className='font-bold mt-2'>Backend</h1>
-                            <div className='flex flex-row max-w-[500px] space-x-5 text-xl'>
+                            <div className='flex  flex-wrap  text-xl h-[80px]'>
                                 <div className='flex flex-row items-center'>
                                     <Checkmark />
-                                    <h1 className='ml-1'>Javascript</h1>
+                                    <h1 className='ml-1 mr-4'>Javascript</h1>
                                 </div>
-                                <h1>React</h1>
-                                <h1>CSS</h1>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Node js</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Express js</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>MySQL</h1>
+                                </div>
+                                
+                            
+                            </div>
+                        </div>
+                        </div>
+                        <div className="w-[580px] h-[100px] border border-black rounded-2xl border-b-2 px-5 space-y-2 mt-6 text-xl hover:border-2">    
+                            <h1 className='font-bold mt-2'>Design</h1>
+                            <div className='flex  flex-wrap  text-xl h-50px]'>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Figma</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Adobe illustrator</h1>
+                                </div>
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Adobe Photoshop</h1>
+                                </div>
+                                
                             
                             </div>
                         </div>
