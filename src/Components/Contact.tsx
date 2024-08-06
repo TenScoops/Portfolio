@@ -4,7 +4,8 @@ import { CopyIcon } from '../icons'
 const Contact = () => {
 return (<div className='flex items-center justify-center h-screen'>
     <div>
-        <img src={Mail} width={400}/>
+        <img className='transform active:scale-95 transition 
+                                duration-150 cursor-pointer' src={Mail} width={400}/>
     </div>
     <div className='flex flex-col ml-10 items-center'>
         <h1 className='text-2xl italic mb-6'>You can contact me at</h1>

@@ -1,5 +1,6 @@
-import AiImg from "../assets/AI.png"
-import { ArrowBack, FigmaIcon } from "../icons"
+import { FaFigma } from "react-icons/fa";
+import AiImg from "../assets/AI.png";
+import { ArrowBack, FigmaIcon } from "../icons";
 
 const ImaginAi = () =>{
     return(<div className="flex flex-col justify-center items-center h-screen">
@@ -12,13 +13,15 @@ const ImaginAi = () =>{
             {/* <h1 className="font-bold">Project: Pomodoro</h1> */}
 
             <div className="flex flex-col  ">
-                <h1 className="font-bold">Description</h1>
-                <p className="max-w-[500px] text-lg">LifeXP is a web app that merges gamification with resources for emotional well-being and personal  growth. It offers a diverse approach to self-improvement. By offering a gaming experience to life and an  emotional well-being system, people can see growth in their mental and physical health. Its versatility  lies in creating an engaging approach to life.</p>
-                <h1 className="font-bold">Technologies</h1>
-                <h1 className="font-bold">Aim</h1>
-                <h1 className="max-w-[500px] text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore temporibus debitis natus iusto, atque eum necessitatibus nisi esse eos non autem et rerum quas voluptas, illum quaerat odio. Magni!
-                Ipsa rerum porro quos ipsum reiciendis sunt aut voluptas sapiente enim omnis facilis repellat officia temporibus praesentium nihil illo mollitia, iste numquam non pariatur. Maiores ad praesentium reprehenderit laborum laudantium.</h1>
-            
+                <h1 className="font-bold mb-3">Description</h1>
+                <p className="max-w-[500px] text-lg">
+                ImaginAI is a design concept for an image generator that transforms ideas into high-quality visuals. The concept focuses on creating a tool that would simplify the process of generating and customizing images. This makes it an effective solution and tool for both personal and professional projects. Its goal is to provide a better approach to visual creation, enhancing creativity and efficiency.
+                </p>
+                <div className="mt-3">
+                    <h1 className="font-bold mb-4">Technologies</h1>
+                    <FaFigma size={30}/>
+                </div>
+               
             </div>
 
             <div className="w-0 h-[440px] border border-black ml-8 mr-8"></div>

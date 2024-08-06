@@ -32,7 +32,7 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                             Hi! I'm Philipe Ayres, a     
                         </h1>
                         <h1 className="text-4xl font-bold">
-                            fullstack developer
+                            Fullstack Developer
                         </h1>
                     </div>
                 </div>
