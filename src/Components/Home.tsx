@@ -2,9 +2,8 @@
 // import Flight from "../assets/flight.jpg"
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
-import { IoEnterOutline } from "react-icons/io5";
-// import ProfilePic from "../assets/profile.png";
 import { IoIosRocket } from "react-icons/io";
+import { IoEnterOutline } from "react-icons/io5";
 import resume from "../assets/Philipe_Ayres_Resume.pdf";
 import Spaceman from "../assets/spaceman.jpg";
 interface HomeProps {
@@ -14,7 +13,7 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
     return(
-        <div className="flex flex-col lg:flex-row justify-center items-center h-screen w-full">
+        <div className="flex flex-col lg:flex-row justify-center items-center xl:h-screen w-full mt-20 xl:mt-0">
             {/* image */}
             <div className="mb-10 lg:mb-0 lg:mr-20">
                 <img className="rounded-full transform active:scale-95 transition 
@@ -28,11 +27,11 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
             <div className=" flex flex-col justify-center space-y-14">
                 <div className="flex items-center justify-center">
                     <div className="space-y-6 flex items-center flex-col">
-                        <h1 className="text-3xl flex flex-col mr-2">
+                        <h1 className="text-2xl sm:text-3xl flex flex-col mr-2">
                             Hi! I'm Philipe Ayres, a     
                         </h1>
                         <div className="flex flex-row items-center space-x-1">
-                            <h1 className="text-4xl font-bold">
+                            <h1 className="text-3xl sm:text-4xl font-bold">
                                 Fullstack Developer
                             </h1>
                             <IoIosRocket className="icon-hover" size={35}/>
@@ -42,12 +41,12 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                 {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ratione quasi ad <br/>o veritatis quam rerum odio velit ea! Nobis, veniam.</p> */}
                 <div className="flex flex-row items-center justify-center ">
                 <a href={resume} target="_blank" rel="noopener noreferrer">
-                    <button className="flex flex-row icon-hover2 justify-center mr-4 bg-black rounded py-4 text-white px-5 shadow-transition duration-200 shadow-sharp-md border border-white hover:shadow-sharp-lg">
+                    <button className="flex flex-row icon-hover2 justify-center w-32 mr-4 bg-black rounded py-4 text-white px-5 shadow-transition duration-200 shadow-sharp-md border border-white hover:shadow-sharp-lg">
                         Resume <IoEnterOutline className="ml-1" size={25}/>
                     </button>
                     </a>
 
-                    <button className="text-medium border rounded w-1/4 border-black ml-4 py-4 icon-hover2 cursor-pointer hover:no-underline shadow-transition duration-200 shadow-sharp-md hover:shadow-sharp-lg"
+                    <button className="text-medium border rounded  border-black w-32 ml-4 py-4 px-5 icon-hover2 cursor-pointer hover:no-underline shadow-transition duration-200 shadow-sharp-md hover:shadow-sharp-lg"
                             onClick={()=>handleSectionClick("contact")}>
                         Contact
                     </button>
@@ -56,7 +55,7 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                     </button> */}
                     
                 </div>
-                <div className="flex flex-row items-center justify-center w-[500px] space-x-3">
+                <div className="flex flex-row items-center justify-center space-x-3">
                     <a href="https://github.com/TenScoops" target="_blank" rel="noopener noreferrer">
                         <BsGithub className="icon-hover cursor-pointer" size={35}/>
                     </a>

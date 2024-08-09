@@ -6,7 +6,7 @@ interface NavbarProps {
 }
 const Navbar:React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) => {
     return (
-      <div className="hidden lg:flex flex-col items-center text-black bg-white fixed w-72 h-screen">
+      <div className="hidden xl:flex flex-col items-center text-black bg-white fixed w-72 h-screen">
         
         <div className="pt-48 pb-16">
           <RocketIcon2 />

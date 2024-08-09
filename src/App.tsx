@@ -72,7 +72,7 @@ const App = () => {
     <Router>
       <div className="flex flex-row w-full">
         <Navbar activeSection={activeSection} handleSectionClick={handleSectionClick} />
-        <div className="flex flex-col w-full ">
+        <div className="flex flex-col w-full space-y-32 xl:space-y-0 xl:ml-60 3xl:ml-0">
           <Routes>
             <Route path="/" element={
               <>
