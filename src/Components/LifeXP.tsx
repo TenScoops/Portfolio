@@ -7,13 +7,13 @@ import { ArrowBack, FigmaIcon, GitIcon, SiteIcon } from "../icons";
 
 const LifeXP = () =>{
     return(<div className="flex flex-col justify-center items-center h-screen">
-        <div className="w-[900px]">
+        <div className="lg:w-[900px]">
             <button className="border border-black rounded-md h-12 w-12 flex items-center justify-center shadow-sharp-sm hover:shadow-sharp-md">
                 <ArrowBack />
             </button>
         </div>
         {/* <h1 className="font-bold">Project: LifeXP</h1> */}
-        <div className="flex flex-row items-center justify-center w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-center w-full">
             <div className="flex flex-col items-center mt-10">
                 <img className="shadow-sharp-md-noborder" src={lifexpimg} width={470}/>
                 <div className="flex flex-row space-x-8 mt-5">
@@ -41,7 +41,7 @@ const LifeXP = () =>{
                     </a>
                 </div>
             </div>
-            <div className="w-0 h-[440px] border border-black ml-8 mr-8"></div>
+            <div className="w-0 h-[440px] border border-black ml-8 mr-8 hidden lg:block"></div>
             <div className="flex flex-col  ">
                 <div className="flex flex-row items-center  mb-2">
                     <h1 className="font-bold">Project Title:</h1>
