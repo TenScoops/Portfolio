@@ -2,7 +2,7 @@ import Mail from '../assets/mail.avif'
 import { CopyIcon } from '../icons'
 
 const Contact = () => {
-return (<div className='flex items-center justify-center h-screen'>
+return (<div className='flex flex-col lg:flex-row items-center justify-center h-screen w-full'>
     <div>
         <img className='transform active:scale-95 transition 
                                 duration-150 cursor-pointer' src={Mail} width={400}/>

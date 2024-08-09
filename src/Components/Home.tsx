@@ -4,9 +4,9 @@ import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoEnterOutline } from "react-icons/io5";
 // import ProfilePic from "../assets/profile.png";
+import { IoIosRocket } from "react-icons/io";
 import resume from "../assets/Philipe_Ayres_Resume.pdf";
 import Spaceman from "../assets/spaceman.jpg";
-
 interface HomeProps {
     handleSectionClick: (section:string)=>void
 }
@@ -14,9 +14,9 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
     return(
-        <div id="Home" className="flex flex-row justify-center items-center h-screen">
+        <div className="flex flex-col lg:flex-row justify-center items-center h-screen w-full">
             {/* image */}
-            <div className="mr-20">
+            <div className="mb-10 lg:mb-0 lg:mr-20">
                 <img className="rounded-full transform active:scale-95 transition 
                                 duration-150 border-2 border-black cursor-pointer" 
                      src={Spaceman} 
@@ -27,13 +27,16 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
             {/* Greetings and CTA */}
             <div className=" flex flex-col justify-center space-y-14">
                 <div className="flex items-center justify-center">
-                    <div className="space-y-6 flex items-center justify-center flex-col">
-                        <h1 className="text-4xl flex flex-col ">
+                    <div className="space-y-6 flex items-center flex-col">
+                        <h1 className="text-3xl flex flex-col mr-2">
                             Hi! I'm Philipe Ayres, a     
                         </h1>
-                        <h1 className="text-4xl font-bold">
-                            Fullstack Developer
-                        </h1>
+                        <div className="flex flex-row items-center space-x-1">
+                            <h1 className="text-4xl font-bold">
+                                Fullstack Developer
+                            </h1>
+                            <IoIosRocket className="icon-hover" size={35}/>
+                        </div>
                     </div>
                 </div>
                 {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ratione quasi ad <br/>o veritatis quam rerum odio velit ea! Nobis, veniam.</p> */}

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { BsArrowDown } from "react-icons/bs";
+// import { BsArrowDown } from "react-icons/bs";
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import About from "./Components/About";
 import Contact from "./Components/Contact";
@@ -70,16 +70,16 @@ const App = () => {
 
   return (
     <Router>
-      <div className="flex flex-row">
+      <div className="flex flex-row w-full">
         <Navbar activeSection={activeSection} handleSectionClick={handleSectionClick} />
         <div className="flex flex-col w-full ">
           <Routes>
             <Route path="/" element={
               <>
-                <div ref={homeRef}><Home handleSectionClick={handleSectionClick}/></div>
-                <div ref={projectsRef}><Projects /></div>
-                <div ref={aboutRef}><About /></div>
-                <div ref={contactRef}><Contact /></div>
+                <div className="w-full" ref={homeRef}><Home handleSectionClick={handleSectionClick}/></div>
+                <div className="w-full" ref={projectsRef}><Projects /></div>
+                <div className="w-full" ref={aboutRef}><About /></div>
+                <div className="w-full" ref={contactRef}><Contact /></div>
               </>
             } />
             <Route path="/projects/lifexp" element={<LifeXP />} />
@@ -88,12 +88,12 @@ const App = () => {
           </Routes>
         </div>
         {/* nav arrow */}
-        <div className="fixed left-60 bottom-10 flex items-center space-x-2">
+        {/* <div className="fixed left-60 bottom-10 flex items-center space-x-2">
           <button className="border mr-2 px-2 transform active:scale-95 transition duration-150 bg-white border-black rounded-sm py-2 shadow-sharp-md icon-hover ">
             <BsArrowDown size={30}/>
           </button>
           <h1 className="text-lg">Home</h1>
-        </div>
+        </div> */}
       </div>
     </Router>
   );
