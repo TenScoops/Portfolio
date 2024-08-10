@@ -12,7 +12,7 @@ const Projects = ()=> {
             <h1 onClick={()=>{setSection("designs")}} className={`text-xl cursor-pointer  ${section === "designs" && 'font-bold underline'}`}>Designs</h1>
         </div>
         {section === "apps"&&
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-28 mt-16 space-y-10 lg:space-y-0">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-20  mt-16 space-y-10 lg:space-y-0">
             <Link to="/projects/lifexp" 
                   className="flex items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <Gamepad />
