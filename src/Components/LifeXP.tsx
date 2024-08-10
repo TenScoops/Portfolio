@@ -1,14 +1,28 @@
 import { FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 import lifexpimg from "../assets/xp.png";
 import { ArrowBack, FigmaIcon, GitIcon, RocketIcon2, SiteIcon } from "../icons";
 
-const LifeXP = () =>{
+interface LifeXPProps{
+    handleSectionClick: (section:string)=>void
+}
+
+const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
+    const navigate = useNavigate()
+
+    const handleButtonClick=() =>{
+        navigate("/")
+        setTimeout(()=>{
+            handleSectionClick("projects")
+        },50)
+    }
     return(<div className="flex flex-col justify-center items-center xl:h-screen lg:mt-0">
        < div className="fixed top-5 left-5 xl:hidden z-50 p-0 m-0"><RocketIcon2 /></div>
         <div className="w-[345px] sm:w-[470px] lg:w-[1030px] lg2:w-[1100px] ">
-            <button className="border border-black rounded-md h-12 w-12 flex items-center justify-center shadow-sharp-sm hover:shadow-sharp-md">
+            <button className="border border-black rounded h-12 w-12 flex items-center justify-center shadow-sharp-sm hover:shadow-sharp-md"
+                    onClick={handleButtonClick}>
                 <ArrowBack />
             </button>
         </div>
@@ -21,19 +35,19 @@ const LifeXP = () =>{
                     <a href="https://www.figma.com/design/BmSVm7SwGyJOQo4gjdm8tY/Final-prototype---no-interactions-yet?node-id=0-1&t=YgxkDQqeitSYVZxr-0"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <button className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
+                        <button className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded icon-hover2">
                             <FigmaIcon />
                             <h1 className="hidden sm:block">Figma</h1>
                         </button>
                     </a>
                     <a href="https://github.com/TenScoops/LifeXP" target="_blank" rel="noopener noreferrer">
-                        <button className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
+                        <button className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded icon-hover2">
                             <GitIcon />
                             <h1 className="hidden sm:block">Github</h1>
                         </button>
                     </a>
                     <a href="https://life-xp-kappa.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <button className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
+                        <button className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded icon-hover2">
                             <SiteIcon />
                             
                             <h1 className="hidden sm:block">Website</h1>

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-// import { BsArrowDown } from "react-icons/bs";
+import { BsArrowDown, BsArrowUp } from "react-icons/bs";
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import About from "./Components/About";
 import Contact from "./Components/Contact";
@@ -37,7 +37,7 @@ const App = () => {
     setTimeout(() => {
       setIsScrolling(false);
     }, 1000); 
-  };
+  }
 
   const handleScroll = () => {
     if (isScrolling === false) {  // Only run if not scrolling 
@@ -59,7 +59,19 @@ const App = () => {
         }
       }
     }
-  };
+  }
+
+  const handleNextSection = () => {
+    if (activeSection === "home") {
+      handleSectionClick("projects");
+    } else if (activeSection === "projects") {
+      handleSectionClick("about");
+    } else if (activeSection === "about") {
+      handleSectionClick("contact");
+    } else if(activeSection === "contact") {
+      handleSectionClick("home")
+    }
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -81,20 +93,27 @@ const App = () => {
                 <div className="w-full" ref={projectsRef}><Projects /></div>
                 <div className="w-full" ref={aboutRef}><About /></div>
                 <div className="w-full" ref={contactRef}><Contact /></div>
+
+                {/* arrow button */}
+                <div className="hidden fixed left-10 xl:left-60 bottom-10 xl:flex items-center space-x-2">
+                  {activeSection === "contact"?<button className="border mr-2 px-2 transform active:scale-95 transition duration-150 bg-white border-black rounded py-2 shadow-sharp-md hover:shadow-sharp-lg icon-hover "
+                          onClick={handleNextSection}>
+                    <BsArrowUp size={30}/>
+                  </button>:
+                  <button className="border mr-2 px-2 transform active:scale-95 transition duration-150 bg-white border-black rounded py-2 shadow-sharp-md hover:shadow-sharp-lg icon-hover "
+                          onClick={handleNextSection}>
+                    <BsArrowDown size={30}/>
+                  </button>}
+                  {/* <h1 className="text-lg">Home</h1> */}
+                </div>
               </>
             } />
-            <Route path="/projects/lifexp" element={<LifeXP />} />
+            <Route path="/projects/lifexp" element={<LifeXP handleSectionClick={handleSectionClick}/>} />
             <Route path="/projects/pomoprogress" element={<Pomoprogress />} />
             <Route path="/projects/imaginai" element={<ImaginAi />} />
           </Routes>
         </div>
         {/* nav arrow */}
-        {/* <div className="fixed left-60 bottom-10 flex items-center space-x-2">
-          <button className="border mr-2 px-2 transform active:scale-95 transition duration-150 bg-white border-black rounded-sm py-2 shadow-sharp-md icon-hover ">
-            <BsArrowDown size={30}/>
-          </button>
-          <h1 className="text-lg">Home</h1>
-        </div> */}
       </div>
     </Router>
   );
