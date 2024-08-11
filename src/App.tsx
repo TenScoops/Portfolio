@@ -109,7 +109,7 @@ const App = () => {
               </>
             } />
             <Route path="/projects/lifexp" element={<LifeXP handleSectionClick={handleSectionClick}/>} />
-            <Route path="/projects/pomoprogress" element={<Pomoprogress />} />
+            <Route path="/projects/pomoprogress" element={<Pomoprogress handleSectionClick={handleSectionClick}/>} />
             <Route path="/projects/imaginai" element={<ImaginAi />} />
           </Routes>
         </div>

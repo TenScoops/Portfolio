@@ -72,13 +72,31 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
                 </div>
                 <div className="flex flex-col space-y-2 mt-5 items-center lg:items-baseline">
                     <h1 className="font-bold">Technologies</h1>
-                    <div className="flex flex-row space-x-2">
-                        <FaReact className="" size={30}/>
-                        <SiTailwindcss size={30}/>
-                        <SiTypescript size={30}/>
-                        <FaHtml5 size={30}/>
-                        <IoLogoCss3 size={30}/>
-                        <SiJavascript size={30}/>
+                    <div className="flex flex-row flex-wrap  max-w-[500px] justify-center lg:justify-start">
+                        <div className="flex flex-row mr-2">
+                            <FaReact className="mr-1"  size={30}/>
+                            <h1>React JS</h1>
+                        </div>
+                        <div className="flex flex-row mr-2">
+                            <SiTailwindcss className="mr-1" size={30}/>
+                            <h1>TailwindCSS</h1>
+                        </div>
+                        <div className="flex flex-row mr-2">
+                            <SiTypescript className="mr-1" size={30}/>
+                            <h1>Typescript</h1>
+                        </div>
+                        <div className="flex flex-row mr-2">
+                            <FaHtml5 className="mr-1" size={30}/>
+                            <h1>HTML</h1>
+                        </div>
+                        <div className="flex flex-row mr-2">
+                            <IoLogoCss3 className="mr-1" size={30}/>
+                            <h1>CSS</h1>
+                        </div>
+                        <div className="flex flex-row mr-2">
+                           <SiJavascript className="mr-1" size={30}/>
+                           <h1>Javascript</h1>
+                        </div>
                     </div>
                 </div>
 
