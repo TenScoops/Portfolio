@@ -110,7 +110,7 @@ const App = () => {
             } />
             <Route path="/projects/lifexp" element={<LifeXP handleSectionClick={handleSectionClick}/>} />
             <Route path="/projects/pomoprogress" element={<Pomoprogress handleSectionClick={handleSectionClick}/>} />
-            <Route path="/projects/imaginai" element={<ImaginAi />} />
+            <Route path="/projects/imaginai" element={<ImaginAi handleSectionClick={handleSectionClick}/>} />
           </Routes>
         </div>
         {/* nav arrow */}

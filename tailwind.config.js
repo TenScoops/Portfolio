@@ -40,6 +40,7 @@ export default {
         
       },
       screens: {
+        sm0:'440px',
         sm: '640px',   // Small devices (mobile)
         md: '768px',   // Medium devices (tablet)
         lg: '1024px',  // Large devices (laptop)
