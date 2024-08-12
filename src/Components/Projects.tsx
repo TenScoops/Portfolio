@@ -14,20 +14,23 @@ const Projects = ()=> {
         {section === "apps"&&
         <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-20  mt-16 space-y-10 lg:space-y-0">
             <Link to="/projects/lifexp" 
-                  className="flex items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
+                  className="flex flex-col items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] space-y-3 rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <Gamepad />
+                <h1 className="italic">Click Here</h1>
             </Link>
             <Link to="projects/pomoprogress"
-                  className="flex items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
+                  className="flex flex-col items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] space-y-2 rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
                 <ProgressBar />
+                <h1 className="italic">Click Here</h1>
             </Link>
         </div>}
 
         {section ==="designs"&&
         <div className="flex flex-row space-x-28 mt-16">
             <Link to="/projects/imaginai" 
-                className="flex items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3">
+                className="flex flex-col items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] rounded-3xl space-y-2 cursor-pointer shadow-transition duration-200 icon-hover3">
                 <AiIcon />
+                <h1>Click Here</h1>
             </Link>
         
         </div>}
