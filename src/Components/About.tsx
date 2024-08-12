@@ -17,7 +17,7 @@ const About = () => {
                                 duration-150 cursor-pointer' src={Rocket} width={400}/>
             </div>
             <div className='m-0'>
-                <div className='space-y-4 flex flex-col items-center mt-5 lg:mt-0 '>
+                <div className='space-y-4 flex flex-col items-center xl:items-baseline mt-5 lg:mt-0 '>
                     <h1 className='font-bold text-2xl'>Education</h1>
                     <div className="w-80 h-44 sm:w-[580px] md:h-[210px] flex flex-col justify-center border border-black rounded-2xl  border-b-2 px-9 space-y-6 sm:text-lg md:text-xl hover:border-2">
                         <h1 >Associate’s in Computer Science at Howard Community College</h1>
@@ -25,7 +25,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col items-center space-y-4 mt-6 mb-12'>
+                <div className='flex flex-col items-center xl:items-baseline space-y-4 mt-6 mb-12'>
                     <h1 className='font-bold text-2xl '>Skills</h1>
                     <div className='flex flex-col'>
                         <div className='flex flex-col sm:flex-row sm:space-x-5 space-y-5 sm:space-y-0'>
