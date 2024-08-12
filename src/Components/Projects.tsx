@@ -30,7 +30,7 @@ const Projects = ()=> {
             <Link to="/projects/imaginai" 
                 className="flex flex-col items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] rounded-3xl space-y-2 cursor-pointer shadow-transition duration-200 icon-hover3">
                 <AiIcon />
-                <h1>Click Here</h1>
+                <h1 className="italic">Click Here</h1>
             </Link>
         
         </div>}
