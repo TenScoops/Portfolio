@@ -65,10 +65,9 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
                 <div className="space-y-1 flex flex-col items-center lg:items-baseline">
                     <h1 className="font-bold">Description</h1>
                     <p className="max-w-[500px] text-base sm:text-lg text-center lg:text-start ">
-                    LifeXP is a web app that merges gamification with resources for emotional well-being and personal growth. 
-                    It offers a diverse approach to self-improvement by blending gaming elements with an emotional well-being system. 
-                    This combination helps users see tangible growth in their mental and physical health, creating an engaging and versatile 
-                    approach to life.
+                        LifeXP combines gamification with tools for emotional well-being and personal growth. By combining game-like features with resources 
+                        for self-improvement, it provides a unique way to track and enhance both mental and physical health. The app makes self-care engaging and effective, 
+                        helping users see real progress in their personal development.
                     </p>
                 </div>
                 <div className="flex flex-col space-y-2 mt-5 items-center lg:items-baseline">
