@@ -70,7 +70,7 @@ const About = () => {
                         </div>
                         <div className="w-[280px] h-[215px] border border-black rounded-2xl border-b-2 px-5 space-y-2 sm:text-lg md:text-xl hover:border-2">    
                             <h1 className='font-bold mt-2'>Backend</h1>
-                            <div className='flex  flex-wrap  lg:text-xl h-[90px] ml-1'>
+                            <div className='flex  flex-wrap  lg:text-xl h-[120px] ml-1'>
                                 <div className='flex flex-row items-center'>
                                     <Checkmark />
                                     <h1 className='ml-1 mr-4'>Javascript</h1>
@@ -87,7 +87,10 @@ const About = () => {
                                     <Checkmark />
                                     <h1 className='ml-1 mr-4'>MySQL</h1>
                                 </div>
-                                
+                                <div className='flex flex-row items-center'>
+                                    <Checkmark />
+                                    <h1 className='ml-1 mr-4'>Restful API</h1>
+                                </div>
                             
                             </div>
                         </div>
