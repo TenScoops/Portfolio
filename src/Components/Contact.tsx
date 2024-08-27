@@ -22,7 +22,7 @@ return (<div className='flex flex-col items-center justify-center xl:h-screen w-
     <div className='flex flex-col lg:flex-row items-center justify-center'>
         <div>
             <img className='transform active:scale-95 transition 
-                                    duration-150 cursor-pointer' src={Mail} width={400}/>
+                                    duration-150 cursor-pointer' src={Mail} width={430}/>
         </div>
         <div onClick={handleCopyClick} 
             className='flex flex-col sm:ml-10 items-center'>
