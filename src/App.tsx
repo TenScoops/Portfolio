@@ -85,7 +85,10 @@ const App = () => {
       <div className="flex flex-row w-full">
         <Navbar activeSection={activeSection} handleSectionClick={handleSectionClick} />
         <div className="flex flex-col w-full space-y-32 xl:space-y-0 xl:ml-60 3xl:ml-0">
-          <div className="fixed top-5 left-5 xl:hidden z-50"><RocketIcon2 /></div>
+          <div className="fixed flex top-5 left-5 xl:hidden z-50 items-center">
+            <RocketIcon2 />
+            <h1 className="text-lg ml-2">Philipe Ayres</h1>
+            </div>
           <Routes>
             <Route path="/" element={
               <>
