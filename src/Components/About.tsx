@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <div className='flex flex-col lg:flex-row items-center md:space-x-8 '>
             <div className='rounded-full'>
-                <img className='rounded-full transform active:scale-95 transition 
+                <img className=' transform active:scale-95 transition 
                                 duration-150 cursor-pointer icon-hover3' src={LineRocket} width={400}/>
             </div>
             <div className='m-0'>
