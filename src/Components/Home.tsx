@@ -2,10 +2,12 @@
 // import Flight from "../assets/flight.jpg"
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
-import { IoIosRocket } from "react-icons/io";
+// import { IoIosRocket } from "react-icons/io";
 import { IoEnterOutline } from "react-icons/io5";
 import resume from "../assets/Philipe_Ayres_Resume.pdf";
-import Spaceman from "../assets/spaceman.jpg";
+// import Spaceman from "../assets/spaceman.jpg";
+import { IoRocketOutline } from "react-icons/io5";
+import Lineastronaut from "../assets/lineastronaut.avif";
 interface HomeProps {
     handleSectionClick: (section:string)=>void
 }
@@ -16,11 +18,11 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
         <div className="flex flex-col lg:flex-row justify-center items-center xl:h-screen w-full mt-20 xl:mt-0">
             {/* image */}
             <div className="mb-10 lg:mb-0 lg:mr-20">
-                <img className="rounded-full transform active:scale-95 transition 
-                                duration-150 border-2 border-black cursor-pointer" 
-                     src={Spaceman} 
+                <img className=" transform active:scale-95 transition 
+                                duration-150 cursor-pointer icon-hover3" 
+                     src={Lineastronaut} 
                     
-                     width={400}
+                     width={450}
                      />
             </div>
             {/* Greetings and CTA */}
@@ -30,11 +32,11 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                         <h1 className="text-2xl sm:text-3xl flex flex-col mr-2">
                             Hi! I'm Philipe Ayres, a     
                         </h1>
-                        <div className="flex flex-row items-center space-x-1">
+                        <div className="flex flex-row items-center space-x-2">
                             <h1 className="text-3xl sm:text-4xl font-bold">
                                 Fullstack Developer
                             </h1>
-                            <IoIosRocket className="icon-hover" size={35}/>
+                            <IoRocketOutline className="icon-hover" size={35}/>
                         </div>
                     </div>
                 </div>
