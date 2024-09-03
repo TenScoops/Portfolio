@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "cedarville" :["Cedarville Cursive", "sans-serif", "cursive"]
+        "noto" :["nunito sans", "sans-serif", "cursive"]
       },
       boxShadow: {
         'sharp-2xl':[
