@@ -12,7 +12,15 @@ interface PomoprogressProps {
 
 const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
 
-    const technologies : [IconType, string][] = [[FaReact, "React JS"],[FaNode, "Node JS"],[SiMysql, "MySQL"],[SiExpress, "Express JS"],[FaHtml5, "HTML"],[IoLogoCss3, "CSS"],[SiJavascript, "Javascript"]]
+    const technologies: { Icon: IconType, tech: string }[] = [
+        { Icon: FaReact, tech: "React JS" },
+        { Icon: FaNode, tech: "Node JS" },
+        { Icon: SiMysql, tech: "MySQL" },
+        { Icon: SiExpress, tech: "Express JS" },
+        { Icon: FaHtml5, tech: "HTML" },
+        { Icon: IoLogoCss3, tech: "CSS" },
+        { Icon: SiJavascript, tech: "Javascript" }
+      ];
 
     const navigate = useNavigate()
 
@@ -78,14 +86,12 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
                 <div className="flex flex-col space-y-2 mt-5 items-center lg:items-baseline">
                     <h1 className="font-bold">Technologies</h1>
                     <div className="flex flex-row flex-wrap  max-w-[500px] justify-center lg:justify-start">
-                        {technologies.map((item, index)=>{
-                            const [Icon, techName] = item
-
-                            return <div key={index} className="flex flex-row mr-2">
-                                    <Icon className="mr-1"  size={30}/>
-                                    <h1>{techName}</h1>
-                                </div>
-                        })}
+                        {technologies.map((item, index)=>(
+                            <div key={index} className="flex flex-row mr-2">
+                                <item.Icon className="mr-1"  size={30}/>
+                                <h1>{item.tech}</h1>
+                            </div>
+                        ))}
                     </div>
                 </div>
 

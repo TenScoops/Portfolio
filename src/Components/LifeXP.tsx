@@ -20,8 +20,14 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
         },50)
     }
 
-    const technologies : [IconType, string][] = [[FaReact,"React JS"], [SiTailwindcss, "TailwindCSS"], [SiTypescript, "Typescript"], 
-                            [FaHtml5, "HTML"], [IoLogoCss3, "CSS"], [SiJavascript, "Javascript"]]
+    const technologies : { Icon: IconType, tech: string }[] = [
+        { Icon: FaReact, tech: "React JS" },
+        { Icon: SiTailwindcss, tech: "TailwindCSS" },
+        { Icon: SiTypescript, tech: "Typescript" },
+        { Icon: FaHtml5, tech: "HTML" },
+        { Icon: IoLogoCss3, tech: "CSS" },
+        { Icon: SiJavascript, tech: "Javascript" }
+      ];
 
     return(<div className="flex flex-col justify-center items-center xl:h-screen lg:mt-0">
        < div className="fixed top-5 left-5 xl:hidden z-50 p-0 m-0"><RocketIcon2 /></div>
@@ -85,15 +91,13 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
                 <div className="flex flex-col space-y-2 mt-5 items-center lg:items-baseline">
                     <h1 className="font-bold">Technologies</h1>
                     <div className="flex flex-row flex-wrap  max-w-[500px] justify-center lg:justify-start">
-                        {technologies.map((item, index)=>{
-                            const [Icon,techName] = item
-                            return (
-                            <div key={index} className="flex flex-row mr-2">
-                                <Icon className="mr-1"  size={30}/>
-                                <h1>{techName}</h1>
-                            </div>
-                            )
-                        })}
+
+                    {technologies.map((item, index) => (
+                        <div key={index} className="flex flex-row mr-2">
+                            <item.Icon className="mr-1" size={30} /> 
+                            <h1>{item.tech}</h1> 
+                        </div>
+                    ))}
                         
                     </div>
                 </div>
