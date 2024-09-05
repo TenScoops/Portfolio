@@ -1,3 +1,4 @@
+import { IconType } from 'react-icons';
 import { FaHtml5, FaNode, FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiExpress, SiJavascript, SiMysql } from "react-icons/si";
@@ -10,6 +11,9 @@ interface PomoprogressProps {
 }
 
 const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
+
+    const technologies : [IconType, string][] = [[FaReact, "React JS"],[FaNode, "Node JS"],[SiMysql, "MySQL"],[SiExpress, "Express JS"],[FaHtml5, "HTML"],[IoLogoCss3, "CSS"],[SiJavascript, "Javascript"]]
+
     const navigate = useNavigate()
 
     const handleButtonClick=() =>{
@@ -29,8 +33,11 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
         {/* <h1 className="font-bold">Project: LifeXP</h1> */}
         <div className="flex flex-col lg:flex-row items-center justify-center w-full">
             <div className="flex flex-col items-center mt-10">
+                {/* images */}
                 <img className="sm:hidden shadow-sharp-md-noborder" src={pomodoroImg} width={350}/>
                 <img className="hidden sm:block shadow-sharp-md-noborder" src={pomodoroImg} width={470}/>
+
+                {/* buttons */}
                 <div className="flex flex-row space-x-8 mt-5">
                    
                     <a href="https://github.com/TenScoops/the_pomodoro_project" target="_blank" rel="noopener noreferrer">
@@ -55,6 +62,8 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
                     <h1 className="font-bold">Project Title:</h1>
                     <h1 className="ml-2 text-lg">The Progress Pomodoro</h1>
                 </div>
+
+                {/* Description */}
                 <div className="space-y-1 flex flex-col items-center lg:items-baseline">
                     <h1 className="font-bold">Description</h1>
                     <p className="max-w-[500px] text-base sm:text-lg text-center lg:text-start ">
@@ -64,37 +73,19 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
                         visual feedback, Progress Pomodoro aims to naturally enhance work ethic and productivity.
                     </p>
                 </div>
+
+                {/* Technologies */}
                 <div className="flex flex-col space-y-2 mt-5 items-center lg:items-baseline">
                     <h1 className="font-bold">Technologies</h1>
                     <div className="flex flex-row flex-wrap  max-w-[500px] justify-center lg:justify-start">
-                        <div className="flex flex-row mr-2">
-                            <FaReact className="mr-1"  size={30}/>
-                            <h1>React JS</h1>
-                        </div>
-                        <div className="flex flex-row mr-2">
-                            <FaNode className="mr-1" size={30}/>
-                            <h1>Node JS</h1>
-                        </div>
-                        <div className="flex flex-row mr-2">
-                            <SiMysql className="mr-1" size={30}/>
-                            <h1>MySQL</h1>
-                        </div>
-                        <div className="flex flex-row mr-2">
-                            <SiExpress className="mr-1" size={30}/>
-                            <h1>Express JS</h1>
-                        </div>
-                        <div className="flex flex-row mr-2">
-                            <FaHtml5 className="mr-1" size={30}/>
-                            <h1>HTML</h1>
-                        </div>
-                        <div className="flex flex-row mr-2">
-                            <IoLogoCss3 className="mr-1" size={30}/>
-                            <h1>CSS</h1>
-                        </div>
-                        <div className="flex flex-row mr-2">
-                           <SiJavascript className="mr-1" size={30}/>
-                           <h1>Javascript</h1>
-                        </div>
+                        {technologies.map((item, index)=>{
+                            const [Icon, techName] = item
+
+                            return <div key={index} className="flex flex-row mr-2">
+                                    <Icon className="mr-1"  size={30}/>
+                                    <h1>{techName}</h1>
+                                </div>
+                        })}
                     </div>
                 </div>
 
@@ -105,6 +96,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
                     </p>
                 </div>
 
+                {/* Key features */}
                 <div className="flex flex-col mt-4 space-y-1 items-center lg:items-baseline">
                     <h1 className="font-bold mb-1">Key Features</h1>
                     <p className="text-center sm:text-lg lg:text-base lg:text-start">

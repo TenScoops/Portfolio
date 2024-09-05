@@ -4,6 +4,9 @@ import { Checkmark } from '../icons'
 
 const About = () => {
 
+    const frontend = ["Javascript", "React JS", "Typescript", "CSS", "TailwindCSS", "Git", "Figma", "HTML"]
+    const backend = ["Javascript", "Node JS", "Express JS", "MySQL", "Restful API"]
+
     return(<div className="flex flex-col items-center justify-center  xl:h-screen space-y-5 w-full ">
         <div className='xl:hidden'><h1 className='text-3xl font-bold mb-6'>About</h1></div>
         <div className='flex items-center justify-center'>
@@ -30,71 +33,31 @@ const About = () => {
                     <h1 className='font-bold text-2xl '>Skills</h1>
                     <div className='flex flex-col'>
                         <div className='flex flex-col sm:flex-row sm:space-x-5 space-y-5 sm:space-y-0'>
+                            {/* frontend skills */}
                             <div className="w-[280px] h-[215px] border border-black rounded-2xl border-b-2 px-5 space-y-1 sm:text-lg md:text-xl hover:border-2">    
-                            <h1 className='font-bold mt-2'>Frontend</h1>
-                            <div className='flex  flex-wrap  h-[160px] ml-1'>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-5'>Javascript</h1>
-                                </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-5'>React js</h1>
-                                </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-5'>Typescript</h1>
-                                </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-5'>CSS</h1>
-                                </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-5'>Tailwindcss</h1>
-                                </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-5'>Git</h1>
-                                </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-5'>Figma</h1>
-                                </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-5'>HTML</h1>
-                                </div>
+                                <h1 className='font-bold mt-2'>Frontend</h1>
+                                <div className='flex  flex-wrap  h-[160px] ml-1'>
+                                    {frontend.map((item)=>(
+                                        <div className='flex flex-row items-center'>
+                                            <Checkmark />
+                                            <h1 className='ml-1 mr-5'>{item}</h1>
+                                        </div>
+                                    ))}
                                 
-                            
+                                </div>
                             </div>
-                        </div>
-                        <div className="w-[280px] h-[215px] border border-black rounded-2xl border-b-2 px-5 space-y-2 sm:text-lg md:text-xl hover:border-2">    
-                            <h1 className='font-bold mt-2'>Backend</h1>
-                            <div className='flex  flex-wrap  lg:text-xl h-[120px] ml-1'>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-4'>Javascript</h1>
+                            {/* backend skills */}
+                            <div className="w-[280px] h-[215px] border border-black rounded-2xl border-b-2 px-[19px] space-y-2 sm:text-lg md:text-xl hover:border-2">    
+                                <h1 className='font-bold mt-2'>Backend</h1>
+                                <div className='flex  flex-wrap lg:text-xl h-[120px] ml-1'>
+                                    {backend.map((item)=>(
+                                        <div className='flex flex-row items-center'>
+                                            <Checkmark />
+                                            <h1 className='ml-1 mr-4'>{item}</h1>
+                                        </div>
+                                    ))}
                                 </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-4'>Node js</h1>
-                                </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-4'>Express js</h1>
-                                </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-4'>MySQL</h1>
-                                </div>
-                                <div className='flex flex-row items-center'>
-                                    <Checkmark />
-                                    <h1 className='ml-1 mr-4'>Restful API</h1>
-                                </div>
-                            
                             </div>
-                        </div>
                         </div>
                        
                     </div>

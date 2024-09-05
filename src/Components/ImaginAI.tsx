@@ -24,13 +24,15 @@ const ImaginAi:React.FC<ImaginAIProps> = ({handleSectionClick}) =>{
             </button>
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-center w-full">
-            {/* <h1 className="font-bold">Project: Pomodoro</h1> */}
 
             <div className="flex flex-col  items-center lg:items-baseline">
+                {/* Description */}
                 <h1 className="font-bold mb-3">Description</h1>
                 <p className="max-w-[500px] text-base sm:text-lg text-center lg:text-start ">
-                ImaginAI is a design concept for an image generator that transforms ideas into high-quality visuals. The concept focuses on creating a tool that would simplify the process of generating and customizing images. This makes it an effective solution and tool for both personal and professional projects. Its goal is to provide a better approach to visual creation, enhancing creativity and efficiency.
+                    ImaginAI is a design concept for an image generator that transforms ideas into high-quality visuals. The concept focuses on creating a tool that would simplify the process of generating and customizing images. This makes it an effective solution and tool for both personal and professional projects. Its goal is to provide a better approach to visual creation, enhancing creativity and efficiency.
                 </p>
+
+                {/* Button */}
                 <div className="mt-3">
                     <h1 className="font-bold mb-4">Technologies</h1>
                     <div className="flex flex-row">
@@ -49,11 +51,10 @@ const ImaginAi:React.FC<ImaginAIProps> = ({handleSectionClick}) =>{
                 <div className="flex flex-row space-x-8 mt-5">
                     <a href="https://www.figma.com/design/3ZnZIo9oCbOosKmQ140Fg0/ImaginAI---Final-prototype?node-id=0-1&t=7yIh3CLP3dHTVX3f-0" 
                         target="_blank" 
-                        rel="noopener noreferrer">
-                        <button className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
+                        rel="noopener noreferrer"
+                        className="flex flex-row items-center justify-center w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded-md icon-hover2">
                             <FigmaIcon />
                             <h1>Figma</h1>
-                        </button>
                     </a>
                 </div>
             </div>

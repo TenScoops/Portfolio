@@ -6,6 +6,7 @@ import { CopyIcon } from '../icons';
 const Contact = () => {
     const[notification, setNotification] = useState("p.ayres9@gmail.com")
 
+    // whenever user clicks the copy section, copy to clipboard
     const handleCopyClick = () => {
         const email = 'p.ayres9@gmail.com';
         navigator.clipboard.writeText(email)

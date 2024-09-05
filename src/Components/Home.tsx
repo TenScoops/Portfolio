@@ -40,22 +40,18 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                         </div>
                     </div>
                 </div>
-                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ratione quasi ad <br/>o veritatis quam rerum odio velit ea! Nobis, veniam.</p> */}
+              
                 <div className="flex flex-row items-center justify-center ">
-                <a href={resume} target="_blank" rel="noopener noreferrer">
-                    <button className="flex flex-row icon-hover2 justify-center w-32 mr-4 bg-black rounded py-4 text-white px-5 shadow-transition duration-200 shadow-sharp-md border border-white hover:shadow-sharp-lg">
+                    <a href={resume} target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex flex-row icon-hover2 justify-center w-32 mr-4 bg-black rounded py-4 text-white px-5 shadow-transition duration-200 shadow-sharp-md border border-white hover:shadow-sharp-lg">
                         Resume <IoEnterOutline className="ml-1" size={25}/>
-                    </button>
                     </a>
 
                     <button className="text-medium border rounded  border-black w-32 ml-4 py-4 px-5 icon-hover2 cursor-pointer hover:no-underline shadow-transition duration-200 shadow-sharp-md hover:shadow-sharp-lg"
                             onClick={()=>handleSectionClick("contact")}>
                         Contact
                     </button>
-                    {/* <button className="flex flex-row justify-center bg-black rounded py-3 text-white w-1/4 ">
-                        Linkedin<BsLinkedin className="ml-3" size = {25}/>
-                    </button> */}
-                    
                 </div>
                 <div className="flex flex-row items-center justify-center space-x-3">
                     <a href="https://github.com/TenScoops" target="_blank" rel="noopener noreferrer">
@@ -65,14 +61,6 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                         <FaLinkedin className="icon-hover cursor-pointer" size={35}/>
                     </a>
                 </div>
-                {/* <div className="flex space-x-5 flex-row">
-                    <FaHtml5 className="text-orange-500 cursor-pointer" size={30}/>
-                    <IoLogoCss3 className="text-blue-400 cursor-pointer" size={30}/>
-                    <IoLogoJavascript className="text-yellow-400 bg-black cursor-pointer rounded" size={28}/>
-                    <FaReact className="text-blue-500 cursor-pointer" size={29}/>
-                    <SiTailwindcss className="text-cyan-400 cursor-pointer" size={29}/>
-                    <FaNode className="text-green-600 cursor-pointer" size={31} />
-                </div> */}
             </div>
             
         </div>
