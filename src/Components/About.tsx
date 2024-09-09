@@ -11,8 +11,9 @@ const About = () => {
         <div className='xl:hidden'><h1 className='text-3xl font-bold mb-6'>About</h1></div>
         <div className='flex items-center justify-center'>
             <h1 className='text-lg md:text-xl px-7 lg:px-0 max-w-5xl mb-12 leading-relaxed'>
-                “ I’m a programmer who has a passion for coding, creating, and designing with the understanding and 
-                application of UI/UX principles. The user is always placed at the forefront. Currently, I work as an AI Training Specialist, enhancing my technical skills daily. “
+                “I’m a programmer who has the drive and passion to make a difference through programming. 
+                I create and design with a strong understanding of UI/UX principles, always placing the user at the forefront. 
+                Currently, I work as an AI Training Specialist, where I enhance my technical skills daily."
             </h1>
         </div>
         <div className='flex flex-col lg:flex-row items-center md:space-x-8 '>
