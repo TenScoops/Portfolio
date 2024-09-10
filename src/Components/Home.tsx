@@ -34,7 +34,7 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                         </h1>
                         <div className="flex flex-row items-center space-x-2">
                             <h1 className="text-3xl sm:text-4xl font-bold">
-                                Fullstack Developer
+                                Frontend Developer
                             </h1>
                             <IoRocketOutline className="icon-hover" size={35}/>
                         </div>
