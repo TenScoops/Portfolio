@@ -12,8 +12,8 @@ const About = () => {
         <div className='flex items-center justify-center'>
             <h1 className='text-lg md:text-xl px-7 lg:px-0 max-w-5xl mb-12 leading-relaxed'>
                 “I'm a programmer who has a passion for coding, creating, and designing with the understanding 
-                and application of UI/UX principles. The user is always placed at the forefront. Currently, I work 
-                as an AI Training Specialist, where I enhance my technical skills daily."
+                and application of UI/UX principles. The user is always placed at the forefront. Through my projects, 
+                I focus on delivering innovative, intuitive, and impactful solutions that improve user experiences."
             </h1>
         </div>
         <div className='flex flex-col lg:flex-row items-center md:space-x-8 '>
