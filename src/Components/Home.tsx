@@ -7,7 +7,7 @@ import { IoEnterOutline } from "react-icons/io5";
 import resume from "../assets/Philipe_Ayres_Resume.pdf";
 // import Spaceman from "../assets/spaceman.jpg";
 import { IoRocketOutline } from "react-icons/io5";
-import Lineastronaut from "../assets/lineastronaut.avif";
+import Lineastronaut from "../assets/lineastronaut.webp";
 interface HomeProps {
     handleSectionClick: (section:string)=>void
 }

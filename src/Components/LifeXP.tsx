@@ -3,7 +3,7 @@ import { FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
-import lifexpimg from "../assets/xp.png";
+import lifexpimg from "../assets/xp.webp";
 import { ArrowBack, FigmaIcon, GitIcon, RocketIcon2, SiteIcon } from "../icons";
 
 interface LifeXPProps{

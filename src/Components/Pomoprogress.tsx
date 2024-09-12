@@ -3,7 +3,7 @@ import { FaHtml5, FaNode, FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiExpress, SiJavascript, SiMysql } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
-import pomodoroImg from "../assets/pomo.png";
+import pomodoroImg from "../assets/pomo.webp";
 import { ArrowBack, GitIcon, RocketIcon2, SiteIcon } from "../icons";
 
 interface PomoprogressProps {

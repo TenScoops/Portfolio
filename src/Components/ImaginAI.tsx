@@ -1,6 +1,6 @@
 import { FaFigma } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import AiImg from "../assets/AI.png";
+import AiImg from "../assets/AI.webp";
 import { ArrowBack, FigmaIcon } from "../icons";
 
 interface ImaginAIProps{

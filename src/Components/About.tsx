@@ -1,5 +1,5 @@
 // import Rocket from '../assets/Rocket.png'
-import LineRocket from "../assets/rocketline.avif"
+import LineRocket from "../assets/rocketline.webp"
 import { Checkmark } from '../icons'
 
 const About = () => {

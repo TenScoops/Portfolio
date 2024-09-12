@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // import Mail from '../assets/mail.avif';
-import Linemail from "../assets/linemail.jpg";
+import Linemail from "../assets/linemail.webp";
 import { CopyIcon } from '../icons';
 
 const Contact = () => {
