@@ -22,7 +22,7 @@ const About = () => {
         <div className='flex flex-col lg:flex-row items-center md:space-x-8 '>
             <div className='rounded-full'>
                 <img className=' transform active:scale-95 transition 
-                                duration-150 cursor-pointer icon-hover3' src={LineRocket} width={400}/>
+                                duration-150 icon-hover3' src={LineRocket} width={400}/>
             </div>
             <div className='m-0'>
                 <div className='space-y-4 flex flex-col items-center xl:items-baseline mt-5 lg:mt-0 '>

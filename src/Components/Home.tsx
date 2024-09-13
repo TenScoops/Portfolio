@@ -19,7 +19,7 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
             {/* image */}
             <div className="mb-10 lg:mb-0 lg:mr-20">
                 <img className=" transform active:scale-95 transition 
-                                duration-150 cursor-pointer icon-hover3" 
+                                duration-150 icon-hover3" 
                      src={Lineastronaut} 
                     
                      width={450}
