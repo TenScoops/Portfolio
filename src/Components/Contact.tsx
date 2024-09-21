@@ -1,6 +1,6 @@
 import { useState } from 'react';
-// import Mail from '../assets/mail.avif';
-import Linemail from "../assets/linemail.webp";
+import Mail from '../assets/mail.avif';
+// import Linemail from "../assets/linemail.webp";
 import { CopyIcon } from '../icons';
 
 const Contact = () => {
@@ -24,7 +24,7 @@ return (<div className='flex flex-col items-center justify-center xl:h-screen w-
     <div className='flex flex-col lg:flex-row items-center justify-center'>
         <div>
             <img className='transform active:scale-95 transition 
-                                    duration-150 icon-hover3' src={Linemail} width={500}/>
+                                    duration-150 icon-hover3' src={Mail} width={420}/>
         </div>
         <div onClick={handleCopyClick} 
             className='flex flex-col sm:ml-10 items-center'>

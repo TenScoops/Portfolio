@@ -3,11 +3,10 @@
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
 // import { IoIosRocket } from "react-icons/io";
-import { IoEnterOutline } from "react-icons/io5";
+import { IoEnterOutline, IoRocketOutline } from "react-icons/io5";
 import resume from "../assets/Philipe_Ayres_Resume.pdf";
-// import Spaceman from "../assets/spaceman.jpg";
-import { IoRocketOutline } from "react-icons/io5";
-import Lineastronaut from "../assets/lineastronaut.webp";
+import Spaceman from "../assets/spaceman.jpg";
+// import Lineastronaut from "../assets/lineastronaut.webp";
 interface HomeProps {
     handleSectionClick: (section:string)=>void
 }
@@ -19,10 +18,10 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
             {/* image */}
             <div className="mb-10 lg:mb-0 lg:mr-20">
                 <img className=" transform active:scale-95 transition 
-                                duration-150 icon-hover3" 
-                     src={Lineastronaut} 
+                                duration-150 icon-hover3 rounded-full" 
+                     src={Spaceman} 
                     
-                     width={450}
+                     width={420}
                      />
             </div>
             {/* Greetings and CTA */}
