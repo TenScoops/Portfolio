@@ -1,10 +1,9 @@
 // import HappyDwarf from "../assets/HappyDwarf.jpg"
 // import Flight from "../assets/flight.jpg"
 import { BsGithub } from "react-icons/bs";
-import { FaLinkedin } from "react-icons/fa6";
 // import { IoIosRocket } from "react-icons/io";
 import { IoEnterOutline, IoRocketOutline } from "react-icons/io5";
-import resume from "../assets/Philipe_Ayres_Resume.pdf";
+// import resume from "../assets/Philipe_Ayres_Resume.pdf";
 import Spaceman from "../assets/spaceman.jpg";
 // import Lineastronaut from "../assets/lineastronaut.webp";
 interface HomeProps {
@@ -41,10 +40,10 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                 </div>
               
                 <div className="flex flex-row items-center justify-center ">
-                    <a href={resume} target="_blank" 
+                    <a href="https://www.linkedin.com/in/philipe-ayres-2b0aab206/" target="_blank" 
                         rel="noopener noreferrer"
                         className="flex flex-row icon-hover2 justify-center w-32 mr-4 bg-black rounded py-4 text-white px-5 shadow-transition duration-200 shadow-sharp-md border border-white hover:shadow-sharp-lg">
-                        Resume <IoEnterOutline className="ml-1" size={25}/>
+                        Linkedin <IoEnterOutline className="ml-1" size={25}/>
                     </a>
 
                     <button className="text-medium border rounded  border-black w-32 ml-4 py-4 px-5 icon-hover2 cursor-pointer hover:no-underline shadow-transition duration-200 shadow-sharp-md hover:shadow-sharp-lg"
@@ -56,9 +55,9 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                     <a href="https://github.com/TenScoops" target="_blank" rel="noopener noreferrer">
                         <BsGithub className="icon-hover cursor-pointer" size={35}/>
                     </a>
-                    <a href="https://www.linkedin.com/in/philipe-ayres-2b0aab206/" target="_blank" rel="noopener noreferrer">
+                    {/* <a href="https://www.linkedin.com/in/philipe-ayres-2b0aab206/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="icon-hover cursor-pointer" size={35}/>
-                    </a>
+                    </a> */}
                 </div>
             </div>
             
