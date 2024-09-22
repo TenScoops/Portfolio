@@ -20,7 +20,7 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                                 duration-150 icon-hover3 rounded-full" 
                      src={Spaceman} 
                     
-                     width={420}
+                     width={410}
                      />
             </div>
             {/* Greetings and CTA */}
@@ -30,11 +30,19 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                         <h1 className="text-2xl sm:text-3xl flex flex-col mr-2">
                             Hi! I'm Philipe Ayres, a     
                         </h1>
-                        <div className="flex flex-row items-center space-x-2">
-                            <h1 className="text-3xl sm:text-4xl font-bold">
-                                Frontend Developer
-                            </h1>
-                            <IoRocketOutline className="icon-hover" size={35}/>
+                        <div className="flex flex-col items-center space-y-4">
+                            <div className="flex flex-row items-center space-x-2">
+                                <h1 className="text-3xl sm:text-4xl font-bold">
+                                    Frontend Developer
+                                </h1>
+                                {/* <IoRocketOutline className="icon-hover" size={35}/> */}
+                            </div>
+                            <span className="text-3xl font-bold">and</span>
+                            <div className="flex flex-row items-center space-x-2">
+                                <h1 className="text-4xl font-bold">UX Designer</h1>
+                                <IoRocketOutline className="icon-hover" size={35}/>
+                            </div>
+
                         </div>
                     </div>
                 </div>
