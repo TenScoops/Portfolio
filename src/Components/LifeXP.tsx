@@ -1,5 +1,5 @@
 import { IconType } from 'react-icons';
-import { FaHtml5, FaReact } from "react-icons/fa";
+import { FaFigma, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
@@ -26,7 +26,8 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
         { Icon: SiTypescript, tech: "Typescript" },
         { Icon: FaHtml5, tech: "HTML" },
         { Icon: IoLogoCss3, tech: "CSS" },
-        { Icon: SiJavascript, tech: "Javascript" }
+        { Icon: SiJavascript, tech: "Javascript" },
+        { Icon: FaFigma, tech: "Figma" },
       ];
 
     return(<div className="flex flex-col justify-center items-center xl:h-screen lg:mt-0">
