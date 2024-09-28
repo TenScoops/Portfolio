@@ -27,21 +27,21 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
             <div className=" flex flex-col justify-center space-y-14">
                 <div className="flex items-center justify-center">
                     <div className="space-y-6 flex items-center flex-col">
-                        <h1 className="text-2xl sm:text-3xl flex flex-col mr-2">
+                        <h1 className="text-2xl flex flex-col mr-2">
                             Hi! I'm Philipe Ayres, a     
                         </h1>
                         <div className="flex flex-col items-center space-y-4">
-                            <div className="flex flex-row items-center space-x-2">
-                                <h1 className="text-3xl sm:text-4xl font-bold">
-                                    Frontend Developer
+                            <div className="flex flex-row  items-center space-x-2">
+                                <h1 className="text-2xl text-center sm:text-3xl font-bold">
+                                    Frontend Developer / UX Designer
                                 </h1>
-                                {/* <IoRocketOutline className="icon-hover" size={35}/> */}
+                                <IoRocketOutline className="icon-hover hidden sm0:block" size={35}/>
                             </div>
-                            <span className="text-3xl font-bold">and</span>
+                            {/* <span className="text-3xl font-bold">and</span>
                             <div className="flex flex-row items-center space-x-2">
                                 <h1 className="text-4xl font-bold">UX Designer</h1>
                                 <IoRocketOutline className="icon-hover" size={35}/>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>
