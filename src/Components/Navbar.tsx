@@ -16,7 +16,7 @@ const Navbar:React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) => 
     }, 50);  // Adjust the timeout duration if necessary
   };
     return (
-      <div className="hidden xl:flex flex-col items-center text-black bg-transparent fixed w-72 h-screen">
+      <div className="hidden xl:flex flex-col items-center text-black bg-transparent fixed w-72 h-screen bg-white">
         
         <div className="pt-48 pb-16">
           {/* <RocketIcon2 /> */}
