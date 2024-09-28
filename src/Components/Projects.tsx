@@ -1,6 +1,7 @@
-import { useState } from "react"
-import { Link } from "react-router-dom"
-import { AiIcon, Gamepad, ProgressBar } from "../icons"
+import { useState } from "react";
+import { IoRocketOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { AiIcon, Gamepad, ProgressBar } from "../icons";
 
 const Projects = ()=> {
     const [section, setSection] = useState<string>("apps")
@@ -8,8 +9,14 @@ const Projects = ()=> {
     <div className="flex flex-col items-center justify-center xl:h-screen  w-full">
         <div className="xl:hidden"><h1 className="text-3xl font-bold mb-12">Projects</h1></div>
         <div className="flex items-start justify-start max-w-[1000px] lg:w-[1000px] space-x-12">
-            <h1 onClick={()=>{setSection("apps")}} className={`text-xl cursor-pointer ${section === "apps" && 'font-bold underline'}`}>Apps</h1>
-            <h1 onClick={()=>{setSection("designs")}} className={`text-xl cursor-pointer  ${section === "designs" && 'font-bold underline'}`}>Designs</h1>
+            <div className="flex flex-row items-center space-x-2">
+                <h1 onClick={()=>{setSection("apps")}} className={`text-xl cursor-pointer ${section === "apps" && 'font-bold underline'}`}>Apps</h1>
+                {section==="apps" && <IoRocketOutline size={26}/>}
+            </div>
+            <div className="flex flex-row items-center space-x-2">
+                <h1 onClick={()=>{setSection("designs")}} className={`text-xl cursor-pointer  ${section === "designs" && 'font-bold underline'}`}>Designs</h1>
+                {section==="designs" && <IoRocketOutline size={26}/>}
+            </div>
         </div>
         {section === "apps"&&
         <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-20  mt-16 space-y-10 lg:space-y-0">

@@ -9,7 +9,8 @@ import LifeXP from "./Components/LifeXP";
 import Navbar from "./Components/Navbar";
 import Pomoprogress from "./Components/Pomoprogress";
 import Projects from "./Components/Projects";
-import { RocketIcon2 } from "./icons";
+// import { RocketIcon2 } from "./icons";
+import { RxRocket } from "react-icons/rx";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState<string>("home");
@@ -86,7 +87,8 @@ const App = () => {
         <Navbar activeSection={activeSection} handleSectionClick={handleSectionClick} />
         <div className="flex flex-col w-full space-y-32 xl:space-y-0 xl:ml-60 3xl:ml-0">
           <div className="fixed flex top-5 left-5 xl:hidden z-50 items-center">
-            <RocketIcon2 />
+            <RxRocket size={40}/>
+            {/* <RocketIcon2 /> */}
             {/* <h1 className="text-lg ml-2 italic">Philipe Ayres</h1> */}
             </div>
           <Routes>

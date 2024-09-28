@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { RocketIcon2 } from "../icons";
+// import { RocketIcon2 } from "../icons";
+import { RxRocket } from "react-icons/rx";
 
 interface NavbarProps {
   activeSection: string
@@ -18,7 +19,8 @@ const Navbar:React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) => 
       <div className="hidden xl:flex flex-col items-center text-black bg-transparent fixed w-72 h-screen">
         
         <div className="pt-48 pb-16">
-          <RocketIcon2 />
+          {/* <RocketIcon2 /> */}
+          <RxRocket size={35}/>
         </div>
         <nav className="flex flex-col ">
           
