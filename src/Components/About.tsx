@@ -10,14 +10,14 @@ const About = () => {
     return(<div className="flex flex-col items-center justify-center  xl:h-screen space-y-5 w-full ">
         <div className='xl:hidden'><h1 className='text-3xl font-bold mb-6'>About</h1></div>
         <div className='flex items-center justify-center'>
-            <h1 className='text-lg md:text-xl px-7 lg:px-0 max-w-5xl mb-12 leading-relaxed'>
+            <p className='text-lg md:text-xl px-7 lg:px-0 max-w-5xl mb-12 leading-relaxed'>
                 “I'm a programmer who has a passion for coding, creating, and designing with the understanding 
                 and application of UI/UX principles. The user is always placed at the forefront. Through my projects, 
                 I focus on creating innovative solutions that enhance user experiences with the goal 
                 of making a positive impact on their lives."
 
                 
-            </h1>
+            </p>
         </div>
         <div className='flex flex-col lg:flex-row items-center md:space-x-8 '>
             <div className='rounded-full'>
