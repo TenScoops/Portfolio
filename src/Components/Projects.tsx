@@ -6,7 +6,7 @@ import { AiIcon, Gamepad, ProgressBar } from "../icons";
 const Projects = ()=> {
     const [section, setSection] = useState<string>("apps")
     return (
-    <div className="flex flex-col items-center justify-center xl:h-screen  w-full bg-gray-100 py-3">
+    <div className="flex flex-col items-center justify-center xl:h-screen  w-full">
         <div className="xl:hidden"><h1 className="text-3xl font-bold mb-12">Projects</h1></div>
         <div className="flex items-start justify-start max-w-[1000px] lg:w-[1000px] space-x-12">
             <div className="flex flex-row items-center space-x-2">

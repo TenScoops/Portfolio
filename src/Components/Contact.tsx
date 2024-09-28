@@ -18,7 +18,7 @@ const Contact = () => {
         },2000)
     }
 
-return (<div className='flex flex-col items-center justify-center xl:h-screen w-full mb-10 py-3 lg:mb-0 bg-purple-100'>
+return (<div className='flex flex-col items-center justify-center xl:h-screen w-full mb-10 py-3 lg:mb-0'>
     <div className='xl:hidden'>
         <h1 className='text-3xl font-bold mb-8'>Contact</h1>
     </div>
