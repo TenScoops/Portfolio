@@ -4,7 +4,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 import lifexpimg from "../assets/xp.webp";
-import { ArrowBack, FigmaIcon, GitIcon, RocketIcon2, SiteIcon } from "../icons";
+import { ArrowBack, FigmaIcon, GitIcon, SiteIcon } from "../icons";
 
 interface LifeXPProps{
     handleSectionClick: (section:string)=>void
@@ -31,7 +31,7 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
       ];
 
     return(<div className="flex flex-col justify-center items-center xl:h-screen lg:mt-0">
-       < div className="fixed top-5 left-5 xl:hidden z-50 p-0 m-0"><RocketIcon2 /></div>
+       {/* < div className="fixed top-5 left-5 xl:hidden z-50 p-0 m-0"><RocketIcon2 /></div> */}
         <div className="w-[345px] sm:w-[470px] lg:w-[1030px] lg2:w-[1100px] ">
             <button className="border border-black rounded h-12 w-12 flex items-center justify-center shadow-sharp-sm hover:shadow-sharp-md"
                     onClick={handleButtonClick}>
