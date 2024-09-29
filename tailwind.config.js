@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "noto" :["nunito sans", "sans-serif", "cursive"]
+        "noto" :["Space Grotesk", "sans-serif", "cursive"]
       },
       boxShadow: {
         'sharp-2xl':[

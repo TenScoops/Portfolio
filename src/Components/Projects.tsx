@@ -23,13 +23,13 @@ const Projects = ()=> {
             <Link to="/projects/lifexp" 
                   className="flex flex-col items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] space-y-3 rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
                 <Gamepad />
-                <h1 className="text-xl font-bold italic pt-3">Project: LifeXP</h1>
+                <h1 className="text-xl font-bold pt-3">Project: LifeXP</h1>
                 <h1 className="italic">Click for info on project</h1>
             </Link>
             <Link to="projects/pomoprogress"
                   className="flex flex-col items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] space-y-2 rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
                 <ProgressBar />
-                <h1 className="text-xl font-bold flex-wrap italic pt-3"> Project: Progress Pomodoro</h1>
+                <h1 className="text-xl font-bold flex-wrap pt-3"> Project: Progress Pomodoro</h1>
                 <h1 className="italic">Click for info on project</h1>
             </Link>
         </div>}
@@ -39,7 +39,7 @@ const Projects = ()=> {
             <Link to="/projects/imaginai" 
                 className="flex flex-col items-center justify-center shadow-sharp-md hover:shadow-sharp-2xl w-80 h-80 sm:w-[420px] sm:h-[420px] xl:w-[470px] xl:h-[470px] rounded-3xl space-y-2 cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
                 <AiIcon />
-                <h1 className="text-xl font-bold italic pt-3">Project: ImaginAI</h1>
+                <h1 className="text-xl font-bold pt-3">Project: ImaginAI</h1>
                 <h1 className="italic">Click for info on project</h1>
             </Link>
         

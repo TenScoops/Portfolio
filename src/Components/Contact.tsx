@@ -29,7 +29,7 @@ return (<div className='flex flex-col items-center justify-center xl:h-screen w-
         </div>
         <div onClick={handleCopyClick} 
             className='flex flex-col sm:ml-10 items-center'>
-            <h1 className='text-xl md:text-2xl italic mb-6'>You can contact me at</h1>
+            <h1 className='text-xl md:text-2xl mb-6'>You can contact me at</h1>
             <div className='flex flex-row items-center justify-center rounded-xl w-80 sm:w-96 lg:w-[400px] h-[50px] border border-b-2 border-black py-8 hover:border-2 cursor-pointer bg-white'>
                 <div className='mr-5 '><CopyIcon /></div>
                 <h1 className='text-xl md:text-2xl'>{notification}</h1>
