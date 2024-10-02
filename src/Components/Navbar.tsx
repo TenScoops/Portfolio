@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 // import { RocketIcon2 } from "../icons";
+import { IoRocketOutline } from "react-icons/io5";
 import { RxRocket } from "react-icons/rx";
 
 interface NavbarProps {
@@ -28,22 +29,22 @@ const Navbar:React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) => 
             <li className={`flex flex-row items-center justify-center cursor-pointer py-2 px-2 ${activeSection === "home" && "font-bold underline"}`}
                 onClick={()=>handleNavClick("home")}>
                 <h1>Home </h1>
-                {activeSection==='home'&& <div className=" w-3 h-3 bg-white mt-1 ml-2 rounded-full blink"></div>}
+                {activeSection==='home'&& <div className=" w-3 h-3 bg-white mt-1 ml-2 rounded-full blink"><IoRocketOutline size={30}/></div>}
             </li>
             <li className={`flex flex-row items-center justify-center cursor-pointer py-2 px-2 ${activeSection === "projects" && "font-bold underline" }`}
                 onClick={()=>handleNavClick("projects")}>
                 <h1>Projects </h1>
-                {activeSection==='projects'&& <div className=" w-3 h-3 bg-white mt-1 ml-2 rounded-full blink"></div>}
+                {activeSection==='projects'&& <div className=" w-3 h-3 bg-white mt-1 ml-2 rounded-full blink"><IoRocketOutline size={30}/></div>}
             </li>
             <li className={`flex flex-row items-center justify-center cursor-pointer py-2 px-2 ${activeSection === "about" && "font-bold underline" }`}
                 onClick={()=>handleNavClick("about")}>
                 <h1>About </h1>
-                {activeSection==='about'&& <div className=" w-3 h-3 bg-white mt-1 ml-2 rounded-full blink"></div>}
+                {activeSection==='about'&& <div className=" w-3 h-3 bg-white mt-1 ml-2 rounded-full blink"><IoRocketOutline size={30}/></div>}
             </li>
             <li className={`flex flex-row items-center justify-center cursor-pointer py-2 px-2 ${activeSection === "contact" && "font-bold underline" }`}
                 onClick={()=>handleNavClick("contact")}>
                 <h1>Contact </h1>
-              {activeSection==='contact'&& <div className=" w-3 h-3 bg-white mt-1 ml-2 rounded-full blink"></div>}
+              {activeSection==='contact'&& <div className=" w-3 h-3 bg-white mt-1 ml-2 rounded-full blink"><IoRocketOutline size={30}/></div>}
             </li>
           </ul>
         </nav>
