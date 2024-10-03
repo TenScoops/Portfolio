@@ -23,7 +23,7 @@ const Navbar:React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) => 
           {/* <RocketIcon2 /> */}
           <RxRocket size={35}/>
         </div>
-        <nav className="flex flex-col ">
+        <nav className=" ">
           
           <ul className="flex flex-col w-16 items-start text-xl md:space-y-4 xl:space-y-8">
             <li className={`flex flex-row items-center justify-center cursor-pointer py-2 px-2 ${activeSection === "home" && "font-bold underline"}`}

@@ -1,6 +1,6 @@
 // import HappyDwarf from "../assets/HappyDwarf.jpg"
 // import Flight from "../assets/flight.jpg"
-import { BsGithub } from "react-icons/bs";
+// import { BsGithub } from "react-icons/bs";
 // import { IoIosRocket } from "react-icons/io";
 import { IoEnterOutline, IoRocketOutline } from "react-icons/io5";
 // import resume from "../assets/Philipe_Ayres_Resume.pdf";
@@ -55,9 +55,9 @@ const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
                             onClick={()=>handleSectionClick("contact")}>
                         Contact
                     </button>
-                    <a href="https://github.com/TenScoops" target="_blank" rel="noopener noreferrer">
+                    {/* <a href="https://github.com/TenScoops" target="_blank" rel="noopener noreferrer">
                         <BsGithub className="icon-hover cursor-pointer" size={35}/>
-                    </a>
+                    </a> */}
                 </div>
                 <div className="flex flex-row items-center justify-center space-x-3">
                     {/* <a href="https://www.linkedin.com/in/philipe-ayres-2b0aab206/" target="_blank" rel="noopener noreferrer">
