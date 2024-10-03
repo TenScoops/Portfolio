@@ -9,12 +9,8 @@ import Helmet from "../assets/helmet.png";
 // import Lineastronaut from "../assets/lineastronaut.webp";
 import { FaLinkedin } from "react-icons/fa";
 
-interface HomeProps {
-    handleSectionClick: (section:string)=>void
-}
 
-
-const Home: React.FC<HomeProps> = ({handleSectionClick}) =>{
+const Home = () =>{
     return(
         <div className="flex flex-col lg:flex-row justify-center items-center xl:h-screen w-full xl:mt-0 tracking-widest"> 
             {/* content1 */}

@@ -112,7 +112,7 @@ const App = () => {
               path="/"
               element={
                 <>
-                  <div className="w-full" ref={homeRef}><Home handleSectionClick={handleSectionClick} /></div>
+                  <div className="w-full" ref={homeRef}><Home /></div>
                   <div className="w-full" ref={projectsRef}><Projects /></div>
                   <div className="w-full" ref={aboutRef}><About /></div>
                   <div className="w-full" ref={contactRef}><Contact /></div>
