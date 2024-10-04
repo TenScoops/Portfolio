@@ -102,11 +102,12 @@ const App = () => {
 
   return (
     <Router>
-      <div className="flex flex-row w-full font-noto tracking-wider">
+      <div className="flex flex-row w-full font-noto tracking-widest">
         
         <div className="w-full flex flex-col">
-          {/* <div className="fixed flex top-5 left-5 xl:hidden z-50 items-center">
+          {/* <div className="fixed flex flex-row top-5 left-5 z-50 items-center">
             <RxRocket size={40} />
+            <h1 className="ml-3 tracking-widest text-lg">Philipe Ayres</h1>
           </div> */}
           <Navbar activeSection={activeSection} handleSectionClick={handleSectionClick} />
 

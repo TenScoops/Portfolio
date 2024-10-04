@@ -34,7 +34,7 @@ return (<div className='flex flex-col items-center justify-center h-screen w-ful
                 <img className='transform active:scale-95 transition 
                                         duration-150 icon-hover3 rounded-full' src={Helmet} width={400}/>
             </div>
-            <h2 className='text-xl pb-10'>"Thank you!"</h2>
+            <h2 className='text-xl pb-10 typewriter'>"Thank you!"</h2>
         </div>
     </div>
 
