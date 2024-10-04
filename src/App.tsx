@@ -92,7 +92,7 @@ const App = () => {
     // Render loading screen when the app is still loading
     return (
       <div className="flex items-center justify-center w-full h-screen bg-white">
-        <div className="animate-spin rounded-full h-24 w-24 border-b-4 "> </div>
+        <div className="animate-spin rounded-full h-24 w-24 border-b-4 border-black"> </div>
         <p className="ml-4 text-lg font-semibold">Loading...</p>
       </div>
     );
