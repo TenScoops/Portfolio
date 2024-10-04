@@ -13,7 +13,7 @@ const About = () => {
     const frontend = ["Javascript", "React JS", "Typescript", "CSS", "TailwindCSS", "Git", "Figma", "HTML"]
     const backend = ["Javascript", "Node JS", "Express JS", "MySQL", "Restful API"]
 
-    return(<div className="flex flex-col items-center h-screen mt-36 space-y-5 w-full tracking-widest ">
+    return(<div className="flex flex-col z-49 items-center h-screen mt-36 space-y-5 w-full tracking-widest ">
             <div>
                 <div className='flex flex-col items-center justify-center'>
                     <div className="flex flex-col lg:flex-row items-center justify-center ">
@@ -32,7 +32,7 @@ const About = () => {
                     </button>
                 </div>
             </div>
-        <div className={`flex-col lg2:flex-row items-center md:space-x-8 ${hidden ?'flex' : 'hidden'} fade-in slide-up2`}>
+        <div className={`flex-col lg2:flex-row items-center md:space-x-8 ${hidden ?'flex' : 'hidden'} slide-up2`}>
             {/* moon image */}
             <img src={moon} className="rounded-full transform active:scale-95 transition 
                                             duration-150 icon-hover3" width={400}/>
@@ -55,8 +55,8 @@ const About = () => {
                     </div>
                     <div className='flex flex-col'>
                         <div className='flex flex-col sm:flex-row sm:space-x-5 space-y-5 sm:space-y-0 items-center'>
-                            {/* frontend skills */}
-                            <div className="w-[280px] md:w-[350px] h-[215px] rounded-2xl  space-y-1 sm:text-lg md:text-xl">    
+                         
+                            <div className="w-[280px] md:w-[350px] h-[215px] space-y-1 sm:text-lg md:text-xl">    
                                 <h1 className='font-bold mt-2'>Frontend</h1>
                                 <div className='flex flex-wrap h-[160px] w-[300px]'>
                                     {frontend.map((item)=>(
@@ -68,7 +68,7 @@ const About = () => {
                                 
                                 </div>
                             </div>
-                            {/* backend skills */}
+                          
                             <div className="w-[280px] h-[215px] rounded-2xl  space-y-2 sm:text-lg md:text-xl ">    
                                 <h1 className='font-bold mt-2'>Backend</h1>
                                 <div className='flex  flex-wrap lg:text-xl h-[120px] ml-1'>
