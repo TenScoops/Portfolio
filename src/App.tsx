@@ -41,46 +41,46 @@ const App = () => {
     }, 1000);
   }
 
-  const handleScroll = () => {
-    if (isScrolling === false) {
-      if (homeRef.current && projectsRef.current && aboutRef.current && contactRef.current) {
-        const homeOffset = homeRef.current.offsetTop;
-        const projectsOffset = projectsRef.current.offsetTop;
-        const aboutOffset = aboutRef.current.offsetTop;
-        const contactOffset = contactRef.current.offsetTop;
-        const scrollPosition = window.scrollY + window.innerHeight / 2;
+  // const handleScroll = () => {
+  //   if (isScrolling === false) {
+  //     if (homeRef.current && projectsRef.current && aboutRef.current && contactRef.current) {
+  //       const homeOffset = homeRef.current.offsetTop;
+  //       const projectsOffset = projectsRef.current.offsetTop;
+  //       const aboutOffset = aboutRef.current.offsetTop;
+  //       const contactOffset = contactRef.current.offsetTop;
+  //       const scrollPosition = window.scrollY + window.innerHeight / 2;
 
-        if (scrollPosition >= contactOffset) {
-          setActiveSection("contact");
-        } else if (scrollPosition >= aboutOffset) {
-          setActiveSection("about");
-        } else if (scrollPosition >= projectsOffset) {
-          setActiveSection("projects");
-        } else if (scrollPosition >= homeOffset) {
-          setActiveSection("home");
-        }
-      }
-    }
-  }
+  //       if (scrollPosition >= contactOffset) {
+  //         setActiveSection("contact");
+  //       } else if (scrollPosition >= aboutOffset) {
+  //         setActiveSection("about");
+  //       } else if (scrollPosition >= projectsOffset) {
+  //         setActiveSection("projects");
+  //       } else if (scrollPosition >= homeOffset) {
+  //         setActiveSection("home");
+  //       }
+  //     }
+  //   }
+  // }
 
-  const handleNextSection = () => {
-    if (activeSection === "home") {
-      handleSectionClick("projects");
-    } else if (activeSection === "projects") {
-      handleSectionClick("about");
-    } else if (activeSection === "about") {
-      handleSectionClick("contact");
-    } else if (activeSection === "contact") {
-      handleSectionClick("home");
-    }
-  }
+  // const handleNextSection = () => {
+  //   if (activeSection === "home") {
+  //     handleSectionClick("projects");
+  //   } else if (activeSection === "projects") {
+  //     handleSectionClick("about");
+  //   } else if (activeSection === "about") {
+  //     handleSectionClick("contact");
+  //   } else if (activeSection === "contact") {
+  //     handleSectionClick("home");
+  //   }
+  // }
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [isScrolling]);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [isScrolling]);
 
 
   useEffect(() => {
