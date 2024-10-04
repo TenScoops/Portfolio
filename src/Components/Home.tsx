@@ -9,12 +9,12 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Home = () =>{
     return(
-        <div className="flex flex-col lg:flex-row justify-center items-center h-screen w-full tracking-widest fade-in"> 
+        <div className="flex flex-col lg:flex-row justify-center items-center h-screen w-full tracking-widest"> 
             {/* content1 */}
             <div className=" flex flex-col justify-center space-y-14 order-2 lg:order-1">
                     <div className="space-y-6 flex items-center flex-col">
                         <div className="flex flex-row items-start justify-start px-7 sm0:px-0  w-[400px] sm1:w-[500px]">
-                            <h1 className="flex flex-col text-2xl mr-2 sm:text-3xl">
+                            <h1 className="flex flex-col text-2xl mr-2 sm:text-3xl typewriter">
                                 Hi, I'm Philipe Ayres    
                             </h1>
                             <IoRocketOutline className="icon-hover " size={35}/>
@@ -31,7 +31,7 @@ const Home = () =>{
 
             {/* content2 */}
              {/* image */}
-             <div className="mb-10 lg:mb-0 flex flex-col lg:flex-row order-1 lg:order-2">
+             <div className="mb-10 lg:mb-0 flex flex-col lg:flex-row order-1 lg:order-2 slide-left">
                 <img className=" transform active:scale-95 transition 
                                 duration-150 icon-hover3 rounded-full" 
                      src={Helmet} 

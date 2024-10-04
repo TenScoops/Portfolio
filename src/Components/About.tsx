@@ -13,7 +13,7 @@ const About = () => {
     const frontend = ["Javascript", "React JS", "Typescript", "CSS", "TailwindCSS", "Git", "Figma", "HTML"]
     const backend = ["Javascript", "Node JS", "Express JS", "MySQL", "Restful API"]
 
-    return(<div className="flex flex-col items-center justify-center  xl:h-screen space-y-5 w-full tracking-widest fade-in">
+    return(<div className="flex flex-col items-center h-screen mt-36 space-y-5 w-full tracking-widest fade-in">
             <div>
                 <div className='flex flex-col items-center justify-center'>
                     <div className="flex flex-col lg:flex-row items-center justify-center">
@@ -28,11 +28,11 @@ const About = () => {
                     </div>
                     <button onClick={()=>{setHidden(true)}} className={` flex-row items-center mr-32 icon-hover3 ${hidden?'hidden':'flex'}`}>
                         <RiArrowDownDoubleLine size={45}/>
-                        <h3 className="text-lg ml-3 tracking-widest">Read more</h3>
+                        <h3 className="text-lg ml-3 tracking-widest">View more</h3>
                     </button>
                 </div>
             </div>
-        <div className={`flex-col lg:flex-row items-center md:space-x-8 ${hidden ?'flex' : 'hidden'} fade-in slide-up`}>
+        <div className={`flex-col lg:flex-row items-center md:space-x-8 ${hidden ?'flex' : 'hidden'} fade-in slide-up2`}>
             {/* moon image */}
             <img src={moon} className="rounded-full transform active:scale-95 transition 
                                             duration-150 icon-hover3" width={400}/>

@@ -32,7 +32,9 @@
 .fade-in {
   animation: fadeIn 1s ease-out forwards;
 }
-
+.slide-up2 {
+  animation: slideUp2 1s ease-out forwards;
+}
 .slide-up {
   animation: slideUp 1s ease-out forwards;
 }
@@ -43,6 +45,15 @@
   animation: slideLeft 1s ease-out forwards;
 }
 @keyframes slideUp {
+  0% {
+    transform: translateY(50px); /* Start slightly below the original position */
+  }
+  100% {
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
+@keyframes slideUp2 {
   0% {
     opacity: 0;
     transform: translateY(50px); /* Start slightly below the original position */
@@ -82,6 +93,39 @@
   100% {
     opacity: 1;
   }
+}
+
+
+@keyframes typewriter {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 24ch;
+  }
+}
+@keyframes typewriter2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+.typewriter {
+  overflow: hidden;             /* Ensures text doesn't go beyond container */
+  white-space: nowrap;          /* Keeps the text in a single line */
+  animation: 
+    typewriter 2.5s steps(40) normal both;
+}
+
+.typewriter2 {
+  overflow: hidden;             /* Ensures text doesn't go beyond container */
+  white-space: nowrap;          /* Keeps the text in a single line */
+  animation: 
+    typewriter2 2.5s steps(40) normal both;
 }
 
 html {
