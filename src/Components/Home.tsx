@@ -16,13 +16,13 @@ const Home = () =>{
             {/* content1 */}
             <div className=" flex flex-col justify-center space-y-14 order-2 lg:order-1">
                     <div className="space-y-6 flex items-center flex-col">
-                        <div className="flex flex-row items-start justify-start w-[500px]">
-                            <h1 className="text-3xl flex flex-col mr-2">
+                        <div className="flex flex-row items-start justify-start px-7 sm0:px-0  w-[400px] sm1:w-[500px]">
+                            <h1 className="flex flex-col text-2xl mr-2 sm:text-3xl">
                                 Hi, I'm Philipe Ayres    
                             </h1>
-                            <IoRocketOutline className="icon-hover hidden sm0:block" size={35}/>
+                            <IoRocketOutline className="icon-hover " size={35}/>
                         </div>
-                        <p className="text-xl w-[500px] leading-relaxed">
+                        <p className=" text-lg sm:text-xl px-7 sm0:px-0 w-[400px] sm1:w-[500px] leading-relaxed">
                             “ I’m a <strong>frontend developer/UX Designer</strong> who has a passion for coding, creating, 
                             and designing with the understanding and application of UI/UX principles. The 
                             user is always placed at the forefront. “
