@@ -9,7 +9,7 @@ const Projects = ()=> {
     <div className="flex flex-col items-center  xl:h-screen  w-full tracking-widest mt-28 ">
         {/* <div className="xl:hidden"><h1 className="text-3xl font-bold mb-12">Projects</h1></div> */}
         <div className="flex flex-col md:flex-row items-center">
-            <p className="text-lg mr-10 order-2 md:order-1 mt-10 md:mt-0 pl-10 md:pl-0 typewriter2">Which project would you like to see?</p>
+            <p className="text-lg lg:text-xl md:mr-10 order-2 md:order-1 mt-10 md:mt-0  md:pl-0 typewriter2">Which project would you like to see?</p>
             <img src={helmet} width={280} className="rounded-full order-1 md:order-2 transform active:scale-95 transition 
                                 duration-150 icon-hover3"/>
 

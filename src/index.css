@@ -118,14 +118,14 @@
   overflow: hidden;             /* Ensures text doesn't go beyond container */
   white-space: nowrap;          /* Keeps the text in a single line */
   animation: 
-    typewriter 2.5s steps(40) normal both;
+    typewriter 2.0s steps(40) normal both;
 }
 
 .typewriter2 {
   overflow: hidden;             /* Ensures text doesn't go beyond container */
   white-space: nowrap;          /* Keeps the text in a single line */
   animation: 
-    typewriter2 2.5s steps(40) normal both;
+    typewriter2 2.0s steps(40) normal both;
 }
 
 html {

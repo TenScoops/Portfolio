@@ -1,5 +1,5 @@
 import { IoRocketOutline } from "react-icons/io5";
-import { RxHamburgerMenu } from "react-icons/rx";
+// import { RxHamburgerMenu } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
 
 interface NavbarProps {
@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
       <nav className="w-full">
         <ul className="flex justify-end mx-auto text-xl space-x-12 mr-10">
           <Link to="/"
-            className={`flex items-center justify-center cursor-pointer py-2 px-2 ${
+            className={`flex items-center justify-center cursor-pointer py-2 px-2  ${
               activeSection === "home" && "font-bold underline"
             }`}
             onClick={() => handleNavClick("home")}
@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
             )}
           </Link>
           <Link to="/projects"
-            className={`flex items-center justify-center cursor-pointer py-2 px-2 ${
+            className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover3 ${
               activeSection === "projects" && "font-bold underline"
             }`}
             onClick={() => handleNavClick("projects")}
@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
             )}
           </Link>
           <Link to="about"
-            className={`flex items-center justify-center cursor-pointer py-2 px-2 ${
+            className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover3 ${
               activeSection === "about" && "font-bold underline"
             }`}
             onClick={() => handleNavClick("about")}
@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
             )}
           </Link>
           <Link to="contact"
-            className={`flex items-center justify-center cursor-pointer py-2 px-2 ${
+            className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover3 ${
               activeSection === "contact" && "font-bold underline"
             }`}
             onClick={() => handleNavClick("contact")}
@@ -75,9 +75,9 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
           </Link>
         </ul>
       </nav>
-      <button className="mr-6">
+      {/* <button className="mr-6">
         <RxHamburgerMenu size={30} />
-      </button>
+      </button> */}
     </div>
   );
 };

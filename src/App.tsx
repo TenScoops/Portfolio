@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 // import { BsArrowDown, BsArrowUp } from "react-icons/bs";
 // import { RxRocket } from "react-icons/rx";
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
@@ -14,7 +14,7 @@ import Projects from "./Components/Projects";
 const App = () => {
   const [activeSection, setActiveSection] = useState<string>("home");
   // const [isScrolling, setIsScrolling] = useState<boolean>(false);
-  const [loading, setLoading] = useState(true); // State for loading
+  // const [loading, setLoading] = useState(true); 
   const homeRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -83,22 +83,22 @@ const App = () => {
   // }, [isScrolling]);
 
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500); //loading duration
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1500); 
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-  if (loading) {
-    // Render loading screen when the app is still loading
-    return (
-      <div className="flex items-center justify-center w-full h-screen bg-white">
-        <div className="animate-spin rounded-full h-24 w-24 border-b-4 border-black"> </div>
-        <p className="ml-4 text-lg font-semibold">Loading...</p>
-      </div>
-    );
-  }
+  // if (loading) {
+
+  //   return (
+  //     <div className="flex items-center justify-center w-full h-screen bg-white">
+  //       <div className="animate-spin rounded-full h-24 w-24 border-b-4 border-black"> </div>
+  //       <p className="ml-4 text-lg font-semibold">Loading...</p>
+  //     </div>
+  //   );
+  // }
 
   return (
     <Router>
@@ -130,18 +130,18 @@ const App = () => {
       </div>
 
        {/* arrow button */}
-                  {/* <div className="hidden fixed left-10 xl:left-60 bottom-10 xl:flex items-center space-x-2">
+                  {/* <div className=" fixed left-10 xl:left-60 bottom-10 xl:flex items-center space-x-2">
                     {activeSection === "contact" ? (
                       <button
                         className="border mr-2 px-2 transform active:scale-95 transition duration-150 bg-white border-black rounded py-2 shadow-sharp-md hover:shadow-sharp-lg icon-hover"
-                        onClick={handleNextSection}
+                       
                       >
                         <BsArrowUp size={30} />
                       </button>
                     ) : (
                       <button
                         className="border mr-2 px-2 transform active:scale-95 transition duration-150 bg-white border-black rounded py-2 shadow-sharp-md hover:shadow-sharp-lg icon-hover"
-                        onClick={handleNextSection}
+                        
                       >
                         <BsArrowDown size={30} />
                       </button>

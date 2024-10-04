@@ -13,10 +13,10 @@ const About = () => {
     const frontend = ["Javascript", "React JS", "Typescript", "CSS", "TailwindCSS", "Git", "Figma", "HTML"]
     const backend = ["Javascript", "Node JS", "Express JS", "MySQL", "Restful API"]
 
-    return(<div className="flex flex-col items-center h-screen mt-36 space-y-5 w-full tracking-widest fade-in">
+    return(<div className="flex flex-col items-center h-screen mt-36 space-y-5 w-full tracking-widest ">
             <div>
                 <div className='flex flex-col items-center justify-center'>
-                    <div className="flex flex-col lg:flex-row items-center justify-center">
+                    <div className="flex flex-col lg:flex-row items-center justify-center slide-right">
                         <p className='text-lg md:text-xl px-7 xl:px-0 max-w-4xl mb-12 xl:mb-10 leading-relaxed order-2 lg:order-1'>
                         “I don’t create for the sake of creating, I create to <strong>solve a problem</strong>. Each personal project I’ve worked 
                         on <strong>has a sense of purpose</strong>. And I take immense pride in my work. I believe that’s what programming/designing 
