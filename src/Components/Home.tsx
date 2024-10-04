@@ -1,18 +1,15 @@
-// import HappyDwarf from "../assets/HappyDwarf.jpg"
-// import Flight from "../assets/flight.jpg"
 import { BsGithub } from "react-icons/bs";
-// import { IoIosRocket } from "react-icons/io";
+
 import { IoRocketOutline } from "react-icons/io5";
-// import resume from "../assets/Philipe_Ayres_Resume.pdf";
-// import Spaceman from "../assets/spaceman.jpg";
+
 import Helmet from "../assets/helmet.png";
-// import Lineastronaut from "../assets/lineastronaut.webp";
+
 import { FaLinkedin } from "react-icons/fa";
 
 
 const Home = () =>{
     return(
-        <div className="flex flex-col lg:flex-row justify-center items-center h-screen w-full tracking-widest "> 
+        <div className="flex flex-col lg:flex-row justify-center items-center h-screen w-full tracking-widest fade-in"> 
             {/* content1 */}
             <div className=" flex flex-col justify-center space-y-14 order-2 lg:order-1">
                     <div className="space-y-6 flex items-center flex-col">
@@ -22,7 +19,7 @@ const Home = () =>{
                             </h1>
                             <IoRocketOutline className="icon-hover " size={35}/>
                         </div>
-                        <p className=" text-lg sm:text-xl px-7 sm0:px-0 w-[400px] sm1:w-[500px] leading-relaxed">
+                        <p className=" text-lg sm:text-xl px-7 sm0:px-0 w-[400px] sm1:w-[500px] leading-relaxed slide-right">
                             “ I’m a <strong>frontend developer/UX Designer</strong> who has a passion for coding, creating, 
                             and designing with the understanding and application of UI/UX principles. The 
                             user is always placed at the forefront. “
@@ -41,7 +38,7 @@ const Home = () =>{
                     
                      width={500}
                      />
-                <div className="flex flex-row lg:flex-col justify-center mt-8 space-x-2 lg:space-x-0 lg:mt-0 lg:space-y-2">
+                <div className="flex flex-row lg:flex-col justify-center mt-8 space-x-2 lg:space-x-0 lg:mt-0 lg:space-y-2 slide-up">
                     <a href="https://www.linkedin.com/in/philipe-ayres-2b0aab206/" target="_blank" 
                         rel="noopener noreferrer"
                         className="flex flex-row icon-hover justify-center duration-200">

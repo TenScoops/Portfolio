@@ -18,21 +18,21 @@ const Contact = () => {
         },2000)
     }
 
-return (<div className='flex flex-col items-center justify-center xl:h-screen w-full mb-10 py-3 lg:mb-0 tracking-widest'>
+return (<div className='flex flex-col items-center justify-center xl:h-screen w-full mb-10 py-3 lg:mb-0 tracking-widest '>
     <div className='xl:hidden'>
         <h1 className='text-3xl font-bold mb-8'>Contact</h1>
     </div>
     <div className='flex flex-col lg:flex-row items-center justify-center'>
         
         <div onClick={handleCopyClick} 
-            className='flex flex-col sm:mr-10 items-center'>
+            className='flex flex-col sm:mr-10 items-center slide-right'>
             <h1 className='text-xl md:text-2xl mb-6'>You can contact me at</h1>
             <div className='flex flex-row items-center justify-center rounded-xl w-80 sm:w-96 lg:w-[400px] h-[50px] border border-b-2 border-black py-8 hover:border-2 cursor-pointer bg-white'>
                 <div className='mr-5 '><CopyIcon /></div>
                 <h1 className='text-xl md:text-2xl'>{notification}</h1>
             </div>
         </div>
-        <div className='flex flex-col items-center space-y-6'>
+        <div className='flex flex-col items-center space-y-6 slide-left'>
             <div>
                 <img className='transform active:scale-95 transition 
                                         duration-150 icon-hover3 rounded-full' src={Helmet} width={400}/>
