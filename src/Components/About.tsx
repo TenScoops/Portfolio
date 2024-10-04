@@ -26,7 +26,7 @@ const About = () => {
                         <img src={helmet} width={280} className="rounded-full mb-10 order-1 lg:order-2 transform active:scale-95 transition 
                                             duration-150 icon-hover3"/>
                     </div>
-                    <button onClick={()=>{setHidden(true)}} className={` flex-row items-center mr-32 ${hidden?'hidden':'flex'}`}>
+                    <button onClick={()=>{setHidden(true)}} className={` flex-row items-center mr-32 icon-hover3 ${hidden?'hidden':'flex'}`}>
                         <RiArrowDownDoubleLine size={45}/>
                         <h3 className="text-lg ml-3 tracking-widest">Read more</h3>
                     </button>

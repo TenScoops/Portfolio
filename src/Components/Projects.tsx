@@ -32,7 +32,7 @@ const Projects = ()=> {
                 <h1 className="text-xl ">LifeXP</h1>
                 {/* <h1 className="italic">Click for info on project</h1> */}
             </Link>
-            <Link to="projects/pomoprogress"
+            <Link to="/projects/pomoprogress"
                   className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
                 <div className="pl-16 pr-10"><ProgressBar /></div>
                 <h1 className="text-xl flex-wrap "> Progress Pomodoro</h1>

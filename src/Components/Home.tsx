@@ -12,7 +12,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Home = () =>{
     return(
-        <div className="flex flex-col lg:flex-row justify-center items-center xl:h-screen w-full xl:mt-0 tracking-widest"> 
+        <div className="flex flex-col lg:flex-row justify-center items-center h-screen w-full tracking-widest "> 
             {/* content1 */}
             <div className=" flex flex-col justify-center space-y-14 order-2 lg:order-1">
                     <div className="space-y-6 flex items-center flex-col">

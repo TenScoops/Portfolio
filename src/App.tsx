@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
-import { BsArrowDown, BsArrowUp } from "react-icons/bs";
-import { RxRocket } from "react-icons/rx";
+// import { BsArrowDown, BsArrowUp } from "react-icons/bs";
+// import { RxRocket } from "react-icons/rx";
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Home from "./Components/Home";
 import ImaginAi from "./Components/ImaginAI";
 import LifeXP from "./Components/LifeXP";
-// import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar";
 import Pomoprogress from "./Components/Pomoprogress";
 import Projects from "./Components/Projects";
 
@@ -20,13 +20,7 @@ const App = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    // Simulate a loading delay
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500); // Adjust loading duration as needed
-    return () => clearTimeout(timer);
-  }, []);
+  
 
   const handleSectionClick = (section: string) => {
     setActiveSection(section);
@@ -88,6 +82,14 @@ const App = () => {
     };
   }, [isScrolling]);
 
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500); //loading duration
+    return () => clearTimeout(timer);
+  }, []);
+
   if (loading) {
     // Render loading screen when the app is still loading
     return (
@@ -101,24 +103,34 @@ const App = () => {
   return (
     <Router>
       <div className="flex flex-row w-full font-noto tracking-wider">
-        {/* <Navbar activeSection={activeSection} handleSectionClick={handleSectionClick} /> */}
-        <div className="flex flex-col w-full">
-          <div className="fixed flex top-5 left-5 xl:hidden z-50 items-center">
+        
+        <div className="w-full flex flex-col">
+          {/* <div className="fixed flex top-5 left-5 xl:hidden z-50 items-center">
             <RxRocket size={40} />
-            {/* <RocketIcon2 /> */}
-          </div>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <div className="w-full" ref={homeRef}><Home /></div>
-                  <div className="w-full" ref={projectsRef}><Projects /></div>
-                  <div className="w-full" ref={aboutRef}><About /></div>
-                  <div className="w-full" ref={contactRef}><Contact /></div>
+          </div> */}
+          <Navbar activeSection={activeSection} handleSectionClick={handleSectionClick} />
 
-                  {/* arrow button */}
-                  <div className="hidden fixed left-10 xl:left-60 bottom-10 xl:flex items-center space-x-2">
+          <Routes>
+            {/* main routes */}
+            <Route path="/"element={<div className="w-full" ref={homeRef}><Home /></div>} />
+            <Route path="/projects" element={<div className="w-full" ref={projectsRef}><Projects /></div>} />
+            <Route path="/about" element={<div className="w-full" ref={aboutRef}><About /></div>} />
+            <Route path="/contact" element={<div className="w-full" ref={contactRef}><Contact /></div>}/>
+            {/* secondary routes */}
+            <Route path="/projects/lifexp" element={<LifeXP handleSectionClick={handleSectionClick} />} />
+            <Route path="/projects/pomoprogress" element={<Pomoprogress handleSectionClick={handleSectionClick} />} />
+            <Route path="/projects/imaginai" element={<ImaginAi handleSectionClick={handleSectionClick} />} />
+            
+          </Routes>
+        </div>
+
+        {/* <div className="w-full" ref={projectsRef}><Projects /></div>
+                  <div className="w-full" ref={aboutRef}><About /></div>
+                  <div className="w-full" ref={contactRef}><Contact /></div> */}
+      </div>
+
+       {/* arrow button */}
+                  {/* <div className="hidden fixed left-10 xl:left-60 bottom-10 xl:flex items-center space-x-2">
                     {activeSection === "contact" ? (
                       <button
                         className="border mr-2 px-2 transform active:scale-95 transition duration-150 bg-white border-black rounded py-2 shadow-sharp-md hover:shadow-sharp-lg icon-hover"
@@ -134,16 +146,7 @@ const App = () => {
                         <BsArrowDown size={30} />
                       </button>
                     )}
-                  </div>
-                </>
-              }
-            />
-            <Route path="/projects/lifexp" element={<LifeXP handleSectionClick={handleSectionClick} />} />
-            <Route path="/projects/pomoprogress" element={<Pomoprogress handleSectionClick={handleSectionClick} />} />
-            <Route path="/projects/imaginai" element={<ImaginAi handleSectionClick={handleSectionClick} />} />
-          </Routes>
-        </div>
-      </div>
+                  </div> */}
     </Router>
   );
 };

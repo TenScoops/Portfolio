@@ -25,7 +25,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
     const navigate = useNavigate()
 
     const handleButtonClick=() =>{
-        navigate("/")
+        navigate("/projects")
         setTimeout(()=>{
             handleSectionClick("projects")
         },50)
