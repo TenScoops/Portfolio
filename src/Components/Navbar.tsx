@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { HiOutlineXMark } from "react-icons/hi2";
 import { IoRocketOutline } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface NavbarProps {
   activeSection: string;
@@ -10,23 +10,16 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) => {
-  const navigate = useNavigate();
-  const location = useLocation();
   const [openOption, setOpenOption] = useState(false);
 
   // Retrieve active section from localStorage on mount
-  useEffect(() => {
-    const savedSection = localStorage.getItem("activeSection");
-    if (savedSection && location.pathname !== '/') {
-      handleSectionClick(savedSection);
-    }
-  }, [location.pathname, handleSectionClick]);
+
 
   const handleNavClick = (section: string) => {
-    navigate("/"); // Navigate to the home page
+    setOpenOption(false)
     setTimeout(() => {
       handleSectionClick(section); // Trigger the scroll after a short delay
-      localStorage.setItem("activeSection", section); // Store active section in localStorage
+      
     }, 50);
   };
 

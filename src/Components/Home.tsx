@@ -31,14 +31,14 @@ const Home = () =>{
 
             {/* content2 */}
              {/* image */}
-             <div className="mb-10 lg:mb-0 flex flex-col lg:flex-row order-1 lg:order-2 slide-left">
+             <div className="mb-10 lg:mb-0 flex flex-col lg2:flex-row order-1 lg:order-2 slide-left">
                 <img className=" transform active:scale-95 transition 
                                 duration-150 icon-hover3 rounded-full" 
                      src={Helmet} 
                     
                      width={500}
                      />
-                <div className="flex flex-row lg:flex-col justify-center mt-8 space-x-2 lg:space-x-0 lg:mt-0 lg:space-y-2 slide-up">
+                <div className="flex flex-row lg2:flex-col justify-center mt-8 space-x-2 lg2:space-x-0 lg2:mt-0 lg2:space-y-2 slide-up">
                     <a href="https://www.linkedin.com/in/philipe-ayres-2b0aab206/" target="_blank" 
                         rel="noopener noreferrer"
                         className="flex flex-row icon-hover justify-center duration-200">
