@@ -102,7 +102,7 @@ const App = () => {
     <Router>
       <div className="flex flex-row w-full font-noto tracking-wider">
         {/* <Navbar activeSection={activeSection} handleSectionClick={handleSectionClick} /> */}
-        <div className="flex flex-col w-full space-y-32 xl:space-y-0 xl:ml-60 3xl:ml-0">
+        <div className="flex flex-col w-full">
           <div className="fixed flex top-5 left-5 xl:hidden z-50 items-center">
             <RxRocket size={40} />
             {/* <RocketIcon2 /> */}
