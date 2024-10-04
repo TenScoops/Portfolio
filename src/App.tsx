@@ -13,7 +13,7 @@ import Projects from "./Components/Projects";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState<string>("home");
-  const [isScrolling, setIsScrolling] = useState<boolean>(false);
+  // const [isScrolling, setIsScrolling] = useState<boolean>(false);
   const [loading, setLoading] = useState(true); // State for loading
   const homeRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
@@ -24,7 +24,7 @@ const App = () => {
 
   const handleSectionClick = (section: string) => {
     setActiveSection(section);
-    setIsScrolling(true);
+    // setIsScrolling(true);
 
     if (section === "home" && homeRef.current) {
       homeRef.current.scrollIntoView({ behavior: "smooth" });
@@ -37,7 +37,7 @@ const App = () => {
     }
 
     setTimeout(() => {
-      setIsScrolling(false);
+      // setIsScrolling(false);
     }, 1000);
   }
 
