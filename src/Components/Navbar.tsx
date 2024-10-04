@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HiOutlineXMark } from "react-icons/hi2";
 import { IoRocketOutline } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 interface NavbarProps {
   activeSection: string;
@@ -10,16 +10,23 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) => {
+  // const navigate = useNavigate();
+  const location = useLocation();
   const [openOption, setOpenOption] = useState(false);
 
   // Retrieve active section from localStorage on mount
-
+  useEffect(() => {
+    const savedSection = localStorage.getItem("activeSection");
+    if (savedSection && location.pathname !== '/') {
+      handleSectionClick(savedSection);
+    }
+  }, [location.pathname, handleSectionClick]);
 
   const handleNavClick = (section: string) => {
     setOpenOption(false)
     setTimeout(() => {
       handleSectionClick(section); // Trigger the scroll after a short delay
-      
+      localStorage.setItem("activeSection", section); // Store active section in localStorage
     }, 50);
   };
 
@@ -81,7 +88,8 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
           </Link>
         </ul>
       </nav>
-      <button onClick={() => setOpenOption(true)} className="absolute right-3 top-2 md:hidden">
+      {/* hamburger button */}
+      <button onClick={() => setOpenOption(true)} className="absolute right-3 top-2 md:hidden z-50">
         <RxHamburgerMenu size={35} />
       </button>
       
