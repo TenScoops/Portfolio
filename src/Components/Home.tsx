@@ -20,9 +20,9 @@ const Home = () =>{
                             <IoRocketOutline className="icon-hover " size={35}/>
                         </div>
                         <p className=" text-lg sm:text-xl px-7 sm0:px-0 w-[400px] sm1:w-[500px] leading-relaxed slide-right">
-                            “I’m a <strong>frontend developer/UX Designer</strong> who has a passion for coding, creating, 
+                            “ I’m a <strong>frontend developer/UX Designer</strong> who has a passion for coding, creating, 
                             and designing with the understanding and application of UI/UX principles. The 
-                            user is always placed at the forefront.“
+                            user is always placed at the forefront. “
                         </p>
                     
                     </div>
