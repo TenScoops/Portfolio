@@ -91,7 +91,7 @@ const ImaginAi:React.FC<ImaginAIProps> = ({handleSectionClick}) =>{
                          rel="noopener noreferrer"
                          className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded icon-hover2">
                              <FaFigma size={25} />
-                             <h1 className="hidden sm:block">Github</h1>
+                             <h1 className="hidden sm:block">Figma</h1>
                      </a>
                  </div>
 

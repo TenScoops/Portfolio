@@ -87,25 +87,9 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
              
                  {/* Technologies */}
              <div className="flex flex-col items-center lg:items-baseline mt-10 lg:mt-0  space-y-10">
-                
-                 
-                 <div className="flex flex-col mt-5 items-center lg:items-baseline space-y-3">
-                     <h1 className="font-bold text-lg">Technologies</h1>
-                     <div className="flex flex-row flex-wrap leading-10 max-w-[500px] justify-center lg:justify-start">
- 
-                         {technologies.map((item, index) => (
-                             <div key={index} className="flex flex-row mr-3">
-                                 <item.Icon className="mr-1" size={30} /> 
-                                 <h1>{item.tech}</h1> 
-                             </div>
-                         ))}
-                         
-                     </div>
-                 </div>
- 
                  
                   {/* buttons */}
-                <div className="flex flex-row space-x-8 mt-5">
+                  <div className="flex flex-row space-x-8 mt-5">
                      
                      <a href="https://github.com/TenScoops/the_pomodoro_project" 
                          target="_blank" 
@@ -139,6 +123,23 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
                         Customizable Sessions: Tailor session lengths to fit your own workflow.
                      </p>
                  </div>
+                 
+                 <div className="flex flex-col mt-5 items-center lg:items-baseline space-y-3">
+                     <h1 className="font-bold text-lg">Technologies</h1>
+                     <div className="flex flex-row flex-wrap leading-10 max-w-[500px] justify-center lg:justify-start">
+ 
+                         {technologies.map((item, index) => (
+                             <div key={index} className="flex flex-row mr-3">
+                                 <item.Icon className="mr-1" size={30} /> 
+                                 <h1>{item.tech}</h1> 
+                             </div>
+                         ))}
+                         
+                     </div>
+                 </div>
+ 
+                
+                
  
                  
  

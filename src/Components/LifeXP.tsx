@@ -89,25 +89,8 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
             
                 {/* Technologies */}
             <div className="flex flex-col items-center lg:items-baseline mt-10 lg:mt-0  space-y-10">
-               
-                
-                <div className="flex flex-col mt-5 items-center lg:items-baseline space-y-3">
-                    <h1 className="font-bold text-lg">Technologies</h1>
-                    <div className="flex flex-row flex-wrap leading-10 max-w-[500px] justify-center lg:justify-start">
-
-                        {technologies.map((item, index) => (
-                            <div key={index} className="flex flex-row mr-3">
-                                <item.Icon className="mr-1" size={30} /> 
-                                <h1>{item.tech}</h1> 
-                            </div>
-                        ))}
-                        
-                    </div>
-                </div>
-
-                
-                 {/* buttons */}
-               <div className="flex flex-row space-x-8 mt-5">
+                {/* buttons */}
+                <div className="flex flex-row space-x-8 mt-5">
                     <a href="https://www.figma.com/design/BmSVm7SwGyJOQo4gjdm8tY/Final-prototype---no-interactions-yet?node-id=0-1&t=YgxkDQqeitSYVZxr-0"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -131,6 +114,20 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
                     </a>
                 </div>
                 
+                <div className="flex flex-col mt-5 items-center lg:items-baseline space-y-3">
+                    <h1 className="font-bold text-lg">Technologies</h1>
+                    <div className="flex flex-row flex-wrap leading-10 max-w-[500px] justify-center lg:justify-start">
+
+                        {technologies.map((item, index) => (
+                            <div key={index} className="flex flex-row mr-3">
+                                <item.Icon className="mr-1" size={30} /> 
+                                <h1>{item.tech}</h1> 
+                            </div>
+                        ))}
+                        
+                    </div>
+                </div>
+
                 
                 {/* Key Features */}
                 <div className="flex flex-col mt-4 space-y-1 items-center lg:items-baseline">
@@ -146,6 +143,7 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
                     </p>
                 </div>
 
+                
                 
 
             </div>
