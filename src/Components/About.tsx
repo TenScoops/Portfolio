@@ -1,10 +1,11 @@
-import helmet from "../assets/helmetleft.jpg";
+// import helmet from "../assets/helmetleft.jpg";
 import moon from "../assets/moon1.jpg";
 // import LineRocket from "../assets/rocketline.webp"
 import { useState } from "react";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { LuPencilRuler } from "react-icons/lu";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
+import Helmet from "../assets/helmet.png";
 import { Checkmark } from '../icons';
 
 const About = () => {
@@ -23,7 +24,7 @@ const About = () => {
                         is about, to solve problems. ”
                         </p>
                         {/* astronaut image */}
-                        <img src={helmet} width={280} className="rounded-full mb-10 order-1 lg:order-2 transform active:scale-95 transition 
+                        <img src={Helmet} width={260} className="rounded-full mb-10 order-1 lg:order-2 transform active:scale-95 transition 
                                             duration-150 icon-hover3 slide-left"/>
                     </div>
                     <button onClick={()=>{setHidden(true)}} className={` flex-row items-center lg:mr-32 mr-8 icon-hover3 ${hidden?'hidden':'flex'}`}>

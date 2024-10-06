@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import helmet from "../assets/helmetleft.jpg";
+import Helmet from "../assets/helmet.png";
 import { AiIcon, Gamepad, ProgressBar } from "../icons";
 
 const Projects = ()=> {
@@ -10,7 +10,7 @@ const Projects = ()=> {
         {/* <div className="xl:hidden"><h1 className="text-3xl font-bold mb-12">Projects</h1></div> */}
         <div className="flex flex-col md:flex-row items-center">
             <p className="text-lg lg:text-xl md:mr-10 order-2 md:order-1 mt-10 md:mt-0  md:pl-0 typewriter2">"Which project would you like to see?"</p>
-            <img src={helmet} width={280} className="rounded-full order-1 md:order-2 transform active:scale-95 transition 
+            <img src={Helmet} width={260} className="rounded-full order-1 md:order-2 transform active:scale-95 transition 
                                 duration-150 icon-hover3"/>
 
         </div>
@@ -29,13 +29,13 @@ const Projects = ()=> {
             <Link to="/projects/lifexp" 
                   className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
                 <div className="pl-16 pr-10"><Gamepad /></div>
-                <h1 className="text-xl ">LifeXP</h1>
+                <h1 className="text-xl font-semibold">LifeXP</h1>
                 {/* <h1 className="italic">Click for info on project</h1> */}
             </Link>
             <Link to="/projects/pomoprogress"
                   className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
                 <div className="pl-16 pr-10"><ProgressBar /></div>
-                <h1 className="text-xl flex-wrap "> Progress Pomodoro</h1>
+                <h1 className="text-xl flex-wrap font-semibold"> Progress Pomodoro</h1>
                 {/* <h1 className="italic">Click for info on project</h1> */}
             </Link>
         </div>}
@@ -45,7 +45,7 @@ const Projects = ()=> {
             <Link to="/projects/imaginai" 
                 className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-3xl cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
                 <div className="pl-16 pr-10"><AiIcon /></div>
-                <h1 className="text-xl ">ImaginAI</h1>
+                <h1 className="text-xl font-semibold">ImaginAI</h1>
                 {/* <h1 className="italic">Click for info on project</h1> */}
             </Link>
         
