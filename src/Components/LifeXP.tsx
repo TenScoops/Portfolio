@@ -90,7 +90,7 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
                 {/* Technologies */}
             <div className="flex flex-col items-center lg:items-baseline mt-10 lg:mt-0  space-y-10">
                 {/* buttons */}
-                <div className="flex flex-row space-x-8 mt-5">
+               <div className="flex flex-row space-x-8 mt-5">
                     <a href="https://www.figma.com/design/BmSVm7SwGyJOQo4gjdm8tY/Final-prototype---no-interactions-yet?node-id=0-1&t=YgxkDQqeitSYVZxr-0"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -114,6 +114,20 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
                     </a>
                 </div>
                 
+                 {/* Key Features */}
+                 <div className="flex flex-col mt-4 space-y-1 items-center lg:items-baseline">
+                    <h1 className="font-bold mb-1 text-lg">Key Features</h1>
+                    <p className="max-w-2xl text-lg">
+                        Gamified Experience: Complete quests, tasks and challenges to earn XP and rewards
+                    </p>
+                    <p className="max-w-2xl text-lg">
+                        Emotional Well-Being: Keep track of your mood for better mental wellness
+                    </p>
+                    <p className="max-w-2xl text-lg">
+                        Personalized Feedback: Use reflective journals to stay on track with your goals.
+                    </p>
+                </div>
+
                 <div className="flex flex-col mt-5 items-center lg:items-baseline space-y-3">
                     <h1 className="font-bold text-lg">Technologies</h1>
                     <div className="flex flex-row flex-wrap leading-10 max-w-[500px] justify-center lg:justify-start">
@@ -129,19 +143,7 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
                 </div>
 
                 
-                {/* Key Features */}
-                <div className="flex flex-col mt-4 space-y-1 items-center lg:items-baseline">
-                    <h1 className="font-bold mb-1 text-lg">Key Features</h1>
-                    <p className="max-w-2xl text-lg">
-                        Gamified Experience: Complete quests, tasks and challenges to earn XP and rewards
-                    </p>
-                    <p className="max-w-2xl text-lg">
-                        Emotional Well-Being: Keep track of your mood for better mental wellness
-                    </p>
-                    <p className="max-w-2xl text-lg">
-                        Personalized Feedback: Use reflective journals to stay on track with your goals.
-                    </p>
-                </div>
+               
 
                 
                 

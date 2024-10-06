@@ -107,22 +107,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
                      </a>
                  </div>
                  
-                 {/* Key Features */}
-                 <div className="flex flex-col mt-4 space-y-1 items-center lg:items-baseline">
-                     <h1 className="font-bold mb-1 text-lg">Key Features</h1>
-                     <p className="max-w-2xl text-lg">
-                        Rating System: Rate your productivity after each session.
-                     </p>
-                     <p className="max-w-2xl text-lg">
-                        Visual Feedback: View your progress on an interactive graph.
-                     </p>
-                     <p className="max-w-2xl text-lg">
-                        Trend Analysis: Analyze and identify patterns in your work habits.
-                     </p>
-                     <p className="max-w-2xl text-lg">
-                        Customizable Sessions: Tailor session lengths to fit your own workflow.
-                     </p>
-                 </div>
+                 
                  
                  <div className="flex flex-col mt-5 items-center lg:items-baseline space-y-3">
                      <h1 className="font-bold text-lg">Technologies</h1>
@@ -139,7 +124,22 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
                  </div>
  
                 
-                
+                {/* Key Features */}
+                <div className="flex flex-col mt-4 space-y-1 items-center lg:items-baseline">
+                     <h1 className="font-bold mb-1 text-lg">Key Features</h1>
+                     <p className="max-w-2xl text-lg">
+                        Rating System: Rate your productivity after each session.
+                     </p>
+                     <p className="max-w-2xl text-lg">
+                        Visual Feedback: View your progress on an interactive graph.
+                     </p>
+                     <p className="max-w-2xl text-lg">
+                        Trend Analysis: Analyze and identify patterns in your work habits.
+                     </p>
+                     <p className="max-w-2xl text-lg">
+                        Customizable Sessions: Tailor session lengths to fit your own workflow.
+                     </p>
+                 </div>
  
                  
  
