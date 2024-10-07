@@ -1,11 +1,11 @@
 // import helmet from "../assets/helmetleft.jpg";
-import moon from "../assets/moon1.jpg";
+import moon from "../assets/moon1.webp";
 // import LineRocket from "../assets/rocketline.webp"
 import { useState } from "react";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { LuPencilRuler } from "react-icons/lu";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
-import Helmet from "../assets/helmet.png";
+import Helmet from "../assets/helmet.webp";
 import { Checkmark } from '../icons';
 
 const About = () => {

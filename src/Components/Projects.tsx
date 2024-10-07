@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Helmet from "../assets/helmet.png";
+import Helmet from "../assets/helmet.webp";
 import { AiIcon, Gamepad, ProgressBar } from "../icons";
 
 const Projects = ()=> {

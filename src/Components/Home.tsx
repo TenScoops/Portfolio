@@ -2,7 +2,7 @@ import { BsGithub } from "react-icons/bs";
 
 import { IoRocketOutline } from "react-icons/io5";
 
-import Helmet from "../assets/helmet.png";
+import Helmet from "../assets/helmet.webp";
 
 import { FaLinkedin } from "react-icons/fa";
 
