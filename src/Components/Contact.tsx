@@ -1,7 +1,7 @@
 import { useState } from 'react';
 // import HangingAstronaut from '../assets/Mail_Rocket.png';
 // import Linemail from "../assets/linemail.webp";
-import Helmet from "../assets/helmet.webp";
+import Helmet from "../assets/helmet.jpg";
 import { CopyIcon } from '../icons';
 
 const Contact = () => {
