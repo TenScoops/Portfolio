@@ -1,6 +1,6 @@
 // import helmet from "../assets/helmetleft.jpg";
 // import { IoRocketOutline } from "react-icons/io5";
-import Helmet from "../assets/helmet.webp";
+import Helmet from "../assets/helmet.jpg";
 
 interface ProjectInfoProps{
     paragraph: ()=>React.ReactNode,
