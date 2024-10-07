@@ -10,7 +10,7 @@ interface ImaginAIProps{
     handleSectionClick: (section:string)=>void
 }
 const paragraph = () =>{
-    return <p className='max-w-4xl slide-right text-lg'>
+    return <p className=''>
         " ImaginAI is a design concept for an image generator that transforms ideas into high-quality 
         visuals. The concept focuses on creating a tool that would simplify the process of generating 
         and customizing images. This makes it an effective solution and tool for both personal and 
@@ -19,7 +19,7 @@ const paragraph = () =>{
     </p>
 }
 const approach = () =>{
-    return <p className="max-w-4xl text-base sm:text-lg text-center lg:text-start "> 
+    return <p className=""> 
                 Create a concept for AI image generation and enhance creativity and efficiency
             </p>
 }
@@ -34,7 +34,7 @@ const ImaginAi:React.FC<ImaginAIProps> = ({handleSectionClick}) =>{
         },50)
     }
 
-    return(<div className="flex flex-col  items-center xl:h-screen mt-10 lg:mt-24 mb-20 slide-right">
+    return(<div className="flex flex-col  items-center xl:h-screen mt-24 mb-20 slide-right">
         {/* < div className="fixed top-5 left-5 xl:hidden z-50 p-0 m-0"><RocketIcon2 /></div> */}
          
          {/* <h1 className="font-bold">Project: LifeXP</h1> */}
@@ -57,9 +57,9 @@ const ImaginAi:React.FC<ImaginAIProps> = ({handleSectionClick}) =>{
              <ProjectInfo paragraph = {paragraph} approach = {approach}/>
         
          {/* view more button */}
-         <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 mt-5 pr-52`}>
+         <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 mt-5 lg:pr-60 space-x-1`}>
              <RiArrowDownDoubleLine size={45}/>
-             <button className='tracking-widest text-lg font-semibold'>View more info</button>
+             <button className='tracking-widest text-lg font-semibold'>View more</button>
          </div>
  
          {/* project image/tech/buttons */}
@@ -96,7 +96,7 @@ const ImaginAi:React.FC<ImaginAIProps> = ({handleSectionClick}) =>{
                  </div>
 
                  {/* for spacing */}
-                 <div className='h-40'>
+                 <div className='lg:h-40'>
 
                  </div>
                  <div>

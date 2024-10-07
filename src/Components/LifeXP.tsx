@@ -14,14 +14,14 @@ interface LifeXPProps{
 }
 
 const paragraph = () =>{
-    return <p className='max-w-4xl slide-right text-lg'>
+    return <p className=''>
         " <strong>LifeXP</strong> combines gamification with tools for emotional well-being and personal growth. By combining game-like features with resources 
             for self-improvement, it provides a unique way to track and <strong>enhance both mental and physical health</strong>. The app makes self-care engaging and effective, 
             helping users see real progress in their personal development. "
     </p>
 }
 const approach = () =>{
-    return <p className="max-w-4xl text-base sm:text-lg text-center lg:text-start "> 
+    return <p className=" "> 
                 <strong>Improve the lives</strong> of many through an all-encompassing, intuitive, and engaging approach
             </p>
 }
@@ -50,7 +50,7 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
       ];
 
       
-    return(<div className="flex flex-col  items-center xl:h-screen mt-10 lg:mt-24 mb-20 slide-right">
+    return(<div className="flex flex-col  items-center xl:h-screen mt-24 mb-20 slide-right">
        {/* < div className="fixed top-5 left-5 xl:hidden z-50 p-0 m-0"><RocketIcon2 /></div> */}
         
         {/* <h1 className="font-bold">Project: LifeXP</h1> */}
@@ -63,7 +63,7 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
 
             <img src={helmet} width={280} className='rounded-full slide-left'/>
         </div> */}
-        <div className="w-[345px] sm:w-[470px] lg:w-[1030px] lg2:w-[1100px] ">
+        <div className="w-[345px] sm0:w-[470px] lg:w-[1030px] lg2:w-[1100px] ">
             <button className="border border-black rounded h-12 w-12 flex items-center justify-center shadow-sharp-sm hover:shadow-sharp-md"
                     onClick={handleButtonClick}>
                 <ArrowBack />
@@ -73,18 +73,20 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
             <ProjectInfo paragraph = {paragraph} approach = {approach}/>
        
         {/* view more button */}
-        <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 pr-52`}>
+        <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 mt-5 lg:pr-60 space-x-1 `}>
             <RiArrowDownDoubleLine size={45}/>
-            <button className='tracking-widest text-lg font-semibold'>View more info</button>
+            <button className='tracking-widest text-lg font-semibold'>View more</button>
         </div>
 
         {/* project image/tech/buttons */}
-        <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-6 pr-12 slide-up`}>
+        <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-6 lg:pr-12 slide-up`}>
             <div className="flex flex-col items-center mt-10">
                 {/* images */}
                 <img className="sm:hidden shadow-sharp-md-noborder" src={lifexpimg} width={350}/>
                 <img className="hidden sm:block shadow-sharp-md-noborder" src={lifexpimg} width={460}/>
             </div>
+
+            {/* divider */}
             <div className="w-0 h-[440px] border border-black ml-8 mr-8 mt-5 hidden lg:block"></div>
             
                 {/* Technologies */}
@@ -116,10 +118,10 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
                 
                 <div className="flex flex-col mt-5 items-center lg:items-baseline space-y-3">
                     <h1 className="font-bold text-lg">Technologies</h1>
-                    <div className="flex flex-row flex-wrap leading-10 max-w-[500px] justify-center lg:justify-start">
+                    <div className="flex flex-row flex-wrap leading-10 max-w-2xl justify-center lg:justify-start">
 
                         {technologies.map((item, index) => (
-                            <div key={index} className="flex flex-row mr-3">
+                            <div key={index} className="flex flex-row mr-3 text-md">
                                 <item.Icon className="mr-1" size={30} /> 
                                 <h1>{item.tech}</h1> 
                             </div>
@@ -130,16 +132,16 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
 
                 
                 {/* Key Features */}
-                <div className="flex flex-col mt-4 space-y-1 items-center lg:items-baseline">
-                    <h1 className="font-bold mb-1 text-lg">Key Features</h1>
-                    <p className="max-w-2xl text-lg">
-                        Gamified Experience: Complete quests, tasks and challenges to earn XP and rewards
+                <div className="flex flex-col mt-4 space-y-1 lg:items-baseline px-4 lg:px-0">
+                <div className='flex items-center justify-center'><h1 className="font-bold mb-1 text-lg">Key Features</h1></div>
+                    <p className="max-w-2xl sm:text-lg">
+                        Gamified Experience: <strong>Complete quests</strong>, tasks and challenges to <strong>earn XP</strong> and rewards
                     </p>
-                    <p className="max-w-2xl text-lg">
-                        Emotional Well-Being: Keep track of your mood for better mental wellness
+                    <p className="max-w-2xl sm:text-lg">
+                        Emotional Well-Being: Keep track of your mood for <strong>better mental wellness</strong>.
                     </p>
-                    <p className="max-w-2xl text-lg">
-                        Personalized Feedback: Use reflective journals to stay on track with your goals.
+                    <p className="max-w-2xl sm:text-lg">
+                        Personalized Feedback: Use reflective journals to <strong>stay on track with your goals</strong>.
                     </p>
                 </div>
 

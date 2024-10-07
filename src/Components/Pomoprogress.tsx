@@ -36,7 +36,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
     }
 
     const paragraph = () => {
-        return <p className="max-w-4xl slide-right text-lg ">
+        return <p className="">
         " <strong>The Progress Pomodoro</strong> is designed to help individuals hold themselves accountable and improve their productivity. 
         The app features a rating system that allows users to evaluate their progress after each work session. This 
         data is then mapped on a graph, showcasing trends and patterns in work habits over time. By providing clear 
@@ -44,11 +44,11 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
         </p>
     }
     const approach = () => {
-        return <p className="max-w-4xl text-base sm:text-lg text-center lg:text-start "> 
+        return <p className=""> 
         Take an innovative, never before done approach to <strong>improve the productivity and lives of many</strong>.
         </p>
     }
-    return(<div className="flex flex-col  items-center xl:h-screen mt-10 lg:mt-24 mb-20 slide-right">
+    return(<div className="flex flex-col  items-center xl:h-screen mt-24 mb-20 slide-right">
         {/* < div className="fixed top-5 left-5 xl:hidden z-50 p-0 m-0"><RocketIcon2 /></div> */}
          
          {/* <h1 className="font-bold">Project: LifeXP</h1> */}
@@ -71,18 +71,20 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
              <ProjectInfo paragraph = {paragraph} approach = {approach}/>
         
          {/* view more button */}
-         <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 pr-52`}>
+         <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 lg:pr-60 mt-5 space-x-1`}>
              <RiArrowDownDoubleLine size={45}/>
-             <button className='tracking-widest text-lg font-semibold'>View more info</button>
+             <button className='tracking-widest text-lg font-semibold'>View more</button>
          </div>
  
          {/* project image/tech/buttons */}
-         <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-6 pr-12 slide-up`}>
+         <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-6 lg:pr-12 slide-up`}>
              <div className="flex flex-col items-center mt-10">
                  {/* images */}
                  <img className="sm:hidden shadow-sharp-md-noborder" src={pomodoroImg} width={350}/>
                  <img className="hidden sm:block shadow-sharp-md-noborder" src={pomodoroImg} width={460}/>
              </div>
+
+             {/* divider */}
              <div className="w-0 h-[440px] border border-black ml-8 mr-8 mt-5 hidden lg:block"></div>
              
                  {/* Technologies */}
@@ -111,7 +113,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
                  
                  <div className="flex flex-col mt-5 items-center lg:items-baseline space-y-3">
                      <h1 className="font-bold text-lg">Technologies</h1>
-                     <div className="flex flex-row flex-wrap leading-10 max-w-[500px] justify-center lg:justify-start">
+                     <div className="flex flex-row flex-wrap leading-10 max-w-2xl justify-center lg:justify-start">
  
                          {technologies.map((item, index) => (
                              <div key={index} className="flex flex-row mr-3">
@@ -125,18 +127,18 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
  
                 
                 {/* Key Features */}
-                <div className="flex flex-col mt-4 space-y-1 items-center lg:items-baseline">
-                     <h1 className="font-bold mb-1 text-lg">Key Features</h1>
-                     <p className="max-w-2xl text-lg">
-                        Rating System: Rate your productivity after each session.
+                <div className="flex flex-col mt-4 space-y-1  lg:items-baseline px-4 lg:px-0">
+                     <div className='flex items-center justify-center'><h1 className="font-bold mb-1 text-lg">Key Features</h1></div>
+                     <p className="max-w-2xl sm:text-lg">
+                        Rating System: <strong>Rate your productivity</strong> after each session.
                      </p>
-                     <p className="max-w-2xl text-lg">
-                        Visual Feedback: View your progress on an interactive graph.
+                     <p className="max-w-2xl sm:text-lg">
+                        Visual Feedback: <strong>View your progress</strong> on an interactive graph.
                      </p>
-                     <p className="max-w-2xl text-lg">
-                        Trend Analysis: Analyze and identify patterns in your work habits.
+                     <p className="max-w-2xl sm:text-lg">
+                        Trend Analysis: <strong>Analyze and identify patterns</strong> in your work habits.
                      </p>
-                     <p className="max-w-2xl text-lg">
+                     <p className="max-w-2xl sm:text-lg">
                         Customizable Sessions: Tailor session lengths to fit your own workflow.
                      </p>
                  </div>

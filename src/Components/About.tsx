@@ -29,7 +29,7 @@ const About = () => {
                     </div>
                     <button onClick={()=>{setHidden(true)}} className={` flex-row items-center lg:mr-32 mr-8 icon-hover3 ${hidden?'hidden':'flex'}`}>
                         <RiArrowDownDoubleLine size={45}/>
-                        <h3 className="text-lg ml-3 tracking-widest">View more</h3>
+                        <h3 className="text-lg ml-3 tracking-widest font-semibold">View more</h3>
                     </button>
                 </div>
             </div>
