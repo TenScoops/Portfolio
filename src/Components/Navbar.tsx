@@ -31,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
   };
 
   return (
-    <div className="flex items-center fixed z-50 justify-center text-black bg-transparent md:bg-white w-full py-4 tracking-widest">
+    <div className="flex items-center fixed z-49 justify-center text-black bg-transparent md:bg-white w-full py-4 tracking-widest">
       <nav className="hidden md:block w-full">
         <ul className="flex justify-end items-center mx-auto text-xl space-x-12 mr-10">
           <Link to="/"

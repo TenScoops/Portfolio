@@ -50,7 +50,7 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
       ];
 
       
-    return(<div className="flex flex-col  items-center xl:h-screen mt-24 mb-20 slide-right">
+    return(<div className="flex flex-col  items-center xl:h-screen mt-24 mb-20 ">
        {/* < div className="fixed top-5 left-5 xl:hidden z-50 p-0 m-0"><RocketIcon2 /></div> */}
         
         {/* <h1 className="font-bold">Project: LifeXP</h1> */}
@@ -73,7 +73,7 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
             <ProjectInfo paragraph = {paragraph} approach = {approach}/>
        
         {/* view more button */}
-        <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 mt-5 lg:pr-60 space-x-1 `}>
+        <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 mt-5 lg:pr-60 space-x-1 fade-in`}>
             <RiArrowDownDoubleLine size={45}/>
             <button className='tracking-widest text-lg font-semibold'>View more</button>
         </div>
