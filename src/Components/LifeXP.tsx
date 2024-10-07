@@ -79,7 +79,7 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
         </div>
 
         {/* project image/tech/buttons */}
-        <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-6 lg:pr-12 slide-up`}>
+        <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-6 lg:pr-12 slide-up2`}>
             <div className="flex flex-col items-center mt-10">
                 {/* images */}
                 <img className="sm:hidden shadow-sharp-md-noborder" src={lifexpimg} width={350}/>
