@@ -22,7 +22,7 @@ const Home = () =>{
                         <p className=" text-lg sm:text-xl px-7 sm0:px-0 w-[400px] sm1:w-[500px] leading-relaxed slide-right">
                             “ I’m a <strong>frontend developer/UX Designer</strong> who has a passion for coding, creating, 
                             and designing with the understanding and application of UI/UX principles. I focus on creating innovative, 
-                            user-centered web applications“
+                            user-centered solutions. “
                         </p>
                     
                     </div>
