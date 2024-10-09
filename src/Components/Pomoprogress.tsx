@@ -37,7 +37,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
 
     const paragraph = () => {
         return <p className="">
-        " <strong>The Progress Pomodoro</strong> is designed to help individuals hold themselves accountable and improve their productivity. 
+        "<span className='italic'>brr...</span> <strong>The Progress Pomodoro</strong> is designed to help individuals hold themselves accountable and improve their productivity. 
         The app features a rating system that allows users to evaluate their progress after each work session. This 
         data is then mapped on a graph, showcasing trends and patterns in work habits over time. By providing clear 
         visual feedback, Progress Pomodoro aims to naturally <strong>enhance work ethic and productivity</strong>. "

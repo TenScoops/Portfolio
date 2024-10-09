@@ -117,10 +117,6 @@ body, html {
   }
 }
 
-.hamburger {
-  z-index: 9999;
-}
-
 .typewriter {
   overflow: hidden;             /* Ensures text doesn't go beyond container */
   white-space: nowrap;          /* Keeps the text in a single line */
