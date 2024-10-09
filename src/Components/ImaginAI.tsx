@@ -11,7 +11,7 @@ interface ImaginAIProps{
 }
 const paragraph = () =>{
     return <p className=''>
-        " ImaginAI is a design concept for an image generator that transforms ideas into high-quality 
+        "<span>br...</span>ImaginAI is a design concept for an image generator that transforms ideas into high-quality 
         visuals. The concept focuses on creating a tool that would simplify the process of generating 
         and customizing images. This makes it an effective solution and tool for both personal and 
         professional projects. Its goal is to <strong>provide a better approach to visual creation, enhancing 
