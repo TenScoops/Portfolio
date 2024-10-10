@@ -15,7 +15,7 @@ interface LifeXPProps{
 
 const paragraph = () =>{
     return <p className=''>
-        "<span className='italic'>brr.. static</span>... <strong>LifeXP</strong> combines gamification with tools for emotional well-being and personal growth. By combining game-like features with resources 
+        " <strong>LifeXP</strong> combines gamification with tools for emotional well-being and personal growth. By combining game-like features with resources 
             for self-improvement, it provides a unique way to track and <strong>enhance both mental and physical health</strong>. The app makes self-care engaging and effective, 
             helping users see real progress in their personal development. "
     </p>
