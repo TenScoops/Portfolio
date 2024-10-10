@@ -27,7 +27,7 @@ const About = () => {
                         <div className="flex flex-col items-center order-1 lg:order-2 mb-10 slide-left">
                             <img src={Helmet} width={260} className="rounded-full  transform active:scale-95 transition 
                                             duration-150 icon-hover3 "/>
-                            <h1 className="text-lg italic typewriter font-semibold mt-1">*static*</h1>
+                            <h1 className="text-lg italic typewriter3 font-semibold mt-1">****</h1>
                         </div>
                     </div>
                     <button onClick={()=>{setHidden(true)}} className={` flex-row items-center lg:mr-32 mr-8 icon-hover3 ${hidden?'hidden':'flex'}`}>

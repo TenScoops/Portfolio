@@ -15,7 +15,7 @@ return(<>
         </div>
         <div className="order-1 lg:order-2 flex flex-col items-center slide-left mb-2 lg:mb-0 ">
             <img src={Helmet} width={280} className='rounded-full  mb-5 lg:mb-0'/>
-            <h1 className="italic font-semibold mt-1  typewriter">*communicating*</h1>
+            <h1 className="italic font-semibold mt-1  typewriter3">****</h1>
         </div>
     </div>
         <div className="space-y-2 mt-5 flex flex-col items-center slide-right lg:pr-64">
