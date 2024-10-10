@@ -127,7 +127,7 @@ body, html {
   overflow: hidden;             /* Ensures text doesn't go beyond container */
   white-space: nowrap;          /* Keeps the text in a single line */
   animation: 
-  typewriter 2s steps(40) 0s infinite normal both;
+  typewriter 2s steps(40) 0s 4 normal both;
 }
 
 .typewriter2 {
