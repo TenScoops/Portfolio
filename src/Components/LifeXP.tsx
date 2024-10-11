@@ -80,37 +80,37 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
 
         {/* project image/tech/buttons */}
         <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-6 lg:pr-12 slide-up2`}>
-            <div className="flex flex-col items-center mt-10">
+            <div className="flex flex-col items-center mt-10 border-r border-black lg:px-8">
                 {/* images */}
                 <img className="sm:hidden shadow-sharp-md-noborder" src={lifexpimg} width={350}/>
                 <img className="hidden sm:block shadow-sharp-md-noborder" src={lifexpimg} width={460}/>
             </div>
 
             {/* divider */}
-            <div className="w-0 h-[440px] border border-black ml-8 mr-8 mt-5 hidden lg:block"></div>
+            {/* <div className="w-0 h-[440px] border border-black ml-8 mr-8 mt-5 hidden lg:block"></div> */}
             
                 {/* Technologies */}
-            <div className="flex flex-col items-center lg:items-baseline mt-10 lg:mt-0  space-y-10">
+            <div className="flex flex-col items-center lg:items-baseline mt-10 lg:mt-0  space-y-10 lg:px-8">
                 {/* buttons */}
                <div className="flex flex-row space-x-8 mt-5">
                     <a href="https://www.figma.com/design/BmSVm7SwGyJOQo4gjdm8tY/Final-prototype---no-interactions-yet?node-id=0-1&t=YgxkDQqeitSYVZxr-0"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded icon-hover2">
+                        className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg icon-hover2">
                             <FigmaIcon />
                             <h1 className="hidden sm:block">Figma</h1>
                     </a>
                     <a href="https://github.com/TenScoops/LifeXP" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded icon-hover2">
+                        className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg icon-hover2">
                             <GitIcon />
                             <h1 className="hidden sm:block">Github</h1>
                     </a>
                     <a href="https://life-xp-kappa.vercel.app/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg rounded icon-hover2">
+                        className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg icon-hover2">
                             <SiteIcon />
                             <h1 className="hidden sm:block">Website</h1>
                     </a>

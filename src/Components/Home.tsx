@@ -2,7 +2,7 @@ import { BsGithub } from "react-icons/bs";
 
 import { IoRocketOutline } from "react-icons/io5";
 
-import Helmet from "../assets/helmet.jpg";
+import Helmet from "../assets/face.jpg";
 
 import { FaLinkedin } from "react-icons/fa";
 
@@ -12,7 +12,7 @@ const Home = () =>{
         <div className="flex flex-col lg:flex-row justify-center items-center h-screen w-full mt-14 lg:mt-0  tracking-widest"> 
             {/* content1 */}
             <div className=" flex flex-col justify-center space-y-14 order-2 lg:order-1">
-                    <div className="space-y-6 flex items-center flex-col">
+                    <div className="space-y-6 flex items-center flex-col border-r border-black">
                         <div className="flex flex-row items-start justify-start px-7 sm0:px-0  w-[400px] sm1:w-[500px]">
                             <h1 className="flex flex-col text-2xl mr-2 sm:text-3xl typewriter">
                                Hi, I'm Philipe Ayres    
@@ -33,7 +33,7 @@ const Home = () =>{
              {/* image */}
              <div className="mb-10 lg:mb-0 flex flex-col lg2:flex-row order-1 lg:order-2 slide-left">
                 <img className=" transform active:scale-95 transition 
-                                duration-150 icon-hover3 rounded-full" 
+                                duration-150 icon-hover3 rounded-full -scale-x-100" 
                      src={Helmet} 
                     
                      width={500}

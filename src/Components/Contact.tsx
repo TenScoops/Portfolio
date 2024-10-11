@@ -1,7 +1,7 @@
 import { useState } from 'react';
 // import HangingAstronaut from '../assets/Mail_Rocket.png';
 // import Linemail from "../assets/linemail.webp";
-import Helmet from "../assets/helmet.jpg";
+import Helmet from "../assets/face.jpg";
 import { CopyIcon } from '../icons';
 
 const Contact = () => {
@@ -32,7 +32,7 @@ return (<div className='flex flex-col items-center justify-center h-screen w-ful
         <div className='flex flex-col items-center space-y-6 slide-left order-1 lg:order-2'>
             <div>
                 <img className='transform active:scale-95 transition 
-                                        duration-150 icon-hover3 rounded-full' src={Helmet} width={400}/>
+                                        duration-150 icon-hover3 rounded-full -scale-x-100' src={Helmet} width={400}/>
             </div>
             <h2 className='text-xl pb-10 typewriter'>"Thank you!"</h2>
         </div>

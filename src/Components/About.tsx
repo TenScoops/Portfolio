@@ -5,7 +5,7 @@ import { useState } from "react";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { LuPencilRuler } from "react-icons/lu";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
-import Helmet from "../assets/helmet.jpg";
+import Helmet from "../assets/face.jpg";
 import { Checkmark } from '../icons';
 
 const About = () => {
@@ -18,15 +18,15 @@ const About = () => {
             <div>
                 <div className='flex flex-col items-center justify-center'>
                     <div className="flex flex-col lg:flex-row items-center justify-center ">
-                        <p className='text-lg md:text-xl px-7 xl:px-0 max-w-4xl mb-12 xl:mb-10 leading-relaxed order-2 lg:order-1 slide-right'>
+                        <p className='text-lg md:text-xl px-7 xl:px-0 max-w-4xl mb-12 xl:mb-10 leading-relaxed order-2 lg:order-1 slide-right mr-1'>
                         “I don’t create for the sake of creating, I create to <strong>solve a problem</strong>. Each personal project I’ve worked 
                         on <strong>has a sense of purpose</strong>. And I take immense pride in my work. I believe that’s what programming/designing 
                         is about, to solve problems. ”
                         </p>
                         {/* astronaut image */}
-                        <div className="flex flex-col items-center order-1 lg:order-2 mb-10 slide-left">
-                            <img src={Helmet} width={260} className="rounded-full  transform active:scale-95 transition 
-                                            duration-150 icon-hover3 "/>
+                        <div className="flex flex-col items-center order-1 lg:order-2 mb-10 slide-left border-l border-black">
+                            <img src={Helmet} width={180} className="rounded-full  transform active:scale-95 transition 
+                                            duration-150 icon-hover3 -scale-x-100 pl-1"/>
                             <h1 className="text-lg italic typewriter3 font-semibold mt-1">****</h1>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const About = () => {
         <div className={`flex-col lg2:flex-row items-center md:space-x-8 ${hidden ?'flex' : 'hidden'} slide-up2`}>
             {/* moon image */}
             <img src={moon} className="rounded-full transform active:scale-95 transition 
-                                            duration-150 icon-hover3" width={400}/>
+                                            duration-150 icon-hover3 border-r border-black" width={400}/>
             <div className='m-0 lg2:pr-44'>
                 <div className='space-y-4 flex flex-col items-center xl:items-baseline mt-5 lg:mt-0 '>
                     <div className="flex flex-row items-center justify-center w-[580px]">
