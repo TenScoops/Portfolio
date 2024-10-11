@@ -31,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
   };
 
   return (
-    <div className="flex items-center fixed z-50 justify-center border-b border-gray-400 text-black bg-transparent md:bg-white w-full py-4 tracking-widest">
+    <div className="flex items-center fixed z-50 justify-center border-b border-gray-400 text-black bg-transparent bg-white w-full py-5 tracking-widest">
       <nav className="hidden md:block w-full">
         <ul className="flex justify-end items-center mx-auto text-xl space-x-12 mr-10">
           <Link to="/"
@@ -89,13 +89,13 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
         </ul>
       </nav>
       {/* hamburger button */}
-      <button onClick={() => setOpenOption(true)} className="absolute right-5 top-2 md:hidden ">
+      <button onClick={() => setOpenOption(true)} className="absolute right-5 top-1 md:hidden ">
         <RxHamburgerMenu size={35} />
       </button>
       
       {/* small nav */}
       <div className={`${openOption ? 'flex' : 'hidden'} flex-col items-center justify-center fixed inset-0 bg-white z-50`}>
-        <button onClick={() => setOpenOption(false)} className="absolute top-2 right-5"><HiOutlineXMark size={35} /></button>
+        <button onClick={() => setOpenOption(false)} className="absolute top-1 right-5"><HiOutlineXMark size={35} /></button>
         <nav>
           <ul className="text-xl space-y-6 flex flex-col items-start w-[100px] slide-right">
             <Link to="/"

@@ -102,7 +102,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="flex flex-row w-full font-noto tracking-widest">
+      <div className="flex flex-row w-full h-screen font-noto tracking-widest">
         
         <div className="w-full flex flex-col">
           {/* <div className="fixed flex flex-row top-5 left-5 z-50 items-center">

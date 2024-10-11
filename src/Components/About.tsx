@@ -24,9 +24,9 @@ const About = () => {
                         is about, to solve problems. ”
                         </p>
                         {/* astronaut image */}
-                        <div className="flex flex-col items-center order-1 lg:order-2 mb-10 slide-left border-l border-black">
+                        <div className="flex flex-col items-center order-1 lg:order-2 mb-10 slide-left border-b lg:border-l lg:border-b-0 border-black">
                             <img src={Helmet} width={180} className="rounded-full  transform active:scale-95 transition 
-                                            duration-150 icon-hover3 -scale-x-100 pl-1"/>
+                                            duration-150 -scale-x-100 pl-1"/>
                             <h1 className="text-lg italic typewriter3 font-semibold mt-1">****</h1>
                         </div>
                     </div>

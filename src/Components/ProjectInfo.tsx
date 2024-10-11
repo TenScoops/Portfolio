@@ -13,7 +13,7 @@ return(<>
         <div className="order-2 lg:order-1 max-w-4xl slide-right text-md sm:text-lg px-4">
             {paragraph()}
         </div>
-        <div className="order-1 lg:order-2 flex flex-col items-center slide-left mb-2 lg:mb-0  border-l border-black">
+        <div className="order-1 lg:order-2 flex flex-col items-center slide-left mb-8 lg:mb-0  lg:border-l border-b lg:border-b-0 border-black">
             <img src={Helmet} width={180} className='rounded-full  mb-5 lg:mb-0 -scale-x-100'/>
             <h1 className="italic font-semibold mt-1  typewriter3">****</h1>
         </div>

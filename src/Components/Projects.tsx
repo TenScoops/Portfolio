@@ -11,7 +11,7 @@ const Projects = ()=> {
         <div className="flex flex-col md:flex-row items-center">
             <p className="sm0:text-lg lg:text-xl md:mr-10 order-2 md:order-1 mt-10 md:mt-0 md:pl-0 typewriter2 border-r border-black">"Which project would you like to see?"</p>
             <img src={Helmet} width={260} className="rounded-full order-1 md:order-2 transform active:scale-95 transition -scale-x-100
-                                duration-150 icon-hover3"/>
+                                duration-150 "/>
 
         </div>
         <div className="flex items-center justify-end space-x-12 mt-16 border-t border-black">
