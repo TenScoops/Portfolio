@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
       <nav className="hidden md:block w-full">
         <ul className="flex justify-end items-center mx-auto text-xl space-x-12 mr-10">
           <Link to="/"
-            className={`flex items-center justify-center cursor-pointer py-2 px-2 ${
+            className={`flex items-center justify-center cursor-pointer icon-hover2 py-2 px-2 ${
               activeSection === "home" && "font-bold underline"
             }`}
             onClick={() => handleNavClick("home")}
@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
             )}
           </Link>
           <Link to="/projects"
-            className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover3 ${
+            className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover2 ${
               activeSection === "projects" && "font-bold underline"
             }`}
             onClick={() => handleNavClick("projects")}
@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
             )}
           </Link>
           <Link to="about"
-            className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover3 ${
+            className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover2 ${
               activeSection === "about" && "font-bold underline"
             }`}
             onClick={() => handleNavClick("about")}
@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
             )}
           </Link>
           <Link to="contact"
-            className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover3 ${
+            className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover2 ${
               activeSection === "contact" && "font-bold underline"
             }`}
             onClick={() => handleNavClick("contact")}
@@ -99,7 +99,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
         <nav>
           <ul className="text-xl space-y-6 flex flex-col items-start w-[100px] slide-right">
             <Link to="/"
-              className={`flex items-center justify-center cursor-pointer py-2 px-2 ${
+              className={`flex items-center justify-center icon-hover2 cursor-pointer py-2 px-2 ${
                 activeSection === "home" && "font-bold underline"
               }`}
               onClick={() => handleNavClick("home")}
@@ -112,7 +112,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
               )}
             </Link>
             <Link to="/projects"
-              className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover3 ${
+              className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover2 ${
                 activeSection === "projects" && "font-bold underline"
               }`}
               onClick={() => handleNavClick("projects")}
@@ -125,7 +125,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
               )}
             </Link>
             <Link to="about"
-              className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover3 ${
+              className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover2 ${
                 activeSection === "about" && "font-bold underline"
               }`}
               onClick={() => handleNavClick("about")}
@@ -138,7 +138,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, handleSectionClick }) =>
               )}
             </Link>
             <Link to="contact"
-              className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover3 ${
+              className={`flex items-center justify-center cursor-pointer py-2 px-2 icon-hover2 ${
                 activeSection === "contact" && "font-bold underline"
               }`}
               onClick={() => handleNavClick("contact")}
