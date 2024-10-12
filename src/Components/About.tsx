@@ -4,7 +4,9 @@ import moon from "../assets/moon1.jpg";
 import { useState } from "react";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { LuPencilRuler } from "react-icons/lu";
-import { RiArrowDownDoubleLine } from "react-icons/ri";
+// import { RiArrowDownDoubleLine } from "react-icons/ri";
+// import { RiArrowDownLine } from "react-icons/ri";
+import { RiArrowDownSLine } from "react-icons/ri";
 import Helmet from "../assets/face.jpg";
 import { Checkmark } from '../icons';
 
@@ -31,7 +33,7 @@ const About = () => {
                         </div>
                     </div>
                     <button onClick={()=>{setHidden(true)}} className={` flex-row items-center lg:mr-32 mr-8 icon-hover3 ${hidden?'hidden':'flex'}`}>
-                        <RiArrowDownDoubleLine size={45}/>
+                        <RiArrowDownSLine size={45}/>
                         <h3 className="text-lg ml-3 tracking-widest font-semibold">View more</h3>
                     </button>
                 </div>

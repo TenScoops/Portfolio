@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { IconType } from 'react-icons';
 import { FaFigma, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
-import { RiArrowDownDoubleLine } from "react-icons/ri";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { SiJavascript, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 import lifexpimg from "../assets/xp.webp";
@@ -73,8 +73,8 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
             <ProjectInfo paragraph = {paragraph} approach = {approach}/>
        
         {/* view more button */}
-        <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 mt-5 lg:pr-60 space-x-1 fade-in`}>
-            <RiArrowDownDoubleLine size={45}/>
+        <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 mt-5 lg:pr-48 space-x-1 fade-in`}>
+            <RiArrowDownSLine size={45}/>
             <button className='tracking-widest text-lg font-semibold'>View more</button>
         </div>
 

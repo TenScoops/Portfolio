@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { IconType } from 'react-icons';
 import { FaHtml5, FaNode, FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
-import { RiArrowDownDoubleLine } from "react-icons/ri";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { SiExpress, SiJavascript, SiMysql } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 import pomodoroImg from "../assets/pomo.webp";
@@ -71,8 +71,8 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
              <ProjectInfo paragraph = {paragraph} approach = {approach}/>
         
          {/* view more button */}
-         <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 lg:pr-60 mt-5 space-x-1 fade-in`}>
-             <RiArrowDownDoubleLine size={45}/>
+         <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 lg:pr-48 mt-5 space-x-1 fade-in`}>
+             <RiArrowDownSLine size={45}/>
              <button className='tracking-widest text-lg font-semibold'>View more</button>
          </div>
  

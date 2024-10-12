@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { FaFigma } from "react-icons/fa";
-import { RiArrowDownDoubleLine } from "react-icons/ri";
+// import { RiArrowDownDoubleLine } from "react-icons/ri";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import AIimg from "../assets/AI.webp";
 import { ArrowBack } from "../icons";
 import ProjectInfo from './ProjectInfo';
-
 interface ImaginAIProps{
     handleSectionClick: (section:string)=>void
 }
@@ -57,8 +57,8 @@ const ImaginAi:React.FC<ImaginAIProps> = ({handleSectionClick}) =>{
              <ProjectInfo paragraph = {paragraph} approach = {approach}/>
         
          {/* view more button */}
-         <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 mt-5 lg:pr-60 space-x-1 fade-in`}>
-             <RiArrowDownDoubleLine size={45}/>
+         <div onClick={()=>{setOpenMore(true)}} className={`${openMore?'hidden':'flex'} flex-row icon-hover3 mt-5 lg:pr-48 space-x-1 fade-in`}>
+             <RiArrowDownSLine size={45}/>
              <button className='tracking-widest text-lg font-semibold'>View more</button>
          </div>
  
