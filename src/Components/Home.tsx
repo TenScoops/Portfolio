@@ -32,11 +32,16 @@ const Home = () =>{
             {/* content2 */}
              {/* image */}
              <div className="mb-10 lg:mb-0 flex flex-col lg2:flex-row order-1 lg:order-2 slide-left border-b lg:border-b-0 border-black">
-                <img className="  rounded-full -scale-x-100 lg:mr-2" 
+                <img className="hidden lg:block  rounded-full -scale-x-100 lg:mr-2" 
                      src={Helmet} 
                     
                      width={500}
                      />
+                <img className=" lg:hidden  rounded-full -scale-x-100 lg:mr-2" 
+                    src={Helmet} 
+                
+                    width={400}
+                    />
                 <div className="flex flex-row lg2:flex-col justify-center mb-3 lg:mb-0 mt-8 space-x-2 lg2:space-x-0 lg2:mt-0 lg2:space-y-2 slide-up">
                     <a href="https://www.linkedin.com/in/philipe-ayres-2b0aab206/" target="_blank" 
                         rel="noopener noreferrer"
