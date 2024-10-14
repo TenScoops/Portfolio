@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { BsGithub } from "react-icons/bs";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaLongArrowAltRight } from "react-icons/fa";
 import { IoRocketOutline } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 import Helmet from "../assets/face.jpg";
@@ -45,8 +45,9 @@ const Home: React.FC<HomeProps> = ({ handleSectionClick }) => {
                 </div>
 
                 <Link to="/projects" onClick={handleUserClick}>
-                    <button className="w-32 h-10 ml-5 mb-10 sm0:ml-0 lg:mb-0 border icon-hover2 border-black shadow-sharp-md slide-right hover:shadow-sharp-lg">
+                    <button className=" flex flex-row items-center h-10 ml-5 mb-10 sm0:ml-0 lg:mb-0  icon-hover2  font-bold underline tracking-wider slide-right hover:no-underline">
                         View My Work
+                        <FaLongArrowAltRight size={20}/>
                     </button>
                 </Link>
             </div>
