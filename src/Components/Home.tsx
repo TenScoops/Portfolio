@@ -47,7 +47,7 @@ const Home: React.FC<HomeProps> = ({ handleSectionClick }) => {
                 <Link to="/projects" onClick={handleUserClick}>
                     <button className=" flex flex-row items-center h-10 ml-5 mb-10 sm0:ml-0 lg:mb-0  icon-hover2  font-bold underline tracking-wider slide-right hover:no-underline">
                         View My Work
-                        <FaLongArrowAltRight size={20}/>
+                        <FaLongArrowAltRight className="ml-1" size={20}/>
                     </button>
                 </Link>
             </div>
