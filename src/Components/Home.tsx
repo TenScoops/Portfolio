@@ -7,10 +7,9 @@ import Helmet from "../assets/face.jpg";
 
 interface HomeProps {
     handleSectionClick: (section: string) => void;
-    setActiveSection: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const Home: React.FC<HomeProps> = ({ handleSectionClick, setActiveSection }) => {
+const Home: React.FC<HomeProps> = ({ handleSectionClick }) => {
     const location = useLocation();
 
     // Retrieve active section from localStorage on mount
@@ -24,7 +23,7 @@ const Home: React.FC<HomeProps> = ({ handleSectionClick, setActiveSection }) => 
     const handleUserClick = () => {
         handleSectionClick("projects");
         localStorage.setItem("activeSection", "projects");
-        setActiveSection("projects");
+
     };
 
     return (
