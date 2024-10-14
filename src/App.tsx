@@ -104,7 +104,7 @@ const App = () => {
     <Router>
       <div className="flex flex-row w-full h-screen font-noto tracking-widest">
         
-        <div className="w-full flex flex-col">
+        <div className="w-full flex flex-col h-screen">
           {/* <div className="fixed flex flex-row top-5 left-5 z-50 items-center">
             <RxRocket size={40} />
             <h1 className="ml-3 tracking-widest text-lg">Philipe Ayres</h1>
