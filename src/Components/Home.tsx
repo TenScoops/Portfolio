@@ -45,7 +45,7 @@ const Home: React.FC<HomeProps> = ({ handleSectionClick }) => {
                 </div>
 
                 <Link to="/projects" onClick={handleUserClick}>
-                    <button className="w-32 h-10 ml-5 mb-10 sm0:ml-0 border icon-hover2 border-black shadow-sharp-md slide-right hover:shadow-sharp-lg">
+                    <button className="w-32 h-10 ml-5 mb-10 sm0:ml-0 sm0:mb-0 border icon-hover2 border-black shadow-sharp-md slide-right hover:shadow-sharp-lg">
                         View My Work
                     </button>
                 </Link>
