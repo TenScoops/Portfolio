@@ -91,7 +91,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
              <div className="flex flex-col items-center lg:items-baseline mt-10 lg:mt-0  space-y-10 lg:px-8">
                  
                   {/* buttons */}
-                  <div className="flex flex-row space-x-8 mt-5">
+                  <div className="flex flex-row space-x-8 mt-5 tracking-wider">
                      
                      <a href="https://github.com/TenScoops/the_pomodoro_project" 
                          target="_blank" 
