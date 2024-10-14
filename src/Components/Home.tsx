@@ -24,7 +24,7 @@ const Home: React.FC<HomeProps> = ({ handleSectionClick, setActiveSection }) => 
     const handleUserClick = () => {
         handleSectionClick("projects");
         localStorage.setItem("activeSection", "projects");
-        // setActiveSection("projects");
+        setActiveSection("projects");
     };
 
     return (
