@@ -96,21 +96,21 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
                     <a href="https://www.figma.com/design/BmSVm7SwGyJOQo4gjdm8tY/Final-prototype---no-interactions-yet?node-id=0-1&t=YgxkDQqeitSYVZxr-0"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg icon-hover2">
+                        className="flex flex-row items-center tracking-wider justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg icon-hover2">
                             <FigmaIcon />
                             <h1 className="hidden sm:block">Figma</h1>
                     </a>
                     <a href="https://github.com/TenScoops/LifeXP" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg icon-hover2">
+                        className="flex flex-row items-center tracking-wider justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg icon-hover2">
                             <GitIcon />
                             <h1 className="hidden sm:block">Github</h1>
                     </a>
                     <a href="https://life-xp-kappa.vercel.app/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg icon-hover2">
+                        className="flex flex-row items-center tracking-wider justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg icon-hover2">
                             <SiteIcon />
                             <h1 className="hidden sm:block">Website</h1>
                     </a>

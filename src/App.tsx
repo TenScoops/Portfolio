@@ -113,7 +113,7 @@ const App = () => {
 
           <Routes>
             {/* main routes */}
-            <Route path="/"element={<div className="w-full" ref={homeRef}><Home /></div>} />
+            <Route path="/"element={<div className="w-full" ref={homeRef}><Home handleSectionClick={handleSectionClick} setActiveSection={setActiveSection}/></div>} />
             <Route path="/projects" element={<div className="w-full" ref={projectsRef}><Projects /></div>} />
             <Route path="/about" element={<div className="w-full" ref={aboutRef}><About /></div>} />
             <Route path="/contact" element={<div className="w-full" ref={contactRef}><Contact /></div>}/>
