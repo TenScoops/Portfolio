@@ -22,7 +22,7 @@ const paragraph = () =>{
 }
 const approach = () =>{
     return <p className=" "> 
-                Design from ground up and program an app that can <strong>improve the lives</strong> of many through an all-encompassing, intuitive, and engaging approach.
+                Design from ground up and program an app that can <strong>improve people's mental and physical health</strong> through an all-encompassing, intuitive, and engaging approach.
             </p>
 }
 
