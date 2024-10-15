@@ -45,7 +45,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
     }
     const approach = () => {
         return <p className=""> 
-        Take an innovative, never before done approach to <strong>improve the productivity and lives of many</strong>.
+        Create something completely innovative, something that has never before done to <strong>improve the productivity and work habits of many</strong>.
         </p>
     }
     return(<div className="flex flex-col  items-center xl:h-screen mt-24 mb-20">
