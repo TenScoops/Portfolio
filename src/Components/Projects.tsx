@@ -26,7 +26,7 @@ const Projects = ()=> {
             </div>
         </div>
         {section === "apps"&&
-        <div className="flex flex-col lg:flex-row items-center justify-center mt-8 lg:space-x-10 space-y-10 lg:space-y-0  slide-up">
+        <div className="flex flex-col lg2:flex-row items-center justify-center mt-8 lg2:space-x-10 space-y-10 lg2:space-y-0  slide-up">
             <Link to="/projects/lifexp" 
                   className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-md cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
                 <div className="pl-16 pr-10"><Gamepad /></div>
