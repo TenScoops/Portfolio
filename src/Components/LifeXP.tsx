@@ -63,7 +63,7 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
 
             <img src={helmet} width={280} className='rounded-full slide-left'/>
         </div> */}
-        <div className="w-[345px] sm0:w-[470px] lg:w-[1030px] lg2:w-[1100px] ">
+        <div className="w-[345px] sm0:w-[440px] sm1:w-[520px] sm:w-[620px] md:w-[680px] lg:w-[1000px] lg2:w-[1100px]">
             <button className="border border-black h-12 w-12 flex items-center justify-center shadow-sharp-sm hover:shadow-sharp-md"
                     onClick={handleButtonClick}>
                 <ArrowBack />

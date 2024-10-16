@@ -51,7 +51,7 @@ const Portfolio:React.FC<PortfolioProps> = ({handleSectionClick}) =>{
  
              <img src={helmet} width={280} className='rounded-full slide-left'/>
          </div> */}
-         <div className="w-[345px] sm:w-[470px] lg:w-[1030px] lg2:w-[1100px] ">
+         <div className="w-[345px] sm0:w-[440px] sm1:w-[520px] sm:w-[620px] md:w-[680px] lg:w-[1000px]  lg2:w-[1100px] ">
              <button className="border border-black h-12 w-12 flex items-center justify-center shadow-sharp-sm hover:shadow-sharp-md"
                      onClick={handleButtonClick}>
                  <ArrowBack />
@@ -67,10 +67,10 @@ const Portfolio:React.FC<PortfolioProps> = ({handleSectionClick}) =>{
          </div>
  
          {/* project image/tech/buttons */}
-         <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-6 pr-12 slide-up2`}>
-             <div className="flex flex-col items-center mt-10 border-r border-black px-8">
+         <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-6 lg:pr-12 slide-up2`}>
+             <div className="flex flex-col items-center mt-10 lg:border-r border-black px-8">
                  {/* images */}
-                 <img className="sm:hidden shadow-sharp-md-noborder" src={Design} width={350}/>
+                 <img className="sm:hidden shadow-sharp-md" src={Design} width={350}/>
                  <img className="hidden sm:block shadow-sharp-md" src={Design} width={560} />
              </div>
              {/* <div className="w-0 h-[440px] border border-black ml-8 mr-8 mt-5 hidden lg:block"></div> */}

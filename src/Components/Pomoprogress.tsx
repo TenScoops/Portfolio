@@ -37,7 +37,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
 
     const paragraph = () => {
         return <p className="">
-        "<strong>The Progress Pomodoro</strong> is designed to help individuals hold themselves accountable and improve their productivity. 
+        " <strong>The Progress Pomodoro</strong> is designed to help individuals hold themselves accountable and improve their productivity. 
         The app features a rating system that allows users to evaluate their progress after each work session. This 
         data is then mapped on a graph, showcasing trends and patterns in work habits over time. By providing clear 
         visual feedback, Progress Pomodoro aims to naturally <strong>enhance work ethic and productivity</strong>. "
@@ -61,7 +61,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
  
              <img src={helmet} width={280} className='rounded-full slide-left'/>
          </div> */}
-         <div className="w-[345px] sm:w-[470px] lg:w-[1030px] lg2:w-[1100px] ">
+         <div className="w-[345px] sm0:w-[440px] sm1:w-[520px] sm:w-[620px] md:w-[680px] lg:w-[1000px]  lg2:w-[1100px]">
              <button className="border border-black h-12 w-12 flex items-center justify-center shadow-sharp-sm hover:shadow-sharp-md"
                      onClick={handleButtonClick}>
                  <ArrowBack />
