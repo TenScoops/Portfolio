@@ -5,10 +5,10 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Home from "./Components/Home";
-import ImaginAi from "./Components/ImaginAI";
 import LifeXP from "./Components/LifeXP";
 import Navbar from "./Components/Navbar";
 import Pomoprogress from "./Components/Pomoprogress";
+import Portfolio from "./Components/Portfolio";
 import Projects from "./Components/Projects";
 
 const App = () => {
@@ -120,7 +120,7 @@ const App = () => {
             {/* secondary routes */}
             <Route path="/projects/lifexp" element={<LifeXP handleSectionClick={handleSectionClick} />} />
             <Route path="/projects/pomoprogress" element={<Pomoprogress handleSectionClick={handleSectionClick} />} />
-            <Route path="/projects/imaginai" element={<ImaginAi handleSectionClick={handleSectionClick} />} />
+            <Route path="/projects/portfolio" element={<Portfolio handleSectionClick={handleSectionClick} />} />
             
           </Routes>
         </div>

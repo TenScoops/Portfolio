@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { FaCode } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Helmet from "../assets/face.jpg";
-import { AiIcon, Gamepad, ProgressBar } from "../icons";
+import { Gamepad, ProgressBar } from "../icons";
 
 const Projects = ()=> {
     const [section, setSection] = useState<string>("apps")
@@ -42,10 +43,10 @@ const Projects = ()=> {
 
         {section ==="designs"&&
         <div className="flex flex-row space-x-28 mt-8 slide-up">
-            <Link to="/projects/imaginai" 
+            <Link to="/projects/portfolio" 
                 className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-md cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
-                <div className="pl-16 pr-10"><AiIcon /></div>
-                <h1 className="text-xl font-semibold">ImaginAI</h1>
+                <div className="pl-16 pr-10"><FaCode size={70} /></div>
+                <h1 className="text-xl font-semibold">Portfolio</h1>
                 {/* <h1 className="italic">Click for info on project</h1> */}
             </Link>
         
