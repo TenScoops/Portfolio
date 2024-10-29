@@ -67,7 +67,7 @@ const Portfolio:React.FC<PortfolioProps> = ({handleSectionClick}) =>{
          </div>
  
          {/* project image/tech/buttons */}
-         <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-6 lg:pr-12 slide-up2`}>
+         <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-12 lg:pr-12 slide-up2`}>
              <div className="flex flex-col items-center mt-10 lg:border-r border-black px-8">
                  {/* images */}
                  <img className="sm:hidden shadow-sharp-md" src={Design} width={350}/>
