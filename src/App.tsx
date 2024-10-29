@@ -6,6 +6,7 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Home from "./Components/Home";
 import LifeXP from "./Components/LifeXP";
+import LifexpMobile from "./Components/LifexpMobile";
 import Navbar from "./Components/Navbar";
 import Pomoprogress from "./Components/Pomoprogress";
 import Portfolio from "./Components/Portfolio";
@@ -121,7 +122,7 @@ const App = () => {
             <Route path="/projects/lifexp" element={<LifeXP handleSectionClick={handleSectionClick} />} />
             <Route path="/projects/pomoprogress" element={<Pomoprogress handleSectionClick={handleSectionClick} />} />
             <Route path="/projects/portfolio" element={<Portfolio handleSectionClick={handleSectionClick} />} />
-            
+            <Route path="/projects/lifexpmobile" element={<LifexpMobile handleSectionClick={handleSectionClick} />} />
           </Routes>
         </div>
 

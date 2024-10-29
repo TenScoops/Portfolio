@@ -42,11 +42,17 @@ const Projects = ()=> {
         </div>}
 
         {section ==="designs"&&
-        <div className="flex flex-row space-x-28 mt-8 slide-up">
+        <div className="flex flex-col lg2:flex-row items-center justify-center mt-8 lg2:space-x-10 space-y-10 lg2:space-y-0  slide-up">
             <Link to="/projects/portfolio" 
                 className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-md cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
                 <div className="pl-16 pr-10"><FaCode size={70} /></div>
                 <h1 className="text-xl font-semibold">Portfolio</h1>
+                {/* <h1 className="italic">Click for info on project</h1> */}
+            </Link>
+            <Link to="/projects/lifexpmobile" 
+                  className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-md cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
+                <div className="pl-16 pr-10"><Gamepad /></div>
+                <h1 className="text-xl font-semibold">LifeXP - Mobile</h1>
                 {/* <h1 className="italic">Click for info on project</h1> */}
             </Link>
         
