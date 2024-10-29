@@ -21,7 +21,7 @@ const paragraph = () =>{
 }
 const approach = () =>{
     return <p className=""> 
-                Design a mobile experience that motivates and supports users on their personal growth journey, <strong>keeping accessibility and usability as top priorities.</strong> 
+                Design a mobile experience that motivates and supports users on their personal growth journey, <strong>keeping accessibility and usability as top priorities. </strong> 
                 Every screen layout, color choice, and interaction was crafted to provide a seamless experience that feels intuitive and engaging. I approached this 
                 design with the aim of balancing function with inspiration, ensuring the app is not only <strong>easy to navigate but also inviting and supportive of users' 
                 mental and physical well-being goals.</strong>
