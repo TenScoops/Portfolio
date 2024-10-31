@@ -20,11 +20,14 @@ const About = () => {
             <div>
                 <div className='flex flex-col items-center justify-center'>
                     <div className="flex flex-col lg:flex-row items-center justify-center ">
+                        
                         <p className='text-lg md:text-xl px-7 xl:px-0 max-w-4xl mb-12 xl:mb-10 leading-relaxed order-2 lg:order-1 slide-right mr-1'>
-                        “I don’t create for the sake of creating, I create to <strong>solve a problem</strong>. Each personal project I’ve worked 
+                        “My journey in software engineering has led to <strong>opportunities with industry leaders</strong> like <strong>NASA</strong> and <strong>IBM</strong>, reflecting my drive to create 
+                        robust and innovative applications/solutions. I don’t create for the sake of creating, I create to <strong>solve a problem</strong>. Each personal project I’ve worked 
                         on <strong>has a sense of purpose</strong>. And I take immense pride in my work. I believe that’s what programming/designing 
                         is about, to solve problems. ”
                         </p>
+                        
                         {/* astronaut image */}
                         <div className="flex flex-col items-center order-1 lg:order-2 mb-10 slide-left border-b lg:border-l lg:border-b-0 border-black">
                             <img src={Helmet} width={180} className="rounded-full  transform active:scale-95 transition 
