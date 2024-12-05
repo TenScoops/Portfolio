@@ -100,7 +100,7 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
                              <GitIcon />
                              <h1 className="hidden sm:block">Github</h1>
                      </a>
-                     <a href="https://storyboard-sandy.vercel.app/" 
+                     <a href="https://the-pomodoro-project.vercel.app/" 
                          target="_blank" 
                          rel="noopener noreferrer"
                          className="flex flex-row items-center justify-center w-14 sm:w-28 h-12 border border-black space-x-2 shadow-sharp-sm hover:shadow-sharp-lg icon-hover2">
