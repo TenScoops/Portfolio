@@ -22,7 +22,10 @@ const paragraph = () =>{
 }
 const approach = () =>{
     return <p className=" "> 
-                Design from ground up and program an app that can <strong>improve people's mental and physical health</strong> through an all-encompassing, intuitive, and engaging approach.
+               My approach was to design and build an app from the ground up, focusing on <strong>improving mental and 
+               physical health through an all-encompassing, intuitive, and engaging experience.</strong> The goal was to 
+               provide practical tools for self-care, creating a platform that motivates users to develop healthier 
+               habits and track their progress. The app is aimed to make personal growth accessible, enjoyable, and sustainable for anyone.
             </p>
 }
 

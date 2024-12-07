@@ -45,7 +45,10 @@ const Pomoprogress: React.FC<PomoprogressProps> = ({handleSectionClick}) =>{
     }
     const approach = () => {
         return <p className=""> 
-        Create something completely innovative, something that has never before done to <strong>improve the productivity and work habits of many</strong>.
+       My approach was to create something completely innovative—an app designed to revolutionize how individuals 
+       track and improve their productivity and work habits. The goal was to <strong>develop a tool that provides meaningful 
+       feedback, helping users hold themselves accountable while identifying patterns and areas for growth.</strong> By integrating 
+       data visualization and self-assessment, the aim was to inspire lasting improvements in work ethic and productivity.
         </p>
     }
     return(<div className="flex flex-col  items-center xl:h-screen mt-24 mb-20">
