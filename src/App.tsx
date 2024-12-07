@@ -11,6 +11,7 @@ import Navbar from "./Components/Navbar";
 import Pomoprogress from "./Components/Pomoprogress";
 import Portfolio from "./Components/Portfolio";
 import Projects from "./Components/Projects";
+import Storyboard from "./Components/Storyboard";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState<string>("home");
@@ -123,6 +124,7 @@ const App = () => {
             <Route path="/projects/pomoprogress" element={<Pomoprogress handleSectionClick={handleSectionClick} />} />
             <Route path="/projects/portfolio" element={<Portfolio handleSectionClick={handleSectionClick} />} />
             <Route path="/projects/lifexpmobile" element={<LifexpMobile handleSectionClick={handleSectionClick} />} />
+            <Route path="/projects/storyboard" element={<Storyboard handleSectionClick={handleSectionClick} />} />
           </Routes>
         </div>
 

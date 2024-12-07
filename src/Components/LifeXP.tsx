@@ -5,7 +5,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { SiJavascript, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
-import lifexpimg from "../assets/xp.webp";
+import lifexpimg from "../assets/lifexp.png";
 import { ArrowBack, FigmaIcon, GitIcon, SiteIcon } from "../icons";
 import ProjectInfo from './ProjectInfo';
 
@@ -82,8 +82,8 @@ const LifeXP:React.FC<LifeXPProps> = ({handleSectionClick}) =>{
         <div className= {`${openMore?'flex':'hidden'} flex-col lg:flex-row justify-center items-center w-full mt-12 lg:pr-12 slide-up2`}>
             <div className="flex flex-col items-center mt-10 border-r border-black lg:px-8">
                 {/* images */}
-                <img className="sm:hidden shadow-sharp-md-noborder" src={lifexpimg} width={350}/>
-                <img className="hidden sm:block shadow-sharp-md-noborder" src={lifexpimg} width={460}/>
+                <img className="sm:hidden shadow-sharp-md-noborder border border-black" src={lifexpimg} width={350}/>
+                <img className="hidden sm:block shadow-sharp-md-noborder border border-black" src={lifexpimg} width={460}/>
             </div>
 
             {/* divider */}
