@@ -28,16 +28,17 @@ const Projects = ()=> {
         </div>
         {section === "apps"&&
         <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-10 lg2:flex-row items-center justify-center mt-8 space-y-10 lg:space-y-0  slide-up ">
-            <Link to="/projects/storyboard"
-                  className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-md cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
-                <div className="pl-16 pr-10"><GiDeadWood size={80} /></div>
-                <h1 className="text-xl flex-wrap font-semibold"> Storyboard</h1>
-                {/* <h1 className="italic">Click for info on project</h1> */}
-            </Link>
+            
             <Link to="/projects/lifexp" 
                   className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-md cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
                 <div className="pl-16 pr-10"><Gamepad /></div>
                 <h1 className="text-xl font-semibold">LifeXP</h1>
+                {/* <h1 className="italic">Click for info on project</h1> */}
+            </Link>
+            <Link to="/projects/storyboard"
+                  className="flex flex-row items-center shadow-sharp-lg hover:shadow-sharp-2xl w-80 h-40 sm:w-[480px] sm:h-[200px] rounded-md cursor-pointer shadow-transition duration-200 icon-hover3 bg-white">
+                <div className="pl-16 pr-10"><GiDeadWood size={80} /></div>
+                <h1 className="text-xl flex-wrap font-semibold"> Storyboard</h1>
                 {/* <h1 className="italic">Click for info on project</h1> */}
             </Link>
             <Link to="/projects/pomoprogress"
