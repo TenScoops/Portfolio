@@ -18,7 +18,7 @@ return(<>
             <h1 className="italic font-semibold mt-1  typewriter3">****</h1>
         </div>
     </div>
-        <div className="space-y-2 mt-5 flex flex-col items-center slide-right lg:pr-44">
+        <div className="space-y-2 mt-5 flex flex-col items-center slide-right lg:pr-44 border-black">
             
             <div className="flex flex-row items-center">
                 <h1 className="font-bold text-lg mr-2">My approach</h1>

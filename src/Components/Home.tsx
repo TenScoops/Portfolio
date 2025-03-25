@@ -38,9 +38,9 @@ const Home: React.FC<HomeProps> = ({ handleSectionClick }) => {
                         <IoRocketOutline className="icon-hover" size={35} />
                     </div>
                     <p className="text-lg sm:text-xl px-7 sm0:px-0 w-[400px] sm1:w-[500px] leading-relaxed slide-right">
-                        "I’m a <strong>frontend developer/UX Designer</strong> who has a passion for coding, creating,
-                        and designing with the understanding and application of UI/UX principles. I focus on creating
-                        innovative, user-centered solutions."
+                        "I’m a passionate Frontend Developer with an eye for UI/UX Design who thrives on creating innovative and 
+                        user-centered solutions. With strong communication and organizational skills, I excel in fast-paced 
+                        environments and am dedicated to solving web problems with impactful solutions."
                     </p>
                 </div>
 
