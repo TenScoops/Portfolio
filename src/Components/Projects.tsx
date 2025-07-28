@@ -21,10 +21,10 @@ const Projects = ()=> {
                 <h1 onClick={()=>{setSection("apps")}} className={`text-xl cursor-pointer ${section === "apps" && 'font-bold underline'}`}>Apps</h1>
                 
             </div>
-            <div className="">
+            {/* <div className="">
                 <h1 onClick={()=>{setSection("designs")}} className={`text-xl cursor-pointer  ${section === "designs" && 'font-bold underline'}`}>Designs</h1>
                
-            </div>
+            </div> */}
         </div>
         {section === "apps"&&
         <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-10 lg2:flex-row items-center justify-center mt-8 space-y-10 lg:space-y-0  slide-up ">
